@@ -7,7 +7,7 @@ from enum import Enum
 from typing import Dict, List, Optional, Tuple, Union
 
 from sqlalchemy import and_, delete, func, or_
-from sqlalchemy.orm import Query, Session, joinedload
+from sqlalchemy.orm import Query, Session, joinedload, selectinload
 from sqlalchemy.sql.functions import coalesce
 
 from app.db.models import (
@@ -166,7 +166,7 @@ def update_hosts(db: Session, inbound_tag: str, modified_hosts: List[ProxyHostMo
     return inbound.hosts
 
 
-def get_user_queryset(db: Session) -> Query:
+def get_user_queryset(db: Session, eager: bool = True) -> Query:
     """
     Retrieves the base user query with joined admin details.
 
@@ -176,7 +176,15 @@ def get_user_queryset(db: Session) -> Query:
     Returns:
         Query: Base user query.
     """
-    return db.query(User).options(joinedload(User.admin)).options(joinedload(User.next_plan))
+    query = db.query(User).options(joinedload(User.admin)).options(joinedload(User.next_plan))
+    if eager:
+        # Everything UserResponse touches: lazy loading cost ~3 extra queries per user (N+1).
+        # Background jobs that only read plain columns pass eager=False to skip this.
+        query = query.options(
+            selectinload(User.proxies).selectinload(Proxy.excluded_inbounds),
+            selectinload(User.usage_logs),
+        )
+    return query
 
 
 def get_user(db: Session, username: str) -> Optional[User]:
@@ -231,7 +239,8 @@ def get_users(db: Session,
               admin: Optional[Admin] = None,
               admins: Optional[List[str]] = None,
               reset_strategy: Optional[Union[UserDataLimitResetStrategy, list]] = None,
-              return_with_count: bool = False) -> Union[List[User], Tuple[List[User], int]]:
+              return_with_count: bool = False,
+              eager: bool = True) -> Union[List[User], Tuple[List[User], int]]:
     """
     Retrieves users based on various filters and options.
 
@@ -251,7 +260,7 @@ def get_users(db: Session,
     Returns:
         Union[List[User], Tuple[List[User], int]]: List of users or tuple of users and total count.
     """
-    query = get_user_queryset(db)
+    query = get_user_queryset(db, eager=eager)
 
     if search:
         query = query.filter(or_(User.username.ilike(f"%{search}%"), User.note.ilike(f"%{search}%")))
@@ -291,6 +300,23 @@ def get_users(db: Session,
     if return_with_count:
         return query.all(), count
 
+    return query.all()
+
+
+def get_active_users_to_review(db: Session, now_ts: float, include_all: bool = False) -> List[User]:
+    """
+    Active users the status review job has to look at.
+
+    Only users that reached their data limit or expired can change status, so filter
+    them in SQL instead of loading every active user. `include_all=True` returns all
+    active users (needed when usage/expiry notifications are enabled).
+    """
+    query = get_user_queryset(db, eager=False).filter(User.status == UserStatus.active)
+    if not include_all:
+        query = query.filter(or_(
+            and_(User.data_limit.isnot(None), User.data_limit != 0, User.used_traffic >= User.data_limit),
+            and_(User.expire.isnot(None), User.expire != 0, User.expire <= now_ts),
+        ))
     return query.all()
 
 
@@ -788,17 +814,18 @@ def get_all_users_usages(
             used_traffic=0
         )
 
-    admin_users = set(user.id for user in get_users(db=db, admins=admin))
-
-    cond = and_(
+    # Aggregate in SQL instead of loading every user and every usage row into Python.
+    query = db.query(NodeUserUsage.node_id, func.sum(NodeUserUsage.used_traffic)).filter(
         NodeUserUsage.created_at >= start,
         NodeUserUsage.created_at <= end,
-        NodeUserUsage.user_id.in_(admin_users)
     )
-
-    for v in db.query(NodeUserUsage).filter(cond):
+    if admin:
+        query = query.join(User, User.id == NodeUserUsage.user_id).filter(
+            User.admin.has(Admin.username.in_(admin))
+        )
+    for node_id, total in query.group_by(NodeUserUsage.node_id):
         try:
-            usages[v.node_id or 0].used_traffic += v.used_traffic
+            usages[node_id or 0].used_traffic += int(total or 0)
         except KeyError:
             pass
 

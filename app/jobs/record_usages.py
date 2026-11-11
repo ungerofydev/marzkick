@@ -56,7 +56,7 @@ def record_user_stats(params: list, node_id: Union[int, None],
         # make user usage row if doesn't exist
         select_stmt = select(NodeUserUsage.user_id) \
             .where(and_(NodeUserUsage.node_id == node_id, NodeUserUsage.created_at == created_at))
-        existings = [r[0] for r in db.execute(select_stmt).fetchall()]
+        existings = {r[0] for r in db.execute(select_stmt).fetchall()}  # set: O(1) membership checks
         uids_to_insert = set()
 
         for p in params:
@@ -150,7 +150,12 @@ def record_user_usages():
         return
 
     with GetDB() as db:
-        user_admin_map = dict(db.query(User.id, User.admin_id).all())
+        # Only fetch the users that actually consumed traffic when there are few of them
+        # (<= 900 keeps us under SQLite's classic 999 bound-variable limit); otherwise load all.
+        admin_query = db.query(User.id, User.admin_id)
+        if len(users_usage) <= 900:
+            admin_query = admin_query.filter(User.id.in_([int(u["uid"]) for u in users_usage]))
+        user_admin_map = dict(admin_query.all())
 
     admin_usage = defaultdict(int)
     for user_usage in users_usage:
