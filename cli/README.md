@@ -294,3 +294,13 @@ $ user set-owner [OPTIONS]
 * `--admin, --owner TEXT`: Admin's username
 * `-y, --yes`: Skips confirmations
 * `--help`: Show this message and exit.
+
+## Fast mode (warm CLI server)
+
+`marzban-cli.py` first tries to forward the call to a warm server (`cli/fast_server.py`)
+over a unix socket (`/var/lib/marzban/cli.sock`, override with `MARZBAN_CLI_SOCKET`).
+The server keeps all modules imported and `fork()`s per command, running it on your
+terminal, so a call takes ~0.2s instead of ~2.5s. It is started automatically on the
+first call (that call is still slow), restarts itself when code, `.env` or the xray
+config change, and the client silently falls back to the normal path if anything is
+off. Set `MARZBAN_CLI_NO_FAST=1` to bypass it; logs go to `cli.sock.log`.
