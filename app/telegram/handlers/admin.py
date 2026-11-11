@@ -1926,7 +1926,7 @@ def confirm_user_command(call: types.CallbackQuery):
         with GetDB() as db:
             depleted_users = crud.get_users(
                 db, status=[UserStatus.limited if data == 'delete_limited' else UserStatus.expired])
-            file_name = f'{data[8:]}_users_{int(now.timestamp()*1000)}.txt'
+            file_name = f'{data[7:]}_users_{int(now.timestamp()*1000)}.txt'
             targets = [(u.id, u.username) for u in depleted_users]
             rows_before = [SimpleNamespace(id=u.id, username=u.username, expire=u.expire, used_traffic=u.used_traffic,
                                            data_limit=u.data_limit, status=u.status) for u in depleted_users]

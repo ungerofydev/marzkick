@@ -163,3 +163,6 @@ xray-core
 
 # marzban script backups
 /backup/
+
+# report files written by the bot's bulk actions
+/*_users_*.txt
