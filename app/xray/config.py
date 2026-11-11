@@ -13,7 +13,7 @@ from app.db import GetDB
 from app.db import models as db_models
 from app.models.proxy import ProxyTypes
 from app.models.user import UserStatus
-from app.utils.crypto import get_cert_SANs, get_cert_sha256
+from app.utils.crypto import get_cert_SANs, get_cert_pin
 from config import DEBUG, XRAY_EXCLUDE_INBOUND_TAGS, XRAY_FALLBACKS_INBOUND_TAG
 
 
@@ -224,7 +224,9 @@ class XRayConfig(dict):
                                 cert = file.read()
                                 settings['sni'].extend(get_cert_SANs(cert))
                                 if protocol == 'hysteria2':
-                                    settings.setdefault('pin_sha256', get_cert_sha256(cert))
+                                    pin = get_cert_pin(cert)
+                                if pin:
+                                    settings.setdefault('pin_sha256', pin)
 
                         if certificate.get("certificate", None):
                             cert = certificate['certificate']
@@ -234,7 +236,9 @@ class XRayConfig(dict):
                                 cert = cert.encode()
                             settings['sni'].extend(get_cert_SANs(cert))
                             if protocol == 'hysteria2':
-                                settings.setdefault('pin_sha256', get_cert_sha256(cert))
+                                pin = get_cert_pin(cert)
+                                if pin:
+                                    settings.setdefault('pin_sha256', pin)
 
                 elif security == 'reality':
                     settings['fp'] = 'chrome'

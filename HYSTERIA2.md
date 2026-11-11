@@ -59,6 +59,10 @@ also computes the certificate's SHA-256 fingerprint and publishes it as `pinSHA2
 (link), `pinnedPeerCertSha256` (v2ray-json, because recent Xray cores removed
 `allowInsecure`) and `fingerprint` (Clash Meta), so clients pin that exact certificate
 instead of skipping verification entirely.
+With a CA-issued certificate (for example Let's Encrypt for a real domain) nothing is pinned or skipped: use
+the domain as the host *Address* and *SNI*, point the inbound's / at the
+certificate and restart Xray after each renewal (a certbot  hook). On UDP 443 without salamander the
+traffic looks like ordinary HTTP/3 to the same domain.
 
 ## Limitations
 

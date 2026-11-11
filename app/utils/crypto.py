@@ -21,6 +21,18 @@ def get_cert_sha256(cert: bytes) -> str:
     return cert.fingerprint(hashes.SHA256()).hex()
 
 
+def get_cert_pin(cert: bytes):
+    """SHA-256 pin for a self-signed certificate, otherwise None.
+
+    A CA-issued certificate (Let's Encrypt, ...) is validated normally and is renewed
+    regularly, so pinning it would break clients at every renewal.
+    """
+    parsed = x509.load_pem_x509_certificate(cert, default_backend())
+    if parsed.issuer != parsed.subject:
+        return None
+    return parsed.fingerprint(hashes.SHA256()).hex()
+
+
 def generate_certificate():
     k = crypto.PKey()
     k.generate_key(crypto.TYPE_RSA, 4096)
