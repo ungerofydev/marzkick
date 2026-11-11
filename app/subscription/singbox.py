@@ -288,6 +288,30 @@ class SingBoxConfiguration(str):
         net = inbound["network"]
         path = inbound["path"]
 
+        if inbound["protocol"] == "hysteria2":
+            remark = self._remark_validation(remark)
+            self.proxy_remarks.append(remark)
+            alpn = inbound.get("alpn", None)
+            outbound = {
+                "type": "hysteria2",
+                "tag": remark,
+                "server": address,
+                "server_port": inbound["port"],
+                "password": settings["auth"],
+                "tls": {
+                    "enabled": True,
+                    "alpn": alpn.rsplit(sep=",") if alpn else ["h3"],
+                },
+            }
+            if inbound.get("sni"):
+                outbound["tls"]["server_name"] = inbound["sni"]
+            if inbound.get("ais"):
+                outbound["tls"]["insecure"] = True
+            if inbound.get("obfs"):
+                outbound["obfs"] = {"type": inbound["obfs"], "password": inbound.get("obfs_password", "")}
+            self.add_outbound(outbound)
+            return
+
         # not supported by sing-box
         if net in ("kcp", "splithttp", "xhttp") or (net == "quic" and inbound["header_type"] != "none"):
             return

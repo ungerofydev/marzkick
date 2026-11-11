@@ -255,7 +255,7 @@ class ClashConfiguration(object):
 
     def add(self, remark: str, address: str, inbound: dict, settings: dict):
         # not supported by clash
-        if inbound['network'] in ("kcp", "splithttp", "xhttp"):
+        if inbound['network'] in ("kcp", "splithttp", "xhttp", "hysteria") or inbound['protocol'] == 'hysteria2':
             return
 
         proxy_remark = self._remark_validation(remark)
@@ -345,6 +345,30 @@ class ClashMetaConfiguration(ClashConfiguration):
         return node
 
     def add(self, remark: str, address: str, inbound: dict, settings: dict):
+        if inbound['protocol'] == 'hysteria2':
+            proxy_remark = self._remark_validation(remark)
+            node = {
+                'name': remark,
+                'type': 'hysteria2',
+                'server': address,
+                'port': inbound['port'],
+                'password': settings['auth'],
+                'udp': True,
+                'alpn': inbound['alpn'].split(',') if inbound.get('alpn') else ['h3'],
+            }
+            if inbound.get('sni'):
+                node['sni'] = inbound['sni']
+            if inbound.get('ais'):
+                node['skip-cert-verify'] = True
+                if inbound.get('pin_sha256'):
+                    node['fingerprint'] = inbound['pin_sha256']
+            if inbound.get('obfs'):
+                node['obfs'] = inbound['obfs']
+                node['obfs-password'] = inbound.get('obfs_password', '')
+            self.data['proxies'].append(node)
+            self.proxy_remarks.append(proxy_remark)
+            return
+
         # not supported by clash-meta
         if inbound['network'] in ("kcp", "splithttp", "xhttp") or (inbound['network'] == "quic" and inbound["header_type"] != "none"):
             return

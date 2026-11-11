@@ -151,6 +151,10 @@ class UserCreate(User):
         }
     })
 
+    # Run the validator on the default too (pydantic v2 skips it otherwise), so a user created
+    # without explicit `inbounds` gets all inbounds of its protocols instead of none.
+    inbounds: Dict[ProxyTypes, List[str]] = Field(default_factory=dict, validate_default=True)
+
     @property
     def excluded_inbounds(self):
         excluded = {}

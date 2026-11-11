@@ -154,6 +154,7 @@
   "userDialog.editUserTitle": "ویرایش کاربر",
   "userDialog.endDate": "تاریخ پایان",
   "userDialog.expiryDate": "تاریخ پایان",
+  "userDialog.hysteria2Desc": "مبتنی بر QUIC (UDP)، سریع در شبکه‌های ناپایدار و شلوغ",
   "userDialog.generatedByDefault": "پیش‌فرض ساخته می‌شود",
   "userDialog.hours": "ساعات",
   "userDialog.method": "روش",

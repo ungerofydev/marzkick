@@ -37,6 +37,7 @@
   "hostsDialog.addHost": "添加主机",
   "hostsDialog.advancedOptions": "高级选项",
   "hostsDialog.allowinsecure": "允许不安全连接",
+  "hostsDialog.useSniAsHost": "Use sni as host",
   "hostsDialog.alpn": "ALPN",
   "hostsDialog.apply": "保存",
   "hostsDialog.currentServer": "当前服务器的 IP 地址",
@@ -147,6 +148,7 @@
   "userDialog.editUserTitle": "用户编辑",
   "userDialog.endDate": "结束日期",
   "userDialog.expiryDate": "过期日期",
+  "userDialog.hysteria2Desc": "基于 QUIC（UDP），在丢包和拥塞网络中速度快",
   "userDialog.generatedByDefault": "默认自动生成",
   "userDialog.hours": "小时",
   "userDialog.method": "加密方式",
@@ -188,5 +190,5 @@
   "usersTable.noUserMatched": "没有找到您搜索的用户",
   "usersTable.status": "状态",
   "usersTable.sortByExpire": "按过期时间排序",
-  "usersTable.total": "总共",
+  "usersTable.total": "总共"
 }

@@ -155,6 +155,20 @@ class V2rayShareLink(str):
                 password=settings["password"],
                 method=settings["method"],
             )
+
+        elif inbound["protocol"] == "hysteria2":
+            link = self.hysteria2(
+                remark=remark,
+                address=address,
+                port=inbound["port"],
+                auth=settings["auth"],
+                sni=inbound.get("sni", ""),
+                alpn=inbound.get("alpn", ""),
+                ais=inbound.get("ais", ""),
+                obfs=inbound.get("obfs", ""),
+                obfs_password=inbound.get("obfs_password", ""),
+                pin=inbound.get("pin_sha256", ""),
+            )
         else:
             return
 
@@ -471,6 +485,46 @@ class V2rayShareLink(str):
             "trojan://"
             + f"{urlparse.quote(password, safe=':')}@{address}:{port}?"
             + urlparse.urlencode(payload)
+            + f"#{urlparse.quote(remark)}"
+        )
+
+    @classmethod
+    def hysteria2(
+            cls,
+            remark: str,
+            address: str,
+            port: Union[int, str],
+            auth: str,
+            sni: str = "",
+            alpn: str = "",
+            ais: bool = False,
+            obfs: str = "",
+            obfs_password: str = "",
+            pin: str = "",
+    ):
+        """Hysteria 2 URI: https://v2.hysteria.network/docs/developers/URI-Scheme/"""
+        payload = {}
+        if sni:
+            payload["sni"] = sni
+        if alpn:
+            payload["alpn"] = alpn
+        if ais:
+            payload["insecure"] = 1
+            if pin:  # trust only this exact certificate instead of skipping verification
+                payload["pinSHA256"] = pin
+        if obfs:
+            payload["obfs"] = obfs
+            payload["obfs-password"] = obfs_password
+
+        # a port string like "20000-50000,443" is a port-hopping list -> `mport`
+        if isinstance(port, str) and ("," in port or "-" in port):
+            payload["mport"] = port
+            port = port.replace("-", ",").split(",")[0]
+
+        query = f"/?{urlparse.urlencode(payload)}" if payload else ""
+        return (
+            "hysteria2://"
+            + f"{urlparse.quote(auth, safe=':')}@{address}:{port}{query}"
             + f"#{urlparse.quote(remark)}"
         )
 
@@ -843,6 +897,38 @@ class V2rayJsonConfig(str):
         }
 
     @staticmethod
+    def hysteria_outbound(address=None, port=None, auth=None, sni=None, alpn=None,
+                          ais: bool = False, obfs=None, obfs_password=None, pin=None) -> dict:
+        """Complete xray outbound for Hysteria 2 (own transport, TLS is mandatory)."""
+        tls_settings = {"alpn": alpn or ["h3"]}
+        if sni:
+            tls_settings["serverName"] = sni
+        if ais:
+            if pin:
+                # `allowInsecure` was removed from recent xray cores; pin the server certificate instead
+                tls_settings["pinnedPeerCertSha256"] = pin
+            else:
+                tls_settings["allowInsecure"] = True
+
+        stream_settings = {
+            "network": "hysteria",
+            "security": "tls",
+            "tlsSettings": tls_settings,
+            "hysteriaSettings": {"version": 2, "auth": auth},
+        }
+        if obfs == "salamander":
+            stream_settings["finalmask"] = {
+                "udp": [{"type": "salamander", "settings": {"password": obfs_password}}]
+            }
+
+        return {
+            "tag": "proxy",
+            "protocol": "hysteria",
+            "settings": {"version": 2, "address": address, "port": port},
+            "streamSettings": stream_settings,
+        }
+
+    @staticmethod
     def shadowsocks_config(address=None, port=None, password=None, method=None) -> dict:
         return {
             "servers": [
@@ -991,6 +1077,20 @@ class V2rayJsonConfig(str):
         if isinstance(port, str):
             ports = port.split(',')
             port = int(choice(ports))
+
+        if protocol == 'hysteria2':
+            alpn = inbound.get('alpn', None)
+            outbound = self.hysteria_outbound(address=address,
+                                              port=port,
+                                              auth=settings['auth'],
+                                              sni=inbound.get('sni', ''),
+                                              alpn=alpn.rsplit(sep=",") if alpn else None,
+                                              ais=inbound.get('ais', False),
+                                              obfs=inbound.get('obfs', ''),
+                                              obfs_password=inbound.get('obfs_password', ''),
+                                              pin=inbound.get('pin_sha256', ''))
+            self.add_config(remarks=remark, outbounds=[outbound])
+            return
 
         tls = (inbound['tls'])
         headers = inbound['header_type']

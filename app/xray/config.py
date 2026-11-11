@@ -13,7 +13,7 @@ from app.db import GetDB
 from app.db import models as db_models
 from app.models.proxy import ProxyTypes
 from app.models.user import UserStatus
-from app.utils.crypto import get_cert_SANs
+from app.utils.crypto import get_cert_SANs, get_cert_sha256
 from config import DEBUG, XRAY_EXCLUDE_INBOUND_TAGS, XRAY_FALLBACKS_INBOUND_TAG
 
 
@@ -140,9 +140,28 @@ class XRayConfig(dict):
             if not outbound.get("tag"):
                 raise ValueError("all outbounds must have a unique tag")
 
+    @staticmethod
+    def proxy_protocol(inbound: dict):
+        """Marzban proxy type (ProxyTypes value) served by an xray inbound, or None.
+
+        Xray calls Hysteria 2 inbounds `"protocol": "hysteria"` with `settings.version == 2`;
+        Marzban names that proxy type "hysteria2".
+        """
+        protocol = inbound.get('protocol')
+        if protocol == 'hysteria':
+            version = (inbound.get('settings') or {}).get('version', 2)
+            return 'hysteria2' if version == 2 else None
+        return protocol
+
+    @staticmethod
+    def clients_key(proxy_protocol: str) -> str:
+        """Key of the users list inside inbound settings."""
+        return 'users' if proxy_protocol == 'hysteria2' else 'clients'
+
     def _resolve_inbounds(self):
         for inbound in self['inbounds']:
-            if not inbound['protocol'] in ProxyTypes._value2member_map_:
+            protocol = self.proxy_protocol(inbound)
+            if protocol not in ProxyTypes._value2member_map_:
                 continue
 
             if inbound['tag'] in XRAY_EXCLUDE_INBOUND_TAGS:
@@ -150,12 +169,13 @@ class XRayConfig(dict):
 
             if not inbound.get('settings'):
                 inbound['settings'] = {}
-            if not inbound['settings'].get('clients'):
-                inbound['settings']['clients'] = []
+            clients_key = self.clients_key(protocol)
+            if not inbound['settings'].get(clients_key):
+                inbound['settings'][clients_key] = []
 
             settings = {
                 "tag": inbound["tag"],
-                "protocol": inbound["protocol"],
+                "protocol": protocol,
                 "port": None,
                 "network": "tcp",
                 "tls": 'none',
@@ -203,6 +223,8 @@ class XRayConfig(dict):
                             with open(certificate['certificateFile'], 'rb') as file:
                                 cert = file.read()
                                 settings['sni'].extend(get_cert_SANs(cert))
+                                if protocol == 'hysteria2':
+                                    settings.setdefault('pin_sha256', get_cert_sha256(cert))
 
                         if certificate.get("certificate", None):
                             cert = certificate['certificate']
@@ -211,6 +233,8 @@ class XRayConfig(dict):
                             if isinstance(cert, str):
                                 cert = cert.encode()
                             settings['sni'].extend(get_cert_SANs(cert))
+                            if protocol == 'hysteria2':
+                                settings.setdefault('pin_sha256', get_cert_sha256(cert))
 
                 elif security == 'reality':
                     settings['fp'] = 'chrome'
@@ -312,6 +336,14 @@ class XRayConfig(dict):
                     settings["noGRPCHeader"] = net_settings.get("noGRPCHeader", False)
                     settings["keepAlivePeriod"] = net_settings.get("keepAlivePeriod", 0)
 
+                elif net == 'hysteria':
+                    # QUIC-based transport; TLS is mandatory, ALPN is h3
+                    settings['header_type'] = ''
+                    for mask in (stream.get('finalmask') or {}).get('udp', []):
+                        if mask.get('type') == 'salamander':
+                            settings['obfs'] = 'salamander'
+                            settings['obfs_password'] = (mask.get('settings') or {}).get('password', '')
+
                 elif net == 'kcp':
                     header = net_settings.get('header', {})
 
@@ -338,9 +370,9 @@ class XRayConfig(dict):
             self.inbounds_by_tag[inbound['tag']] = settings
 
             try:
-                self.inbounds_by_protocol[inbound['protocol']].append(settings)
+                self.inbounds_by_protocol[protocol].append(settings)
             except KeyError:
-                self.inbounds_by_protocol[inbound['protocol']] = [settings]
+                self.inbounds_by_protocol[protocol] = [settings]
 
     def get_inbound(self, tag) -> dict:
         for inbound in self['inbounds']:
@@ -400,7 +432,7 @@ class XRayConfig(dict):
                     continue
 
                 for inbound in inbounds:
-                    clients = config.get_inbound(inbound['tag'])['settings']['clients']
+                    clients = config.get_inbound(inbound['tag'])['settings'][self.clients_key(proxy_type)]
 
                     for row in rows:
                         user_id, username, settings, excluded_inbound_tags = row

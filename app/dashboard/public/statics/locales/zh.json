@@ -148,6 +148,7 @@
   "userDialog.editUserTitle": "用户编辑",
   "userDialog.endDate": "结束日期",
   "userDialog.expiryDate": "过期日期",
+  "userDialog.hysteria2Desc": "基于 QUIC（UDP），在丢包和拥塞网络中速度快",
   "userDialog.generatedByDefault": "默认自动生成",
   "userDialog.hours": "小时",
   "userDialog.method": "加密方式",

@@ -1,5 +1,6 @@
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives import hashes
 from OpenSSL import crypto
 
 
@@ -12,6 +13,12 @@ def get_cert_SANs(cert: bytes):
             for name in san:
                 san_list.append(name.value)
     return san_list
+
+
+def get_cert_sha256(cert: bytes) -> str:
+    """Lowercase hex SHA-256 fingerprint of the (first) PEM certificate."""
+    cert = x509.load_pem_x509_certificate(cert, default_backend())
+    return cert.fingerprint(hashes.SHA256()).hex()
 
 
 def generate_certificate():
