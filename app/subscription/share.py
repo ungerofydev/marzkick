@@ -4,6 +4,7 @@ import secrets
 from collections import defaultdict
 from datetime import datetime as dt
 from datetime import timedelta
+from functools import lru_cache
 from typing import TYPE_CHECKING, List, Literal, Union
 
 from jdatetime import date as jd
@@ -24,8 +25,10 @@ from config import (
     ONHOLD_STATUS_TEXT,
 )
 
-SERVER_IP = get_public_ip()
-SERVER_IPV6 = get_public_ipv6()
+# Public IPs are resolved lazily (and cached): looking them up at import time made
+# every import (CLI included) block on several HTTP requests.
+get_server_ip = lru_cache(maxsize=None)(get_public_ip)
+get_server_ipv6 = lru_cache(maxsize=None)(get_public_ipv6)
 
 STATUS_EMOJIS = {
     "active": "✅",
@@ -211,8 +214,8 @@ def setup_format_variables(extra_data: dict) -> dict:
     format_variables = defaultdict(
         lambda: "<missing>",
         {
-            "SERVER_IP": SERVER_IP,
-            "SERVER_IPV6": SERVER_IPV6,
+            "SERVER_IP": get_server_ip(),
+            "SERVER_IPV6": get_server_ipv6(),
             "USERNAME": extra_data.get("username", "{USERNAME}"),
             "DATA_USAGE": readable_size(extra_data.get("used_traffic")),
             "DATA_LIMIT": data_limit,

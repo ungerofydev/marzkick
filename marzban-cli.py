@@ -4,6 +4,7 @@ import readline  # noqa
 import sys  # noqa
 
 sys.path.insert(0, os.getcwd())  # noqa
+os.environ.setdefault("MARZBAN_CLI", "1")  # noqa: CLI does not need the web stack
 
 import typer
 from typer._completion_shared import Shells
