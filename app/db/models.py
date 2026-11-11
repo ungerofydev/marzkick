@@ -32,6 +32,14 @@ from app.models.proxy import (
 from app.models.user import ReminderType, UserDataLimitResetStrategy, UserStatus
 
 
+class AppSetting(Base):
+    """Key/value settings edited from the Telegram bot (see app/settings.py)."""
+    __tablename__ = "app_settings"
+
+    key = Column(String(64), primary_key=True)
+    value = Column(JSON, nullable=False)
+
+
 class Admin(Base):
     __tablename__ = "admins"
 

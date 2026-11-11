@@ -14,22 +14,12 @@ from app.utils.notification import (Notification, ReachedDaysLeft,
                                     UserUpdated, notify)
 from app import discord
 
-from config import (
-    NOTIFY_STATUS_CHANGE,
-    NOTIFY_USER_CREATED,
-    NOTIFY_USER_UPDATED,
-    NOTIFY_USER_DELETED,
-    NOTIFY_USER_DATA_USED_RESET,
-    NOTIFY_USER_SUB_REVOKED,
-    NOTIFY_IF_DATA_USAGE_PERCENT_REACHED,
-    NOTIFY_IF_DAYS_LEFT_REACHED,
-    NOTIFY_LOGIN
-)
+from app.settings import settings
 
 
 def status_change(
         username: str, status: UserStatus, user: UserResponse, user_admin: Admin = None, by: Admin = None) -> None:
-    if NOTIFY_STATUS_CHANGE:
+    if settings.NOTIFY_STATUS_CHANGE:
         try:
             telegram.report_status_change(username, status, user_admin)
         except Exception:
@@ -49,7 +39,7 @@ def status_change(
 
 
 def user_created(user: UserResponse, user_id: int, by: Admin, user_admin: Admin = None) -> None:
-    if NOTIFY_USER_CREATED:
+    if settings.NOTIFY_USER_CREATED:
         try:
             telegram.report_new_user(
                 user_id=user_id,
@@ -81,7 +71,7 @@ def user_created(user: UserResponse, user_id: int, by: Admin, user_admin: Admin 
 
 
 def user_updated(user: UserResponse, by: Admin, user_admin: Admin = None) -> None:
-    if NOTIFY_USER_UPDATED:
+    if settings.NOTIFY_USER_UPDATED:
         try:
             telegram.report_user_modification(
                 username=user.username,
@@ -112,7 +102,7 @@ def user_updated(user: UserResponse, by: Admin, user_admin: Admin = None) -> Non
 
 
 def user_deleted(username: str, by: Admin, user_admin: Admin = None) -> None:
-    if NOTIFY_USER_DELETED:
+    if settings.NOTIFY_USER_DELETED:
         try:
             telegram.report_user_deletion(username=username, by=by.username, admin=user_admin)
         except Exception:
@@ -125,7 +115,7 @@ def user_deleted(username: str, by: Admin, user_admin: Admin = None) -> None:
 
 
 def user_data_usage_reset(user: UserResponse, by: Admin, user_admin: Admin = None) -> None:
-    if NOTIFY_USER_DATA_USED_RESET:
+    if settings.NOTIFY_USER_DATA_USED_RESET:
         try:
             telegram.report_user_usage_reset(
                 username=user.username,
@@ -146,7 +136,7 @@ def user_data_usage_reset(user: UserResponse, by: Admin, user_admin: Admin = Non
 
 
 def user_data_reset_by_next(user: UserResponse, user_admin: Admin = None) -> None:
-    if NOTIFY_USER_DATA_USED_RESET:
+    if settings.NOTIFY_USER_DATA_USED_RESET:
         try:
             telegram.report_user_data_reset_by_next(
                 user=user,
@@ -165,7 +155,7 @@ def user_data_reset_by_next(user: UserResponse, user_admin: Admin = None) -> Non
 
 
 def user_subscription_revoked(user: UserResponse, by: Admin, user_admin: Admin = None) -> None:
-    if NOTIFY_USER_SUB_REVOKED:
+    if settings.NOTIFY_USER_SUB_REVOKED:
         try:
             telegram.report_user_subscription_revoked(
                 username=user.username,
@@ -188,22 +178,37 @@ def user_subscription_revoked(user: UserResponse, by: Admin, user_admin: Admin =
 
 def data_usage_percent_reached(
         db: Session, percent: float, user: UserResponse, user_id: int, expire: Optional[int] = None, threshold: Optional[int] = None) -> None:
-    if NOTIFY_IF_DATA_USAGE_PERCENT_REACHED:
+    if settings.NOTIFY_IF_DATA_USAGE_PERCENT_REACHED:
         notify(ReachedUsagePercent(username=user.username, user=user, used_percent=percent))
+        try:
+            telegram.report_usage_percent_reached(user.username, percent, user.used_traffic, user.data_limit)
+        except Exception:
+            pass
         create_notification_reminder(db, ReminderType.data_usage,
                                      expires_at=dt.utcfromtimestamp(expire) if expire else None, user_id=user_id, threshold=threshold)
 
 
 def expire_days_reached(db: Session, days: int, user: UserResponse, user_id: int, expire: int, threshold=None) -> None:
-    notify(ReachedDaysLeft(username=user.username, user=user, days_left=days))
-    if NOTIFY_IF_DAYS_LEFT_REACHED:
+    if settings.NOTIFY_IF_DAYS_LEFT_REACHED:
+        notify(ReachedDaysLeft(username=user.username, user=user, days_left=days))
+        try:
+            telegram.report_days_left_reached(user.username, days, expire)
+        except Exception:
+            pass
         create_notification_reminder(
             db, ReminderType.expiration_date, expires_at=dt.utcfromtimestamp(expire),
             user_id=user_id, threshold=threshold)
 
 
+def threshold_alerts_active() -> bool:
+    """Whether usage / days-left alerts are switched on and have somewhere to go."""
+    if not (settings.NOTIFY_IF_DATA_USAGE_PERCENT_REACHED or settings.NOTIFY_IF_DAYS_LEFT_REACHED):
+        return False
+    return bool(settings.WEBHOOK_ADDRESS) or telegram.has_targets()
+
+
 def login(username: str, password: str, client_ip: str, success: bool) -> None:
-    if NOTIFY_LOGIN:
+    if settings.NOTIFY_LOGIN:
         try:
             telegram.report_login(
                 username=username,

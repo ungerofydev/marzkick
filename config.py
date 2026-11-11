@@ -75,6 +75,10 @@ USE_CUSTOM_JSON_FOR_V2RAYNG = config("USE_CUSTOM_JSON_FOR_V2RAYNG", default=Fals
 USE_CUSTOM_JSON_FOR_STREISAND = config("USE_CUSTOM_JSON_FOR_STREISAND", default=False, cast=bool)
 USE_CUSTOM_JSON_FOR_HAPP = config("USE_CUSTOM_JSON_FOR_HAPP", default=False, cast=bool)
 
+# --- Moved to the bot -----------------------------------------------------------------------------
+# NOTIFY_*, LOGIN_NOTIFY_WHITE_LIST, TELEGRAM_LOGGER_CHANNEL_ID, DISCORD_WEBHOOK_URL, WEBHOOK_ADDRESS,
+# WEBHOOK_SECRET and the two threshold lists below are edited in the Telegram bot (Settings) and stored
+# in the database (see app/settings.py). The environment values are only the initial defaults.
 NOTIFY_STATUS_CHANGE = config("NOTIFY_STATUS_CHANGE", default=True, cast=bool)
 NOTIFY_USER_CREATED = config("NOTIFY_USER_CREATED", default=True, cast=bool)
 NOTIFY_USER_UPDATED = config("NOTIFY_USER_UPDATED", default=True, cast=bool)

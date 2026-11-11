@@ -1,4 +1,5 @@
 import requests
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from app.db.models import User
 from app.utils.system import readable_size
@@ -6,23 +7,26 @@ from app.models.user import UserDataLimitResetStrategy
 from app.models.admin import Admin
 from telebot.formatting import escape_html
 from app import logger
-from config import DISCORD_WEBHOOK_URL
+from app.settings import settings
 
 
-def send_webhooks(json_data, admin_webhook:str = None):
-    if DISCORD_WEBHOOK_URL:
-        send_webhook(json_data=json_data, webhook=DISCORD_WEBHOOK_URL)
+_pool = ThreadPoolExecutor(max_workers=2, thread_name_prefix="discord")
+
+
+def send_webhooks(json_data, admin_webhook: str = None):
+    """Fire and forget: reports are sent from a small background pool, never inside API requests."""
+    if settings.DISCORD_WEBHOOK_URL:
+        _pool.submit(send_webhook, json_data=json_data, webhook=settings.DISCORD_WEBHOOK_URL)
     if admin_webhook:
-        send_webhook(json_data=json_data, webhook=admin_webhook)
+        _pool.submit(send_webhook, json_data=json_data, webhook=admin_webhook)
 
 
 def send_webhook(json_data, webhook):
-    result = requests.post(webhook, json=json_data)
-
     try:
+        result = requests.post(webhook, json=json_data, timeout=10)
         result.raise_for_status()
-    except requests.exceptions.HTTPError as err:
-        logger.error(err)
+    except requests.exceptions.RequestException as err:
+        logger.error("Discord webhook failed: %s", err)
     else:
         logger.debug("Discord payload delivered successfully, code {}.".format(result.status_code))
 

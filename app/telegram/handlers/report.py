@@ -6,25 +6,58 @@ from app.telegram import bot
 from telebot.apihelper import ApiTelegramException
 from datetime import datetime
 from app.telegram.utils.keyboard import BotKeyboard
+from app.telegram.utils.sender import sender
 from app.utils.system import readable_size
-from config import TELEGRAM_ADMIN_ID, TELEGRAM_LOGGER_CHANNEL_ID
+from app.settings import settings
+from config import TELEGRAM_ADMIN_ID
 from telebot.formatting import escape_html
 from app.models.admin import Admin
 from app.models.user import UserDataLimitResetStrategy
 
 
+def has_targets() -> bool:
+    """True when the bot is enabled and there is somebody (admins / log channel) to report to."""
+    return bool(bot and (TELEGRAM_ADMIN_ID or settings.TELEGRAM_LOGGER_CHANNEL_ID))
+
+
+def report_usage_percent_reached(username: str, percent: float, used_traffic: int, data_limit: int):
+    text = '''\
+🪫 <b>#Usage_Warning</b>
+➖➖➖➖➖➖➖➖➖
+<b>Username :</b> <code>{username}</code>
+<b>Used :</b> <code>{percent:.0f}%</code> (<code>{used}</code> / <code>{limit}</code>)'''.format(
+        username=escape_html(username),
+        percent=percent,
+        used=readable_size(used_traffic or 0),
+        limit=readable_size(data_limit) if data_limit else "Unlimited",
+    )
+    return report(text)
+
+
+def report_days_left_reached(username: str, days_left: int, expire: int):
+    text = '''\
+⏳ <b>#Expiry_Warning</b>
+➖➖➖➖➖➖➖➖➖
+<b>Username :</b> <code>{username}</code>
+<b>Days left :</b> <code>{days_left}</code>
+<b>Expire Date :</b> <code>{expire_date}</code>'''.format(
+        username=escape_html(username),
+        days_left=days_left,
+        expire_date=datetime.fromtimestamp(expire).strftime("%H:%M:%S %Y-%m-%d") if expire else "Never",
+    )
+    return report(text)
+
+
 def report(text: str, chat_id: int = None, parse_mode="html", keyboard=None):
-    if bot and (TELEGRAM_ADMIN_ID or TELEGRAM_LOGGER_CHANNEL_ID):
-        try:
-            if TELEGRAM_LOGGER_CHANNEL_ID:
-                bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, parse_mode=parse_mode)
-            else:
-                for admin in TELEGRAM_ADMIN_ID:
-                    bot.send_message(admin, text, parse_mode=parse_mode, reply_markup=keyboard)
-            if chat_id:
-                bot.send_message(chat_id, text, parse_mode=parse_mode)
-        except ApiTelegramException as e:
-            logger.error(e)
+    """Queue a report; delivery happens in the background (see utils/sender.py)."""
+    if not has_targets():
+        return
+    channel = settings.TELEGRAM_LOGGER_CHANNEL_ID
+    targets = [channel] if channel else list(TELEGRAM_ADMIN_ID)
+    for target in targets:
+        sender.submit(target, text, parse_mode, None if channel else keyboard)
+    if chat_id and chat_id not in targets:
+        sender.submit(chat_id, text, parse_mode)
 
 
 def report_new_user(

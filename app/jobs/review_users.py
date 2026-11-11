@@ -9,20 +9,21 @@ from app.db import (GetDB, get_notification_reminder, get_users,
 from app.db.crud import get_active_users_to_review
 from app.models.user import ReminderType, UserResponse, UserStatus
 from app.utils import report
+from app.utils.report import threshold_alerts_active
 from app.utils.helpers import (calculate_expiration_days,
                                calculate_usage_percent)
-from config import (JOB_REVIEW_USERS_INTERVAL, NOTIFY_DAYS_LEFT,
-                    NOTIFY_REACHED_USAGE_PERCENT, WEBHOOK_ADDRESS)
+from app.settings import settings
+from config import JOB_REVIEW_USERS_INTERVAL
 
 if TYPE_CHECKING:
     from app.db.models import User
 
 
 def add_notification_reminders(db: Session, user: "User", now: datetime = datetime.utcnow()) -> None:
-    if user.data_limit:
+    if user.data_limit and settings.NOTIFY_IF_DATA_USAGE_PERCENT_REACHED:
         usage_percent = calculate_usage_percent(user.used_traffic, user.data_limit)
 
-        for percent in sorted(NOTIFY_REACHED_USAGE_PERCENT, reverse=True):
+        for percent in sorted(settings.NOTIFY_REACHED_USAGE_PERCENT, reverse=True):
             if usage_percent >= percent:
                 if not get_notification_reminder(db, user.id, ReminderType.data_usage, threshold=percent):
                     report.data_usage_percent_reached(
@@ -31,10 +32,10 @@ def add_notification_reminders(db: Session, user: "User", now: datetime = dateti
                     )
                 break
 
-    if user.expire:
+    if user.expire and settings.NOTIFY_IF_DAYS_LEFT_REACHED:
         expire_days = calculate_expiration_days(user.expire)
 
-        for days_left in sorted(NOTIFY_DAYS_LEFT):
+        for days_left in sorted(settings.NOTIFY_DAYS_LEFT):
             if expire_days <= days_left:
                 if not get_notification_reminder(db, user.id, ReminderType.expiration_date, threshold=days_left):
                     report.expire_days_reached(
@@ -56,7 +57,13 @@ def review():
     now = datetime.utcnow()
     now_ts = now.timestamp()
     with GetDB() as db:
-        for user in get_active_users_to_review(db, now_ts, include_all=bool(WEBHOOK_ADDRESS)):
+        alerts = threshold_alerts_active()
+        percents = settings.NOTIFY_REACHED_USAGE_PERCENT if settings.NOTIFY_IF_DATA_USAGE_PERCENT_REACHED else []
+        days = settings.NOTIFY_DAYS_LEFT if settings.NOTIFY_IF_DAYS_LEFT_REACHED else []
+        for user in get_active_users_to_review(
+                db, now_ts,
+                usage_percent=min(percents) if alerts and percents else None,
+                days_left=max(days) if alerts and days else None):
 
             limited = user.data_limit and user.used_traffic >= user.data_limit
             expired = user.expire and user.expire <= now_ts
@@ -77,7 +84,7 @@ def review():
             elif expired:
                 status = UserStatus.expired
             else:
-                if WEBHOOK_ADDRESS:
+                if alerts:
                     add_notification_reminders(db, user, now)
                 continue
 

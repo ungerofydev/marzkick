@@ -9,14 +9,12 @@ from app import app, logger, scheduler
 from app.db import GetDB
 from app.db.models import NotificationReminder
 from app.utils.notification import queue
+from app.settings import settings
 from config import (JOB_SEND_NOTIFICATIONS_INTERVAL,
                     NUMBER_OF_RECURRENT_NOTIFICATIONS,
-                    RECURRENT_NOTIFICATIONS_TIMEOUT, WEBHOOK_ADDRESS,
-                    WEBHOOK_SECRET)
+                    RECURRENT_NOTIFICATIONS_TIMEOUT)
 
 session = Session()
-
-headers = {"x-webhook-secret": WEBHOOK_SECRET} if WEBHOOK_SECRET else None
 
 
 def send(data: List[Dict[Any, Any]]) -> bool:
@@ -29,9 +27,11 @@ def send(data: List[Dict[Any, Any]]) -> bool:
         bool: returns True if an ok response received
     """
 
+    secret = settings.WEBHOOK_SECRET
+    headers = {"x-webhook-secret": secret} if secret else None
     result_list = []
-    for webhook in WEBHOOK_ADDRESS:
-        result = send_req(w_address=webhook, data=data)
+    for webhook in settings.WEBHOOK_ADDRESS:
+        result = send_req(w_address=webhook, data=data, headers=headers)
         result_list.append(result)
     if True in result_list:
         return True
@@ -39,7 +39,7 @@ def send(data: List[Dict[Any, Any]]) -> bool:
         return False
 
 
-def send_req(w_address: str, data):
+def send_req(w_address: str, data, headers=None):
     try:
         logger.debug(f"Sending {len(data)} webhook updates to {w_address}")
         r = session.post(w_address, json=data, headers=headers)
@@ -53,6 +53,9 @@ def send_req(w_address: str, data):
 
 def send_notifications():
     if not queue:
+        return
+    if not settings.WEBHOOK_ADDRESS:  # webhooks were switched off: nothing to deliver to
+        queue.clear()
         return
 
     notifications_to_send = list()
@@ -85,14 +88,15 @@ def delete_expired_reminders() -> None:
         db.commit()
 
 
-if WEBHOOK_ADDRESS:
-    @app.on_event("shutdown")
-    def app_shutdown():
+@app.on_event("shutdown")
+def app_shutdown():
+    if settings.WEBHOOK_ADDRESS:
         logger.info("Sending pending notifications before shutdown...")
-        send_notifications()
+    send_notifications()
 
-    logger.info("Send webhook job started")
-    scheduler.add_job(send_notifications, "interval",
-                      seconds=JOB_SEND_NOTIFICATIONS_INTERVAL,
-                      replace_existing=True)
-    scheduler.add_job(delete_expired_reminders, "interval", hours=2, start_date=dt.utcnow() + td(minutes=1))
+
+# registered unconditionally: webhook addresses can be added at runtime from the bot
+scheduler.add_job(send_notifications, "interval",
+                  seconds=JOB_SEND_NOTIFICATIONS_INTERVAL,
+                  replace_existing=True)
+scheduler.add_job(delete_expired_reminders, "interval", hours=2, start_date=dt.utcnow() + td(minutes=1))

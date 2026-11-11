@@ -6,6 +6,7 @@ import random
 import re
 import string
 from datetime import datetime
+from types import SimpleNamespace
 
 import qrcode
 import sqlalchemy
@@ -37,7 +38,8 @@ from app.telegram.utils.shared import (
 )
 from app.utils.store import MemoryStorage
 from app.utils.system import cpu_usage, memory_usage, readable_size, realtime_bandwidth
-from config import TELEGRAM_DEFAULT_VLESS_FLOW, TELEGRAM_LOGGER_CHANNEL_ID
+from app.settings import settings
+from config import TELEGRAM_DEFAULT_VLESS_FLOW
 
 mem_store = MemoryStorage()
 
@@ -85,6 +87,18 @@ def get_system_info():
         up_speed=readable_size(realtime_bandwidth().outgoing_bytes),
         down_speed=readable_size(realtime_bandwidth().incoming_bytes)
     )
+
+
+def write_users_report(path: str, rows) -> None:
+    """Tab separated report of a bulk operation (sent to the log channel)."""
+    with open(path, 'w') as f:
+        f.write('USERNAME\tEXIPRY\tUSAGE/LIMIT\tSTATUS\n')
+        for r in rows:
+            status = getattr(r.status, 'value', r.status)
+            f.write(
+                f'{r.username}\t{datetime.fromtimestamp(r.expire) if r.expire else "never"}'
+                f'\t{readable_size(r.used_traffic) if r.used_traffic else 0}'
+                f'/{readable_size(r.data_limit) if r.data_limit else "Unlimited"}\t{status}\n')
 
 
 def schedule_delete_message(chat_id, *message_ids: int) -> None:
@@ -623,7 +637,7 @@ def edit_note_step(message: types.Message):
         bot.reply_to(
             message, get_user_info_text(db_user), parse_mode="html",
             reply_markup=BotKeyboard.user_menu(user_info={'status': user.status, 'username': user.username}))
-        if TELEGRAM_LOGGER_CHANNEL_ID:
+        if settings.TELEGRAM_LOGGER_CHANNEL_ID:
             text = f"""\
 📝 <b>#Edit_Note #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -633,7 +647,7 @@ def edit_note_step(message: types.Message):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={message.chat.id}">{message.from_user.full_name}</a>"""
             try:
-                bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
             except ApiTelegramException:
                 pass
 
@@ -822,7 +836,7 @@ def template_charge_command(call: types.CallbackQuery):
                 call.message.message_id,
                 parse_mode='html',
                 reply_markup=BotKeyboard.user_menu(user_info={'status': 'active', 'username': user.username}))
-            if TELEGRAM_LOGGER_CHANNEL_ID:
+            if settings.TELEGRAM_LOGGER_CHANNEL_ID:
                 text = f"""\
 🔋 <b>#Charged #Reset #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -841,7 +855,7 @@ def template_charge_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={call.from_user.id}">{call.from_user.full_name}</a>"""
                 try:
-                    bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                    bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
                 except ApiTelegramException:
                     pass
         else:
@@ -1498,7 +1512,7 @@ def confirm_user_command(call: types.CallbackQuery):
             call.message.message_id,
             reply_markup=BotKeyboard.main_menu()
         )
-        if TELEGRAM_LOGGER_CHANNEL_ID:
+        if settings.TELEGRAM_LOGGER_CHANNEL_ID:
             text = f"""\
 🗑 <b>#Deleted #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -1509,7 +1523,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
             try:
-                bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
             except ApiTelegramException:
                 pass
     elif data == "suspend":
@@ -1525,7 +1539,7 @@ def confirm_user_command(call: types.CallbackQuery):
                 call.message.message_id,
                 parse_mode='HTML',
                 reply_markup=BotKeyboard.user_menu(user_info={'status': 'disabled', 'username': db_user.username}))
-        if TELEGRAM_LOGGER_CHANNEL_ID:
+        if settings.TELEGRAM_LOGGER_CHANNEL_ID:
             text = f"""\
 ❌ <b>#Disabled  #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -1533,7 +1547,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
             try:
-                bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
             except ApiTelegramException:
                 pass
     elif data == "activate":
@@ -1549,7 +1563,7 @@ def confirm_user_command(call: types.CallbackQuery):
                 call.message.message_id,
                 parse_mode='HTML',
                 reply_markup=BotKeyboard.user_menu(user_info={'status': 'active', 'username': db_user.username}))
-        if TELEGRAM_LOGGER_CHANNEL_ID:
+        if settings.TELEGRAM_LOGGER_CHANNEL_ID:
             text = f"""\
 ✅ <b>#Activated  #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -1557,7 +1571,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
             try:
-                bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
             except ApiTelegramException:
                 pass
     elif data == 'reset_usage':
@@ -1574,7 +1588,7 @@ def confirm_user_command(call: types.CallbackQuery):
                 call.message.message_id,
                 parse_mode='HTML',
                 reply_markup=BotKeyboard.user_menu(user_info={'status': user.status, 'username': user.username}))
-        if TELEGRAM_LOGGER_CHANNEL_ID:
+        if settings.TELEGRAM_LOGGER_CHANNEL_ID:
             text = f"""\
 🔁 <b>#Reset_usage  #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -1582,7 +1596,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
             try:
-                bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
             except ApiTelegramException:
                 pass
     elif data == 'restart':
@@ -1650,7 +1664,7 @@ def confirm_user_command(call: types.CallbackQuery):
                 call.message.message_id,
                 parse_mode='html',
                 reply_markup=BotKeyboard.user_menu(user_info={'status': user.status, 'username': user.username}))
-            if TELEGRAM_LOGGER_CHANNEL_ID:
+            if settings.TELEGRAM_LOGGER_CHANNEL_ID:
                 text = f"""\
 🔋 <b>#Charged #{data.split('_')[1].title()} #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -1670,7 +1684,7 @@ def confirm_user_command(call: types.CallbackQuery):
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>\
 """
                 try:
-                    bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                    bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
                 except ApiTelegramException:
                     pass
 
@@ -1743,7 +1757,7 @@ def confirm_user_command(call: types.CallbackQuery):
                 call.message.message_id,
                 parse_mode="HTML",
                 reply_markup=BotKeyboard.user_menu({'username': db_user.username, 'status': db_user.status}))
-        if TELEGRAM_LOGGER_CHANNEL_ID:
+        if settings.TELEGRAM_LOGGER_CHANNEL_ID:
             tag = f'\n➖➖➖➖➖➖➖➖➖ \n<b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>'
             if last_user.data_limit != user.data_limit:
                 text = f"""\
@@ -1753,7 +1767,7 @@ def confirm_user_command(call: types.CallbackQuery):
 <b>Last Traffic Limit :</b> <code>{readable_size(last_user.data_limit) if last_user.data_limit else "Unlimited"}</code>
 <b>New Traffic Limit :</b> <code>{readable_size(user.data_limit) if user.data_limit else "Unlimited"}</code>{tag}"""
                 try:
-                    bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                    bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
                 except ApiTelegramException:
                     pass
             if last_user.expire != user.expire:
@@ -1766,7 +1780,7 @@ def confirm_user_command(call: types.CallbackQuery):
 <b>New Expire Date :</b> <code>\
 {datetime.fromtimestamp(user.expire).strftime('%H:%M:%S %Y-%m-%d') if user.expire else "Never"}</code>{tag}"""
                 try:
-                    bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                    bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
                 except ApiTelegramException:
                     pass
             if list(last_user.inbounds.values())[0] != list(user.inbounds.values())[0]:
@@ -1777,7 +1791,7 @@ def confirm_user_command(call: types.CallbackQuery):
 <b>Last Proxies :</b> <code>{", ".join(list(last_user.inbounds.values())[0])}</code>
 <b>New Proxies :</b> <code>{", ".join(list(user.inbounds.values())[0])}</code>{tag}"""
                 try:
-                    bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                    bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
                 except ApiTelegramException:
                     pass
 
@@ -1879,7 +1893,7 @@ def confirm_user_command(call: types.CallbackQuery):
                     '❌ Username already exists.',
                     show_alert=True
                 )
-            if TELEGRAM_LOGGER_CHANNEL_ID:
+            if settings.TELEGRAM_LOGGER_CHANNEL_ID:
                 text = f"""\
 🆕 <b>#Created #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -1899,7 +1913,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
                 try:
-                    bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                    bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
                 except ApiTelegramException:
                     pass
 
@@ -1913,29 +1927,33 @@ def confirm_user_command(call: types.CallbackQuery):
             depleted_users = crud.get_users(
                 db, status=[UserStatus.limited if data == 'delete_limited' else UserStatus.expired])
             file_name = f'{data[8:]}_users_{int(now.timestamp()*1000)}.txt'
-            with open(file_name, 'w') as f:
-                f.write('USERNAME\tEXIPRY\tUSAGE/LIMIT\tSTATUS\n')
-                deleted = 0
-                for user in depleted_users:
+            targets = [(u.id, u.username) for u in depleted_users]
+            rows_before = [SimpleNamespace(id=u.id, username=u.username, expire=u.expire, used_traffic=u.used_traffic,
+                                           data_limit=u.data_limit, status=u.status) for u in depleted_users]
+            try:  # one transaction for everybody (a commit per user is what made this slow)
+                crud.remove_users(db, depleted_users)
+                deleted_ids = {uid for uid, _ in targets}
+            except sqlalchemy.exc.IntegrityError:
+                db.rollback()
+                deleted_ids = set()
+                for user in crud.get_users(db, status=[UserStatus.limited if data == 'delete_limited' else UserStatus.expired]):
                     try:
                         crud.remove_user(db, user)
-                        xray.operations.remove_user(user)
-                        deleted += 1
-                        f.write(
-                            f'{user.username}\
-\t{datetime.fromtimestamp(user.expire) if user.expire else "never"}\
-\t{readable_size(user.used_traffic) if user.used_traffic else 0}\
-/{readable_size(user.data_limit) if user.data_limit else "Unlimited"}\
-\t{user.status}\n')
+                        deleted_ids.add(user.id)
                     except sqlalchemy.exc.IntegrityError:
                         db.rollback()
+            deleted = len(deleted_ids)
+            for uid, username in targets:
+                if uid in deleted_ids:
+                    xray.operations.remove_user(SimpleNamespace(id=uid, username=username))
+            write_users_report(file_name, [r for r in rows_before if r.id in deleted_ids])
             bot.edit_message_text(
                 f'✅ <code>{deleted}</code>/<code>{len(depleted_users)}</code> <b>{data[7:].title()} Users Deleted</b>',
                 call.message.chat.id,
                 call.message.message_id,
                 parse_mode="HTML",
                 reply_markup=BotKeyboard.main_menu())
-            if TELEGRAM_LOGGER_CHANNEL_ID:
+            if settings.TELEGRAM_LOGGER_CHANNEL_ID:
                 text = f"""\
 🗑 <b>#Delete #{data[7:].title()} #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -1943,7 +1961,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
                 try:
-                    bot.send_document(TELEGRAM_LOGGER_CHANNEL_ID, open(
+                    bot.send_document(settings.TELEGRAM_LOGGER_CHANNEL_ID, open(
                         file_name, 'rb'), caption=text, parse_mode='HTML')
                     os.remove(file_name)
                 except ApiTelegramException:
@@ -1954,31 +1972,18 @@ def confirm_user_command(call: types.CallbackQuery):
             bot.send_message(chat_id, '⏳ <b>In Progress...</b>', 'HTML').id)
         data_limit = float(call.data.split(":")[2]) * 1024 * 1024 * 1024
         with GetDB() as db:
-            users = crud.get_users(db)
-            counter = 0
+            total_users = crud.get_users_count(db)
+            rows = crud.bulk_add_data_limit(db, int(data_limit))
+            counter = len(rows)
             file_name = f'new_data_limit_users_{int(now.timestamp()*1000)}.txt'
-            with open(file_name, 'w') as f:
-                f.write('USERNAME\tEXIPRY\tUSAGE/LIMIT\tSTATUS\n')
-                for user in users:
-                    try:
-                        if user.data_limit and user.status not in [UserStatus.limited, UserStatus.expired]:
-                            user = crud.update_user(db, user, UserModify(data_limit=(user.data_limit + data_limit)))
-                            counter += 1
-                            f.write(
-                                f'{user.username}\
-\t{datetime.fromtimestamp(user.expire) if user.expire else "never"}\
-\t{readable_size(user.used_traffic) if user.used_traffic else 0}\
-/{readable_size(user.data_limit) if user.data_limit else "Unlimited"}\
-\t{user.status}\n')
-                    except sqlalchemy.exc.IntegrityError:
-                        db.rollback()
+            write_users_report(file_name, rows)
             cleanup_messages(chat_id)
             bot.send_message(
                 chat_id,
-                f'✅ <b>{counter}/{len(users)} Users</b> Data Limit according to <code>{"+" if data_limit > 0 else "-"}{readable_size(abs(data_limit))}</code>',
+                f'✅ <b>{counter}/{total_users} Users</b> Data Limit according to <code>{"+" if data_limit > 0 else "-"}{readable_size(abs(data_limit))}</code>',
                 'HTML',
                 reply_markup=BotKeyboard.main_menu())
-            if TELEGRAM_LOGGER_CHANNEL_ID:
+            if settings.TELEGRAM_LOGGER_CHANNEL_ID:
                 text = f"""\
 📶 <b>#Traffic_Change #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -1987,7 +1992,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
                 try:
-                    bot.send_document(TELEGRAM_LOGGER_CHANNEL_ID, open(
+                    bot.send_document(settings.TELEGRAM_LOGGER_CHANNEL_ID, open(
                         file_name, 'rb'), caption=text, parse_mode='HTML')
                     os.remove(file_name)
                 except ApiTelegramException:
@@ -1999,35 +2004,18 @@ def confirm_user_command(call: types.CallbackQuery):
             bot.send_message(chat_id, '⏳ <b>In Progress...</b>', 'HTML').id)
         days = int(call.data.split(":")[2])
         with GetDB() as db:
-            users = crud.get_users(db)
-            counter = 0
+            total_users = crud.get_users_count(db)
+            rows = crud.bulk_add_expire_days(db, days)
+            counter = len(rows)
             file_name = f'new_expiry_users_{int(now.timestamp()*1000)}.txt'
-            with open(file_name, 'w') as f:
-                f.write('USERNAME\tEXIPRY\tUSAGE/LIMIT\tSTATUS\n')
-                for user in users:
-                    try:
-                        if user.expire and user.status not in [UserStatus.limited, UserStatus.expired]:
-                            user = crud.update_user(
-                                db, user,
-                                UserModify(
-                                    expire=int(
-                                        (datetime.fromtimestamp(user.expire) + relativedelta(days=days)).timestamp())))
-                            counter += 1
-                            f.write(
-                                f'{user.username}\
-\t{datetime.fromtimestamp(user.expire) if user.expire else "never"}\
-\t{readable_size(user.used_traffic) if user.used_traffic else 0}\
-/{readable_size(user.data_limit) if user.data_limit else "Unlimited"}\
-\t{user.status}\n')
-                    except sqlalchemy.exc.IntegrityError:
-                        db.rollback()
+            write_users_report(file_name, rows)
             cleanup_messages(chat_id)
             bot.send_message(
                 chat_id,
-                f'✅ <b>{counter}/{len(users)} Users</b> Expiry Changes according to {days} Days',
+                f'✅ <b>{counter}/{total_users} Users</b> Expiry Changes according to {days} Days',
                 'HTML',
                 reply_markup=BotKeyboard.main_menu())
-            if TELEGRAM_LOGGER_CHANNEL_ID:
+            if settings.TELEGRAM_LOGGER_CHANNEL_ID:
                 text = f"""\
 📅 <b>#Expiry_Change #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -2036,7 +2024,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
                 try:
-                    bot.send_document(TELEGRAM_LOGGER_CHANNEL_ID, open(
+                    bot.send_document(settings.TELEGRAM_LOGGER_CHANNEL_ID, open(
                         file_name, 'rb'), caption=text, parse_mode='HTML')
                     os.remove(file_name)
                 except ApiTelegramException:
@@ -2049,11 +2037,12 @@ def confirm_user_command(call: types.CallbackQuery):
             parse_mode="HTML")
         inbound = call.data.split(":")[2]
         with GetDB() as db:
+            db.expire_on_commit = False  # a commit per user must not invalidate the other 1000s of loaded users
             users = crud.get_users(db)
             unsuccessful = 0
             for user in users:
                 inbound_tags = [j for i in user.inbounds for j in user.inbounds[i]]
-                protocol = xray.config.inbounds_by_tag[inbound]['protocol']
+                protocol = xray.config.inbounds_by_tag[inbound]['protocol']  # (re-assigned below, so set per user)
                 new_inbounds = user.inbounds
                 if data == 'inbound_add':
                     if inbound not in inbound_tags:
@@ -2077,7 +2066,7 @@ def confirm_user_command(call: types.CallbackQuery):
                         elif protocol in user.inbounds and protocol not in new_inbounds:
                             del proxies[protocol]
                     try:
-                        user = crud.update_user(db, user, UserModify(inbounds=new_inbounds, proxies=proxies))
+                        user = crud.update_user(db, user, UserModify(inbounds=new_inbounds, proxies=proxies), refresh=False)
                         if user.status == UserStatus.active:
                             xray.operations.update_user(user)
                     except:
@@ -2092,7 +2081,7 @@ def confirm_user_command(call: types.CallbackQuery):
                 parse_mode="HTML",
                 reply_markup=BotKeyboard.main_menu())
 
-            if TELEGRAM_LOGGER_CHANNEL_ID:
+            if settings.TELEGRAM_LOGGER_CHANNEL_ID:
                 text = f"""\
 ✏️ <b>#Modified #Inbound_{data[8:].title()} #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -2100,7 +2089,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
                 try:
-                    bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                    bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
                 except ApiTelegramException:
                     pass
 
@@ -2120,7 +2109,7 @@ def confirm_user_command(call: types.CallbackQuery):
                 parse_mode="HTML",
                 reply_markup=BotKeyboard.user_menu(user_info={'status': user.status, 'username': user.username}))
 
-        if TELEGRAM_LOGGER_CHANNEL_ID:
+        if settings.TELEGRAM_LOGGER_CHANNEL_ID:
             text = f"""\
 🚫 <b>#Revoke_sub #From_Bot</b>
 ➖➖➖➖➖➖➖➖➖
@@ -2128,7 +2117,7 @@ def confirm_user_command(call: types.CallbackQuery):
 ➖➖➖➖➖➖➖➖➖
 <b>By :</b> <a href="tg://user?id={chat_id}">{full_name}</a>"""
             try:
-                bot.send_message(TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
+                bot.send_message(settings.TELEGRAM_LOGGER_CHANNEL_ID, text, 'HTML')
             except ApiTelegramException:
                 pass
 

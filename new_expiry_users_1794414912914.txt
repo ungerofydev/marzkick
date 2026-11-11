@@ -1,0 +1,2247 @@
+USERNAME	EXIPRY	USAGE/LIMIT	STATUS
+perf_00000	2026-12-10 16:35:09	5.0 GB/Unlimited	active
+perf_00001	2026-11-02 16:35:09	28.0 GB/Unlimited	expired
+perf_00002	2026-12-12 16:35:09	10.0 GB/Unlimited	active
+perf_00005	2026-11-03 16:35:09	20.0 GB/Unlimited	on_hold
+perf_00009	2027-02-04 16:35:09	15.0 GB/Unlimited	active
+perf_00012	2026-11-18 16:35:09	9.0 GB/Unlimited	active
+perf_00013	2026-12-02 16:35:09	45.0 GB/101.0 GB	active
+perf_00014	2026-11-07 16:35:09	15.0 GB/101.0 GB	expired
+perf_00015	2026-12-04 16:35:09	13.0 GB/51.0 GB	active
+perf_00019	2026-11-17 16:35:09	38.0 GB/51.0 GB	active
+perf_00022	2026-11-25 16:35:09	28.0 GB/101.0 GB	disabled
+perf_00023	2026-11-05 16:35:09	44.0 GB/101.0 GB	on_hold
+perf_00024	2026-10-30 16:35:09	41.0 GB/Unlimited	expired
+perf_00028	2026-12-09 16:35:09	5.0 GB/Unlimited	active
+perf_00029	2026-11-06 16:35:09	26.0 GB/Unlimited	expired
+perf_00031	2027-01-27 16:35:09	6.0 GB/51.0 GB	active
+perf_00032	2026-11-15 16:35:09	26.0 GB/51.0 GB	active
+perf_00033	2027-01-25 16:35:09	35.0 GB/101.0 GB	active
+perf_00037	2026-11-06 16:35:09	4.0 GB/51.0 GB	expired
+perf_00038	2026-12-28 16:35:09	47.0 GB/51.0 GB	active
+perf_00042	2027-01-16 16:35:09	27.0 GB/101.0 GB	active
+perf_00043	2026-12-07 16:35:09	21.0 GB/Unlimited	active
+perf_00045	2026-10-18 17:35:09	2.0 GB/51.0 GB	expired
+perf_00049	2026-12-06 16:35:09	8.0 GB/Unlimited	active
+perf_00050	2026-12-06 16:35:09	29.0 GB/101.0 GB	active
+perf_00053	2026-10-15 17:35:09	0/101.0 GB	expired
+perf_00054	2026-11-23 16:35:09	15.0 GB/51.0 GB	active
+perf_00055	2027-01-15 16:35:09	22.0 GB/51.0 GB	active
+perf_00056	2027-02-10 16:35:09	35.0 GB/101.0 GB	active
+perf_00057	2026-11-01 16:35:09	39.0 GB/51.0 GB	expired
+perf_00058	2027-01-30 16:35:09	10.0 GB/101.0 GB	active
+perf_00060	2027-02-06 16:35:09	13.0 GB/51.0 GB	active
+perf_00061	2026-11-04 16:35:09	46.0 GB/51.0 GB	expired
+perf_00062	2026-12-17 16:35:09	11.0 GB/Unlimited	active
+perf_00063	2026-10-20 17:35:09	39.0 GB/Unlimited	expired
+perf_00064	2026-12-25 16:35:09	39.0 GB/Unlimited	active
+perf_00065	2027-02-01 16:35:09	20.0 GB/Unlimited	active
+perf_00067	2027-01-28 16:35:09	21.0 GB/101.0 GB	active
+perf_00070	2026-10-15 17:35:09	11.0 GB/Unlimited	expired
+perf_00072	2026-12-03 16:35:09	49.0 GB/101.0 GB	active
+perf_00074	2027-01-15 16:35:09	4.0 GB/101.0 GB	active
+perf_00077	2027-01-13 16:35:09	45.0 GB/51.0 GB	active
+perf_00079	2026-12-24 16:35:09	16.0 GB/51.0 GB	active
+perf_00080	2026-10-26 16:35:09	9.0 GB/101.0 GB	expired
+perf_00086	2026-10-13 17:35:09	44.0 GB/101.0 GB	expired
+perf_00090	2026-10-27 16:35:09	10.0 GB/51.0 GB	on_hold
+perf_00092	2026-10-25 17:35:09	30.0 GB/51.0 GB	expired
+perf_00093	2027-01-30 16:35:09	45.0 GB/Unlimited	active
+perf_00097	2026-10-15 17:35:09	9.0 GB/51.0 GB	expired
+perf_00099	2027-01-19 16:35:09	39.0 GB/101.0 GB	active
+perf_00100	2026-11-13 16:35:09	40.0 GB/51.0 GB	active
+perf_00102	2027-01-27 16:35:09	49.0 GB/Unlimited	active
+perf_00105	2027-02-01 16:35:09	4.0 GB/Unlimited	active
+perf_00107	2026-11-23 16:35:09	17.0 GB/101.0 GB	active
+perf_00108	2026-11-11 16:35:09	2.0 GB/101.0 GB	on_hold
+perf_00109	2026-12-16 16:35:09	42.0 GB/Unlimited	active
+perf_00110	2026-12-18 16:35:09	39.0 GB/Unlimited	active
+perf_00112	2026-12-11 16:35:09	20.0 GB/101.0 GB	active
+perf_00120	2026-11-18 16:35:09	1.0 GB/51.0 GB	active
+perf_00121	2027-01-03 16:35:09	30.0 GB/Unlimited	active
+perf_00123	2026-11-22 16:35:09	27.0 GB/101.0 GB	active
+perf_00124	2026-12-21 16:35:09	48.0 GB/51.0 GB	active
+perf_00125	2027-02-04 16:35:09	4.0 GB/101.0 GB	active
+perf_00126	2026-11-25 16:35:09	34.0 GB/51.0 GB	disabled
+perf_00129	2027-01-14 16:35:09	15.0 GB/51.0 GB	active
+perf_00130	2026-12-29 16:35:09	21.0 GB/101.0 GB	active
+perf_00132	2026-11-07 16:35:09	47.0 GB/Unlimited	expired
+perf_00134	2026-10-22 17:35:09	13.0 GB/Unlimited	expired
+perf_00139	2027-01-04 16:35:09	8.0 GB/101.0 GB	active
+perf_00140	2027-01-13 16:35:09	21.0 GB/51.0 GB	active
+perf_00144	2026-11-14 16:35:09	42.0 GB/51.0 GB	disabled
+perf_00149	2027-01-11 16:35:09	41.0 GB/Unlimited	active
+perf_00152	2026-11-14 16:35:09	31.0 GB/51.0 GB	active
+perf_00158	2026-12-05 16:35:09	33.0 GB/101.0 GB	active
+perf_00159	2027-01-26 16:35:09	7.0 GB/51.0 GB	active
+perf_00160	2026-11-10 16:35:09	0/51.0 GB	expired
+perf_00161	2027-01-03 16:35:09	20.0 GB/51.0 GB	active
+perf_00166	2027-01-24 16:35:09	20.0 GB/101.0 GB	active
+perf_00170	2026-12-20 16:35:09	44.0 GB/51.0 GB	active
+perf_00172	2026-11-14 16:35:09	37.0 GB/51.0 GB	active
+perf_00174	2026-12-08 16:35:09	14.0 GB/101.0 GB	active
+perf_00179	2026-10-15 17:35:09	27.0 GB/Unlimited	expired
+perf_00180	2026-11-18 16:35:09	39.0 GB/101.0 GB	active
+perf_00183	2026-11-26 16:35:09	38.0 GB/Unlimited	active
+perf_00185	2026-10-24 17:35:09	10.0 GB/Unlimited	expired
+perf_00186	2027-01-18 16:35:09	47.0 GB/Unlimited	active
+perf_00187	2026-11-28 16:35:09	12.0 GB/51.0 GB	active
+perf_00189	2026-11-21 16:35:09	10.0 GB/51.0 GB	active
+perf_00193	2027-01-19 16:35:09	18.0 GB/51.0 GB	active
+perf_00196	2027-01-31 16:35:09	34.0 GB/51.0 GB	active
+perf_00199	2026-11-25 16:35:09	6.0 GB/51.0 GB	disabled
+perf_00201	2026-12-23 16:35:09	36.0 GB/51.0 GB	active
+perf_00202	2026-12-25 16:35:09	48.0 GB/51.0 GB	active
+perf_00203	2026-12-24 16:35:09	27.0 GB/51.0 GB	active
+perf_00204	2027-01-10 16:35:09	44.0 GB/51.0 GB	active
+perf_00205	2026-12-11 16:35:09	20.0 GB/51.0 GB	active
+perf_00206	2026-10-14 17:35:09	33.0 GB/101.0 GB	expired
+perf_00207	2026-11-22 16:35:09	19.0 GB/51.0 GB	active
+perf_00210	2027-01-19 16:35:09	35.0 GB/51.0 GB	active
+perf_00213	2026-11-14 16:35:09	8.0 GB/Unlimited	active
+perf_00214	2027-01-03 16:35:09	17.0 GB/Unlimited	active
+perf_00218	2026-12-23 16:35:09	13.0 GB/Unlimited	active
+perf_00219	2026-10-20 17:35:09	9.0 GB/51.0 GB	expired
+perf_00222	2026-10-23 17:35:09	2.0 GB/51.0 GB	expired
+perf_00224	2027-01-11 16:35:09	35.0 GB/51.0 GB	active
+perf_00225	2026-11-15 16:35:09	4.0 GB/51.0 GB	active
+perf_00226	2026-11-01 16:35:09	15.0 GB/101.0 GB	expired
+perf_00229	2026-10-17 17:35:09	49.0 GB/51.0 GB	expired
+perf_00230	2026-11-23 16:35:09	50.0 GB/Unlimited	active
+perf_00232	2026-12-17 16:35:09	11.0 GB/101.0 GB	active
+perf_00233	2026-11-09 16:35:09	34.0 GB/Unlimited	expired
+perf_00234	2026-12-26 16:35:09	29.0 GB/Unlimited	active
+perf_00235	2026-11-23 16:35:09	20.0 GB/101.0 GB	active
+perf_00237	2027-01-04 16:35:09	20.0 GB/101.0 GB	active
+perf_00238	2026-11-25 16:35:09	14.0 GB/101.0 GB	active
+perf_00239	2026-12-28 16:35:09	17.0 GB/101.0 GB	active
+perf_00240	2026-11-20 16:35:09	21.0 GB/51.0 GB	active
+perf_00241	2027-01-05 16:35:09	20.0 GB/Unlimited	disabled
+perf_00242	2026-11-09 16:35:09	7.0 GB/Unlimited	expired
+perf_00244	2026-12-02 16:35:09	9.0 GB/Unlimited	active
+perf_00247	2027-02-01 16:35:09	38.0 GB/101.0 GB	active
+perf_00248	2027-01-28 16:35:09	18.0 GB/51.0 GB	active
+perf_00251	2026-12-07 16:35:09	4.0 GB/Unlimited	active
+perf_00252	2027-01-10 16:35:09	8.0 GB/101.0 GB	active
+perf_00253	2027-01-25 16:35:09	9.0 GB/51.0 GB	active
+perf_00255	2026-10-13 17:35:09	8.0 GB/101.0 GB	expired
+perf_00258	2026-12-16 16:35:09	48.0 GB/101.0 GB	active
+perf_00259	2027-01-30 16:35:09	44.0 GB/101.0 GB	active
+perf_00264	2027-02-02 16:35:09	13.0 GB/101.0 GB	active
+perf_00265	2026-12-13 16:35:09	14.0 GB/51.0 GB	active
+perf_00269	2027-02-01 16:35:09	46.0 GB/51.0 GB	active
+perf_00270	2027-01-24 16:35:09	41.0 GB/Unlimited	active
+perf_00271	2026-11-23 16:35:09	20.0 GB/51.0 GB	active
+perf_00272	2027-01-26 16:35:09	35.0 GB/51.0 GB	active
+perf_00273	2027-01-20 16:35:09	33.0 GB/Unlimited	active
+perf_00275	2026-11-04 16:35:09	37.0 GB/51.0 GB	expired
+perf_00277	2026-12-11 16:35:09	17.0 GB/101.0 GB	active
+perf_00280	2026-11-05 16:35:09	11.0 GB/101.0 GB	expired
+perf_00281	2026-11-26 16:35:09	29.0 GB/51.0 GB	active
+perf_00283	2026-12-19 16:35:09	44.0 GB/101.0 GB	disabled
+perf_00285	2026-12-18 16:35:09	1.0 GB/101.0 GB	active
+perf_00287	2027-02-03 16:35:09	36.0 GB/Unlimited	active
+perf_00291	2026-12-03 16:35:09	23.0 GB/51.0 GB	active
+perf_00294	2026-12-12 16:35:09	8.0 GB/Unlimited	active
+perf_00295	2026-12-21 16:35:09	28.0 GB/51.0 GB	active
+perf_00298	2026-12-22 16:35:09	43.0 GB/101.0 GB	active
+perf_00300	2026-12-25 16:35:09	28.0 GB/51.0 GB	active
+perf_00301	2027-01-21 16:35:09	29.0 GB/51.0 GB	active
+perf_00302	2027-01-26 16:35:09	20.0 GB/101.0 GB	active
+perf_00304	2026-12-21 16:35:09	15.0 GB/Unlimited	active
+perf_00307	2026-11-13 16:35:09	6.0 GB/101.0 GB	active
+perf_00313	2026-12-30 16:35:09	50.0 GB/Unlimited	active
+perf_00314	2026-12-31 16:35:09	41.0 GB/Unlimited	active
+perf_00318	2026-12-17 16:35:09	13.0 GB/51.0 GB	active
+perf_00325	2026-11-10 16:35:09	25.0 GB/Unlimited	expired
+perf_00327	2027-02-07 16:35:09	2.0 GB/Unlimited	active
+perf_00329	2027-02-02 16:35:09	41.0 GB/Unlimited	active
+perf_00331	2026-11-03 16:35:09	9.0 GB/Unlimited	expired
+perf_00335	2026-12-04 16:35:09	45.0 GB/Unlimited	active
+perf_00336	2027-01-05 16:35:09	28.0 GB/Unlimited	active
+perf_00337	2026-11-24 16:35:09	33.0 GB/101.0 GB	active
+perf_00339	2027-01-29 16:35:09	14.0 GB/101.0 GB	active
+perf_00341	2026-12-27 16:35:09	49.0 GB/51.0 GB	disabled
+perf_00344	2026-11-23 16:35:09	13.0 GB/51.0 GB	active
+perf_00345	2026-11-05 16:35:09	23.0 GB/51.0 GB	expired
+perf_00346	2026-11-13 16:35:09	33.0 GB/101.0 GB	active
+perf_00347	2026-10-24 17:35:09	41.0 GB/101.0 GB	expired
+perf_00349	2026-10-16 17:35:09	3.0 GB/51.0 GB	expired
+perf_00351	2027-01-14 16:35:09	30.0 GB/Unlimited	active
+perf_00352	2026-10-13 17:35:09	41.0 GB/51.0 GB	expired
+perf_00353	2026-11-29 16:35:09	13.0 GB/101.0 GB	active
+perf_00356	2027-02-03 16:35:09	21.0 GB/51.0 GB	active
+perf_00357	2027-01-02 16:35:09	42.0 GB/101.0 GB	active
+perf_00358	2026-10-13 17:35:09	35.0 GB/Unlimited	expired
+perf_00361	2026-10-15 17:35:09	42.0 GB/101.0 GB	expired
+perf_00362	2026-11-18 16:35:09	2.0 GB/Unlimited	active
+perf_00364	2027-02-02 16:35:09	21.0 GB/Unlimited	on_hold
+perf_00365	2026-12-11 16:35:09	22.0 GB/101.0 GB	active
+perf_00369	2026-11-11 16:35:09	30.0 GB/101.0 GB	expired
+perf_00370	2027-01-10 16:35:09	3.0 GB/101.0 GB	active
+perf_00374	2027-01-16 16:35:09	43.0 GB/101.0 GB	active
+perf_00375	2026-10-21 17:35:09	13.0 GB/Unlimited	on_hold
+perf_00380	2026-12-09 16:35:09	50.0 GB/101.0 GB	active
+perf_00381	2027-01-19 16:35:09	24.0 GB/51.0 GB	disabled
+perf_00383	2026-11-17 16:35:09	39.0 GB/101.0 GB	active
+perf_00384	2026-10-13 17:35:09	44.0 GB/Unlimited	expired
+perf_00387	2026-10-23 17:35:09	19.0 GB/Unlimited	expired
+perf_00388	2027-01-13 16:35:09	23.0 GB/Unlimited	disabled
+perf_00389	2026-10-16 17:35:09	27.0 GB/101.0 GB	disabled
+perf_00390	2026-12-19 16:35:09	35.0 GB/Unlimited	active
+perf_00392	2027-01-08 16:35:09	4.0 GB/Unlimited	active
+perf_00393	2026-10-25 17:35:09	30.0 GB/101.0 GB	expired
+perf_00394	2026-12-16 16:35:09	21.0 GB/Unlimited	active
+perf_00396	2026-12-03 16:35:09	38.0 GB/101.0 GB	active
+perf_00398	2026-12-27 16:35:09	42.0 GB/51.0 GB	disabled
+perf_00400	2026-11-11 16:35:09	25.0 GB/51.0 GB	expired
+perf_00401	2027-01-19 16:35:09	30.0 GB/51.0 GB	active
+perf_00402	2026-12-13 16:35:09	41.0 GB/101.0 GB	active
+perf_00403	2026-12-05 16:35:09	49.0 GB/Unlimited	active
+perf_00408	2026-11-30 16:35:09	43.0 GB/101.0 GB	active
+perf_00410	2027-02-05 16:35:09	40.0 GB/51.0 GB	active
+perf_00411	2027-01-13 16:35:09	25.0 GB/51.0 GB	active
+perf_00412	2027-02-04 16:35:09	50.0 GB/51.0 GB	disabled
+perf_00415	2027-01-03 16:35:09	34.0 GB/101.0 GB	active
+perf_00418	2026-11-29 16:35:09	43.0 GB/51.0 GB	active
+perf_00419	2026-11-23 16:35:09	10.0 GB/Unlimited	disabled
+perf_00422	2027-01-10 16:35:09	40.0 GB/101.0 GB	active
+perf_00424	2026-12-03 16:35:09	31.0 GB/51.0 GB	active
+perf_00426	2026-10-15 17:35:09	2.0 GB/Unlimited	expired
+perf_00428	2026-11-07 16:35:09	43.0 GB/51.0 GB	expired
+perf_00429	2027-01-04 16:35:09	37.0 GB/51.0 GB	active
+perf_00430	2026-10-13 17:35:09	19.0 GB/101.0 GB	expired
+perf_00432	2026-12-26 16:35:09	2.0 GB/51.0 GB	disabled
+perf_00433	2026-12-19 16:35:09	35.0 GB/101.0 GB	disabled
+perf_00434	2026-11-25 16:35:09	4.0 GB/101.0 GB	active
+perf_00436	2026-10-28 16:35:09	26.0 GB/101.0 GB	expired
+perf_00437	2027-01-05 16:35:09	1.0 GB/101.0 GB	active
+perf_00439	2026-11-19 16:35:09	30.0 GB/Unlimited	active
+perf_00440	2026-12-06 16:35:09	20.0 GB/51.0 GB	active
+perf_00441	2027-02-02 16:35:09	1.0 GB/51.0 GB	active
+perf_00443	2027-02-08 16:35:09	42.0 GB/51.0 GB	active
+perf_00444	2026-11-25 16:35:09	25.0 GB/51.0 GB	active
+perf_00445	2026-12-29 16:35:09	49.0 GB/51.0 GB	active
+perf_00450	2027-01-01 16:35:09	11.0 GB/Unlimited	active
+perf_00451	2027-02-09 16:35:09	50.0 GB/51.0 GB	active
+perf_00453	2027-02-05 16:35:09	13.0 GB/Unlimited	active
+perf_00457	2026-12-02 16:35:09	49.0 GB/Unlimited	active
+perf_00458	2027-02-08 16:35:09	17.0 GB/Unlimited	on_hold
+perf_00461	2026-12-08 16:35:09	25.0 GB/Unlimited	active
+perf_00465	2027-02-03 16:35:09	7.0 GB/101.0 GB	on_hold
+perf_00468	2026-11-12 16:35:09	48.0 GB/51.0 GB	active
+perf_00471	2026-10-26 16:35:09	40.0 GB/Unlimited	expired
+perf_00476	2026-11-18 16:35:09	34.0 GB/101.0 GB	active
+perf_00478	2026-12-13 16:35:09	34.0 GB/51.0 GB	on_hold
+perf_00479	2027-01-11 16:35:09	8.0 GB/101.0 GB	disabled
+perf_00481	2026-11-11 16:35:09	28.0 GB/Unlimited	expired
+perf_00482	2026-10-30 16:35:09	42.0 GB/Unlimited	expired
+perf_00483	2026-12-21 16:35:09	48.0 GB/101.0 GB	active
+perf_00484	2027-01-10 16:35:09	12.0 GB/51.0 GB	active
+perf_00487	2026-10-20 17:35:09	32.0 GB/101.0 GB	expired
+perf_00489	2027-02-02 16:35:09	35.0 GB/101.0 GB	active
+perf_00491	2026-11-14 16:35:09	14.0 GB/51.0 GB	active
+perf_00495	2027-01-07 16:35:09	26.0 GB/Unlimited	active
+perf_00496	2026-12-04 16:35:09	21.0 GB/101.0 GB	active
+perf_00500	2027-01-31 16:35:09	7.0 GB/51.0 GB	active
+perf_00504	2026-12-25 16:35:09	35.0 GB/101.0 GB	active
+perf_00506	2026-12-08 16:35:09	22.0 GB/101.0 GB	active
+perf_00507	2026-10-28 16:35:09	25.0 GB/101.0 GB	disabled
+perf_00510	2026-11-04 16:35:09	48.0 GB/Unlimited	expired
+perf_00511	2026-12-01 16:35:09	6.0 GB/Unlimited	active
+perf_00512	2027-01-26 16:35:09	12.0 GB/51.0 GB	active
+perf_00514	2026-10-26 16:35:09	23.0 GB/51.0 GB	expired
+perf_00515	2026-11-13 16:35:09	3.0 GB/51.0 GB	active
+perf_00517	2027-01-22 16:35:09	15.0 GB/51.0 GB	disabled
+perf_00518	2027-01-06 16:35:09	34.0 GB/51.0 GB	active
+perf_00520	2027-01-24 16:35:09	24.0 GB/51.0 GB	active
+perf_00522	2027-01-14 16:35:09	47.0 GB/51.0 GB	active
+perf_00523	2026-12-25 16:35:09	36.0 GB/101.0 GB	active
+perf_00524	2026-10-22 17:35:09	17.0 GB/101.0 GB	expired
+perf_00527	2026-12-29 16:35:09	45.0 GB/101.0 GB	disabled
+perf_00530	2026-12-13 16:35:09	45.0 GB/101.0 GB	active
+perf_00531	2026-12-15 16:35:09	49.0 GB/Unlimited	active
+perf_00533	2026-10-14 17:35:09	40.0 GB/101.0 GB	expired
+perf_00538	2026-10-30 16:35:09	37.0 GB/101.0 GB	expired
+perf_00539	2026-12-31 16:35:09	30.0 GB/51.0 GB	active
+perf_00544	2026-12-16 16:35:09	22.0 GB/Unlimited	active
+perf_00545	2027-02-07 16:35:09	4.0 GB/Unlimited	active
+perf_00553	2027-01-10 16:35:09	7.0 GB/101.0 GB	active
+perf_00558	2026-12-11 16:35:09	34.0 GB/Unlimited	active
+perf_00559	2027-01-29 16:35:09	43.0 GB/Unlimited	active
+perf_00561	2026-11-09 16:35:09	36.0 GB/Unlimited	expired
+perf_00562	2026-12-22 16:35:09	38.0 GB/101.0 GB	active
+perf_00572	2027-02-05 16:35:09	8.0 GB/51.0 GB	active
+perf_00574	2026-11-16 16:35:09	34.0 GB/51.0 GB	active
+perf_00580	2026-12-09 16:35:09	3.0 GB/Unlimited	active
+perf_00583	2026-12-19 16:35:09	41.0 GB/101.0 GB	active
+perf_00588	2027-01-05 16:35:09	35.0 GB/51.0 GB	active
+perf_00589	2026-12-11 16:35:09	2.0 GB/101.0 GB	active
+perf_00590	2027-01-05 16:35:09	45.0 GB/51.0 GB	active
+perf_00591	2027-01-23 16:35:09	38.0 GB/101.0 GB	active
+perf_00594	2026-11-29 16:35:09	6.0 GB/Unlimited	active
+perf_00597	2026-12-24 16:35:09	39.0 GB/Unlimited	active
+perf_00598	2026-11-27 16:35:09	24.0 GB/101.0 GB	active
+perf_00600	2027-01-18 16:35:09	26.0 GB/101.0 GB	active
+perf_00603	2026-12-15 16:35:09	47.0 GB/101.0 GB	active
+perf_00609	2026-12-23 16:35:09	22.0 GB/Unlimited	active
+perf_00611	2026-12-29 16:35:09	37.0 GB/51.0 GB	active
+perf_00612	2027-01-23 16:35:09	8.0 GB/101.0 GB	active
+perf_00617	2027-01-17 16:35:09	12.0 GB/Unlimited	active
+perf_00618	2026-10-15 17:35:09	47.0 GB/101.0 GB	expired
+perf_00620	2027-01-10 16:35:09	5.0 GB/Unlimited	active
+perf_00621	2026-11-11 16:35:09	40.0 GB/101.0 GB	expired
+perf_00625	2026-12-06 16:35:09	26.0 GB/51.0 GB	active
+perf_00626	2026-12-14 16:35:09	13.0 GB/101.0 GB	active
+perf_00627	2027-01-26 16:35:09	5.0 GB/101.0 GB	active
+perf_00630	2027-01-26 16:35:09	17.0 GB/101.0 GB	active
+perf_00631	2027-02-04 16:35:09	31.0 GB/101.0 GB	active
+perf_00632	2026-10-21 17:35:09	2.0 GB/51.0 GB	expired
+perf_00633	2027-01-16 16:35:09	13.0 GB/Unlimited	active
+perf_00637	2027-01-23 16:35:09	42.0 GB/Unlimited	active
+perf_00642	2027-01-21 16:35:09	50.0 GB/Unlimited	active
+perf_00643	2027-01-06 16:35:09	20.0 GB/Unlimited	active
+perf_00645	2026-10-21 17:35:09	25.0 GB/51.0 GB	on_hold
+perf_00647	2026-12-07 16:35:09	11.0 GB/101.0 GB	active
+perf_00648	2026-12-10 16:35:09	23.0 GB/101.0 GB	active
+perf_00652	2027-01-09 16:35:09	3.0 GB/101.0 GB	on_hold
+perf_00653	2026-12-26 16:35:09	42.0 GB/101.0 GB	active
+perf_00654	2027-01-27 16:35:09	6.0 GB/101.0 GB	active
+perf_00655	2026-10-31 16:35:09	11.0 GB/Unlimited	expired
+perf_00662	2026-11-07 16:35:09	25.0 GB/101.0 GB	expired
+perf_00664	2026-12-04 16:35:09	9.0 GB/101.0 GB	active
+perf_00666	2026-12-06 16:35:09	43.0 GB/101.0 GB	disabled
+perf_00667	2026-11-08 16:35:09	34.0 GB/101.0 GB	expired
+perf_00669	2026-11-23 16:35:09	7.0 GB/51.0 GB	active
+perf_00670	2027-01-12 16:35:09	50.0 GB/101.0 GB	active
+perf_00674	2026-12-23 16:35:09	33.0 GB/Unlimited	active
+perf_00679	2026-11-03 16:35:09	23.0 GB/51.0 GB	expired
+perf_00681	2027-01-30 16:35:09	31.0 GB/Unlimited	active
+perf_00683	2026-10-19 17:35:09	24.0 GB/51.0 GB	expired
+perf_00684	2026-12-30 16:35:09	33.0 GB/101.0 GB	active
+perf_00685	2027-01-09 16:35:09	30.0 GB/51.0 GB	disabled
+perf_00686	2026-12-04 16:35:09	50.0 GB/Unlimited	active
+perf_00687	2026-12-18 16:35:09	43.0 GB/Unlimited	active
+perf_00691	2026-12-17 16:35:09	8.0 GB/101.0 GB	active
+perf_00694	2026-10-26 16:35:09	45.0 GB/51.0 GB	expired
+perf_00695	2026-12-28 16:35:09	37.0 GB/101.0 GB	active
+perf_00696	2026-12-21 16:35:09	1.0 GB/Unlimited	active
+perf_00698	2026-10-27 16:35:09	6.0 GB/101.0 GB	expired
+perf_00701	2026-12-02 16:35:09	17.0 GB/101.0 GB	active
+perf_00702	2026-10-16 17:35:09	23.0 GB/Unlimited	expired
+perf_00703	2026-10-21 17:35:09	14.0 GB/Unlimited	expired
+perf_00704	2026-10-18 17:35:09	6.0 GB/Unlimited	expired
+perf_00707	2027-01-19 16:35:09	45.0 GB/101.0 GB	active
+perf_00709	2026-10-23 17:35:09	2.0 GB/Unlimited	expired
+perf_00715	2026-10-29 16:35:09	38.0 GB/101.0 GB	expired
+perf_00718	2027-02-05 16:35:09	44.0 GB/Unlimited	active
+perf_00721	2027-02-08 16:35:09	20.0 GB/Unlimited	active
+perf_00724	2026-10-25 17:35:09	34.0 GB/51.0 GB	expired
+perf_00729	2026-12-27 16:35:09	36.0 GB/101.0 GB	active
+perf_00732	2026-12-23 16:35:09	10.0 GB/101.0 GB	active
+perf_00733	2026-11-07 16:35:09	1.0 GB/Unlimited	expired
+perf_00736	2027-01-27 16:35:09	19.0 GB/51.0 GB	active
+perf_00740	2027-02-08 16:35:09	28.0 GB/Unlimited	on_hold
+perf_00745	2027-01-09 16:35:09	11.0 GB/101.0 GB	active
+perf_00746	2027-01-02 16:35:09	22.0 GB/101.0 GB	active
+perf_00748	2026-12-17 16:35:09	33.0 GB/Unlimited	active
+perf_00750	2027-01-14 16:35:09	31.0 GB/Unlimited	on_hold
+perf_00751	2027-01-27 16:35:09	39.0 GB/101.0 GB	active
+perf_00754	2027-01-12 16:35:09	12.0 GB/51.0 GB	active
+perf_00760	2026-11-24 16:35:09	19.0 GB/Unlimited	disabled
+perf_00762	2026-11-03 16:35:09	36.0 GB/101.0 GB	expired
+perf_00766	2026-12-21 16:35:09	8.0 GB/Unlimited	active
+perf_00767	2027-02-08 16:35:09	22.0 GB/51.0 GB	active
+perf_00768	2027-01-20 16:35:09	35.0 GB/51.0 GB	active
+perf_00770	2027-01-22 16:35:09	37.0 GB/101.0 GB	active
+perf_00772	2026-12-01 16:35:09	49.0 GB/51.0 GB	active
+perf_00776	2027-01-09 16:35:09	19.0 GB/Unlimited	active
+perf_00777	2026-11-12 16:35:09	1.0 GB/101.0 GB	active
+perf_00779	2026-11-02 16:35:09	45.0 GB/51.0 GB	expired
+perf_00783	2026-11-18 16:35:09	12.0 GB/101.0 GB	active
+perf_00786	2027-01-23 16:35:09	18.0 GB/Unlimited	active
+perf_00788	2026-12-07 16:35:09	18.0 GB/Unlimited	active
+perf_00793	2027-01-21 16:35:09	10.0 GB/Unlimited	active
+perf_00794	2026-11-16 16:35:09	50.0 GB/51.0 GB	on_hold
+perf_00795	2026-11-06 16:35:09	8.0 GB/51.0 GB	expired
+perf_00796	2027-01-26 16:35:09	25.0 GB/51.0 GB	active
+perf_00797	2026-11-04 16:35:09	22.0 GB/101.0 GB	expired
+perf_00801	2026-11-17 16:35:09	29.0 GB/101.0 GB	active
+perf_00804	2026-10-30 16:35:09	40.0 GB/101.0 GB	disabled
+perf_00805	2026-10-18 17:35:09	5.0 GB/101.0 GB	expired
+perf_00807	2027-01-10 16:35:09	7.0 GB/Unlimited	active
+perf_00808	2027-02-04 16:35:09	36.0 GB/101.0 GB	active
+perf_00809	2027-01-01 16:35:09	3.0 GB/101.0 GB	active
+perf_00811	2027-01-09 16:35:09	42.0 GB/Unlimited	active
+perf_00818	2026-11-15 16:35:09	39.0 GB/51.0 GB	active
+perf_00820	2026-11-05 16:35:09	1.0 GB/51.0 GB	expired
+perf_00828	2027-01-23 16:35:09	5.0 GB/101.0 GB	active
+perf_00832	2027-02-04 16:35:09	42.0 GB/101.0 GB	active
+perf_00834	2027-01-26 16:35:09	15.0 GB/101.0 GB	active
+perf_00836	2027-01-11 16:35:09	8.0 GB/Unlimited	active
+perf_00839	2026-11-25 16:35:09	48.0 GB/101.0 GB	active
+perf_00840	2026-12-01 16:35:09	24.0 GB/Unlimited	active
+perf_00843	2027-02-10 16:35:09	9.0 GB/Unlimited	active
+perf_00847	2026-10-28 16:35:09	46.0 GB/Unlimited	expired
+perf_00850	2026-11-21 16:35:09	44.0 GB/101.0 GB	active
+perf_00853	2026-11-25 16:35:09	44.0 GB/101.0 GB	active
+perf_00854	2026-10-28 16:35:09	6.0 GB/Unlimited	expired
+perf_00856	2026-12-07 16:35:09	14.0 GB/51.0 GB	active
+perf_00859	2026-12-16 16:35:09	36.0 GB/101.0 GB	active
+perf_00860	2027-02-03 16:35:09	30.0 GB/101.0 GB	on_hold
+perf_00861	2026-10-26 16:35:09	10.0 GB/Unlimited	on_hold
+perf_00862	2026-11-20 16:35:09	21.0 GB/101.0 GB	active
+perf_00863	2026-12-16 16:35:09	18.0 GB/101.0 GB	active
+perf_00864	2026-10-15 17:35:09	39.0 GB/101.0 GB	expired
+perf_00867	2027-01-21 16:35:09	31.0 GB/101.0 GB	active
+perf_00868	2027-01-19 16:35:09	39.0 GB/101.0 GB	active
+perf_00869	2027-01-13 16:35:09	29.0 GB/101.0 GB	active
+perf_00872	2026-10-21 17:35:09	32.0 GB/101.0 GB	expired
+perf_00874	2026-12-16 16:35:09	34.0 GB/Unlimited	active
+perf_00875	2026-10-15 17:35:09	42.0 GB/101.0 GB	expired
+perf_00878	2026-11-01 16:35:09	19.0 GB/101.0 GB	expired
+perf_00881	2026-12-14 16:35:09	40.0 GB/51.0 GB	active
+perf_00884	2027-01-15 16:35:09	38.0 GB/101.0 GB	active
+perf_00885	2026-12-27 16:35:09	0/101.0 GB	active
+perf_00886	2026-11-24 16:35:09	7.0 GB/Unlimited	disabled
+perf_00889	2026-12-30 16:35:09	45.0 GB/101.0 GB	disabled
+perf_00890	2026-12-21 16:35:09	16.0 GB/51.0 GB	active
+perf_00891	2026-11-03 16:35:09	25.0 GB/101.0 GB	expired
+perf_00893	2027-01-20 16:35:09	43.0 GB/101.0 GB	active
+perf_00897	2027-02-03 16:35:09	48.0 GB/51.0 GB	active
+perf_00901	2027-02-03 16:35:09	31.0 GB/101.0 GB	active
+perf_00905	2027-01-07 16:35:09	27.0 GB/101.0 GB	active
+perf_00907	2026-11-22 16:35:09	48.0 GB/Unlimited	active
+perf_00908	2026-10-22 17:35:09	21.0 GB/Unlimited	expired
+perf_00912	2026-12-29 16:35:09	26.0 GB/Unlimited	active
+perf_00914	2027-02-03 16:35:09	8.0 GB/51.0 GB	on_hold
+perf_00918	2027-02-06 16:35:09	22.0 GB/101.0 GB	active
+perf_00920	2026-10-13 17:35:09	44.0 GB/51.0 GB	disabled
+perf_00921	2026-10-25 17:35:09	37.0 GB/101.0 GB	expired
+perf_00923	2027-01-10 16:35:09	1.0 GB/101.0 GB	active
+perf_00926	2026-11-16 16:35:09	12.0 GB/Unlimited	active
+perf_00927	2026-12-08 16:35:09	6.0 GB/101.0 GB	active
+perf_00930	2027-02-07 16:35:09	37.0 GB/101.0 GB	active
+perf_00931	2026-11-21 16:35:09	50.0 GB/Unlimited	active
+perf_00932	2026-11-19 16:35:09	8.0 GB/51.0 GB	active
+perf_00933	2026-10-16 17:35:09	23.0 GB/Unlimited	expired
+perf_00937	2026-11-25 16:35:09	27.0 GB/101.0 GB	active
+perf_00938	2027-01-08 16:35:09	49.0 GB/Unlimited	active
+perf_00942	2027-01-20 16:35:09	27.0 GB/Unlimited	active
+perf_00944	2027-01-08 16:35:09	20.0 GB/101.0 GB	disabled
+perf_00946	2027-02-05 16:35:09	23.0 GB/Unlimited	active
+perf_00947	2026-10-13 17:35:09	13.0 GB/101.0 GB	expired
+perf_00948	2027-01-08 16:35:09	37.0 GB/51.0 GB	active
+perf_00952	2027-01-14 16:35:09	50.0 GB/Unlimited	active
+perf_00954	2026-12-15 16:35:09	21.0 GB/101.0 GB	on_hold
+perf_00955	2026-10-23 17:35:09	25.0 GB/101.0 GB	expired
+perf_00956	2026-11-28 16:35:09	45.0 GB/Unlimited	active
+perf_00958	2026-12-27 16:35:09	47.0 GB/101.0 GB	active
+perf_00959	2026-11-26 16:35:09	18.0 GB/51.0 GB	active
+perf_00960	2026-11-28 16:35:09	17.0 GB/Unlimited	active
+perf_00962	2026-11-28 16:35:09	24.0 GB/51.0 GB	active
+perf_00965	2026-12-05 16:35:09	31.0 GB/Unlimited	active
+perf_00971	2026-10-19 17:35:09	11.0 GB/51.0 GB	expired
+perf_00972	2026-11-03 16:35:09	7.0 GB/Unlimited	expired
+perf_00974	2026-12-21 16:35:09	39.0 GB/101.0 GB	active
+perf_00975	2027-02-03 16:35:09	50.0 GB/51.0 GB	active
+perf_00978	2027-01-31 16:35:09	4.0 GB/Unlimited	active
+perf_00981	2026-11-21 16:35:09	43.0 GB/Unlimited	active
+perf_00985	2026-11-09 16:35:09	14.0 GB/51.0 GB	expired
+perf_00987	2026-10-22 17:35:09	31.0 GB/51.0 GB	expired
+perf_00988	2027-02-06 16:35:09	11.0 GB/101.0 GB	active
+perf_00990	2027-01-23 16:35:09	33.0 GB/51.0 GB	active
+perf_00993	2026-11-24 16:35:09	41.0 GB/51.0 GB	active
+perf_00994	2026-11-10 16:35:09	40.0 GB/51.0 GB	expired
+perf_00996	2026-11-16 16:35:09	30.0 GB/Unlimited	active
+perf_00999	2027-01-02 16:35:09	7.0 GB/Unlimited	on_hold
+perf_01003	2026-11-15 16:35:09	45.0 GB/101.0 GB	active
+perf_01004	2027-01-02 16:35:09	30.0 GB/Unlimited	active
+perf_01009	2026-10-29 16:35:09	36.0 GB/51.0 GB	expired
+perf_01011	2027-01-08 16:35:09	48.0 GB/51.0 GB	active
+perf_01013	2027-01-30 16:35:09	26.0 GB/Unlimited	active
+perf_01014	2027-02-06 16:35:09	27.0 GB/101.0 GB	active
+perf_01015	2026-10-20 17:35:09	31.0 GB/Unlimited	expired
+perf_01017	2026-11-14 16:35:09	26.0 GB/51.0 GB	active
+perf_01019	2027-01-28 16:35:09	10.0 GB/Unlimited	active
+perf_01021	2026-12-05 16:35:09	12.0 GB/101.0 GB	active
+perf_01022	2027-02-10 16:35:09	37.0 GB/101.0 GB	active
+perf_01023	2026-11-21 16:35:09	45.0 GB/51.0 GB	active
+perf_01024	2026-12-26 16:35:09	45.0 GB/101.0 GB	active
+perf_01025	2027-02-02 16:35:09	24.0 GB/Unlimited	active
+perf_01026	2026-12-11 16:35:09	9.0 GB/51.0 GB	active
+perf_01029	2026-12-23 16:35:09	11.0 GB/Unlimited	active
+perf_01033	2026-11-08 16:35:09	50.0 GB/Unlimited	expired
+perf_01037	2026-11-12 16:35:09	29.0 GB/Unlimited	active
+perf_01041	2026-11-17 16:35:09	25.0 GB/101.0 GB	active
+perf_01042	2026-11-13 16:35:09	21.0 GB/101.0 GB	active
+perf_01044	2027-02-10 16:35:09	35.0 GB/51.0 GB	active
+perf_01046	2026-11-07 16:35:09	24.0 GB/101.0 GB	disabled
+perf_01047	2027-01-05 16:35:09	12.0 GB/101.0 GB	active
+perf_01051	2026-12-24 16:35:09	18.0 GB/Unlimited	active
+perf_01052	2026-12-21 16:35:09	16.0 GB/101.0 GB	active
+perf_01056	2026-12-08 16:35:09	9.0 GB/Unlimited	active
+perf_01060	2027-01-01 16:35:09	9.0 GB/101.0 GB	active
+perf_01061	2026-10-27 16:35:09	8.0 GB/51.0 GB	expired
+perf_01063	2026-11-11 16:35:09	38.0 GB/51.0 GB	on_hold
+perf_01071	2027-02-06 16:35:09	5.0 GB/101.0 GB	disabled
+perf_01072	2027-01-21 16:35:09	26.0 GB/101.0 GB	active
+perf_01075	2026-11-19 16:35:09	25.0 GB/101.0 GB	active
+perf_01077	2026-11-07 16:35:09	24.0 GB/Unlimited	expired
+perf_01078	2026-10-28 16:35:09	0/Unlimited	expired
+perf_01080	2027-01-05 16:35:09	50.0 GB/101.0 GB	active
+perf_01082	2027-01-20 16:35:09	0/Unlimited	active
+perf_01084	2026-10-17 17:35:09	12.0 GB/101.0 GB	expired
+perf_01085	2027-01-27 16:35:09	45.0 GB/101.0 GB	active
+perf_01091	2026-11-04 16:35:09	12.0 GB/51.0 GB	expired
+perf_01092	2027-02-01 16:35:09	32.0 GB/51.0 GB	disabled
+perf_01094	2026-11-06 16:35:09	45.0 GB/101.0 GB	disabled
+perf_01099	2026-10-26 16:35:09	27.0 GB/101.0 GB	on_hold
+perf_01101	2027-02-02 16:35:09	15.0 GB/51.0 GB	active
+perf_01104	2026-11-20 16:35:09	43.0 GB/51.0 GB	on_hold
+perf_01105	2026-12-15 16:35:09	3.0 GB/51.0 GB	active
+perf_01106	2026-11-17 16:35:09	3.0 GB/51.0 GB	active
+perf_01113	2026-10-16 17:35:09	27.0 GB/51.0 GB	expired
+perf_01114	2026-10-24 17:35:09	45.0 GB/101.0 GB	disabled
+perf_01116	2027-01-07 16:35:09	14.0 GB/101.0 GB	disabled
+perf_01117	2026-11-06 16:35:09	50.0 GB/51.0 GB	expired
+perf_01118	2027-01-27 16:35:09	27.0 GB/Unlimited	active
+perf_01123	2026-10-26 16:35:09	0/101.0 GB	expired
+perf_01125	2027-01-26 16:35:09	29.0 GB/101.0 GB	active
+perf_01127	2026-12-13 16:35:09	41.0 GB/101.0 GB	active
+perf_01128	2026-11-26 16:35:09	16.0 GB/101.0 GB	active
+perf_01129	2026-12-26 16:35:09	19.0 GB/51.0 GB	on_hold
+perf_01130	2027-01-15 16:35:09	30.0 GB/Unlimited	active
+perf_01132	2026-11-25 16:35:09	16.0 GB/51.0 GB	active
+perf_01134	2027-01-09 16:35:09	34.0 GB/Unlimited	active
+perf_01136	2027-01-20 16:35:09	16.0 GB/51.0 GB	active
+perf_01137	2026-11-20 16:35:09	37.0 GB/101.0 GB	active
+perf_01138	2026-12-31 16:35:09	46.0 GB/101.0 GB	active
+perf_01142	2027-01-21 16:35:09	34.0 GB/101.0 GB	active
+perf_01143	2027-01-12 16:35:09	41.0 GB/101.0 GB	active
+perf_01144	2026-12-24 16:35:09	15.0 GB/Unlimited	active
+perf_01145	2027-01-04 16:35:09	6.0 GB/51.0 GB	active
+perf_01148	2026-12-01 16:35:09	15.0 GB/101.0 GB	active
+perf_01149	2026-11-12 16:35:09	46.0 GB/Unlimited	active
+perf_01150	2026-10-15 17:35:09	50.0 GB/101.0 GB	expired
+perf_01151	2026-10-21 17:35:09	2.0 GB/Unlimited	expired
+perf_01155	2026-11-13 16:35:09	40.0 GB/51.0 GB	disabled
+perf_01157	2027-02-08 16:35:09	37.0 GB/101.0 GB	active
+perf_01160	2027-01-10 16:35:09	38.0 GB/51.0 GB	active
+perf_01163	2026-10-23 17:35:09	27.0 GB/Unlimited	expired
+perf_01165	2026-11-26 16:35:09	34.0 GB/101.0 GB	active
+perf_01168	2026-11-16 16:35:09	49.0 GB/51.0 GB	active
+perf_01170	2027-01-03 16:35:09	35.0 GB/101.0 GB	active
+perf_01171	2026-10-23 17:35:09	22.0 GB/Unlimited	expired
+perf_01173	2027-01-30 16:35:09	12.0 GB/51.0 GB	active
+perf_01175	2026-11-19 16:35:09	2.0 GB/101.0 GB	active
+perf_01177	2026-11-26 16:35:09	26.0 GB/Unlimited	active
+perf_01179	2027-01-27 16:35:09	28.0 GB/51.0 GB	active
+perf_01181	2026-12-01 16:35:09	41.0 GB/101.0 GB	active
+perf_01182	2026-11-24 16:35:09	30.0 GB/Unlimited	active
+perf_01186	2026-11-01 16:35:09	22.0 GB/51.0 GB	disabled
+perf_01188	2027-01-19 16:35:09	31.0 GB/101.0 GB	active
+perf_01190	2026-10-30 16:35:09	1.0 GB/51.0 GB	expired
+perf_01194	2026-10-19 17:35:09	26.0 GB/51.0 GB	expired
+perf_01195	2027-01-13 16:35:09	12.0 GB/51.0 GB	active
+perf_01196	2026-10-15 17:35:09	13.0 GB/Unlimited	expired
+perf_01197	2026-11-29 16:35:09	8.0 GB/51.0 GB	active
+perf_01198	2026-12-30 16:35:09	18.0 GB/51.0 GB	active
+perf_01200	2026-12-29 16:35:09	4.0 GB/101.0 GB	active
+perf_01203	2026-12-02 16:35:09	30.0 GB/Unlimited	active
+perf_01205	2027-01-19 16:35:09	40.0 GB/51.0 GB	active
+perf_01208	2026-11-26 16:35:09	15.0 GB/101.0 GB	active
+perf_01210	2026-10-28 16:35:09	16.0 GB/101.0 GB	disabled
+perf_01211	2026-11-22 16:35:09	30.0 GB/101.0 GB	active
+perf_01213	2026-11-29 16:35:09	4.0 GB/101.0 GB	active
+perf_01217	2027-01-25 16:35:09	31.0 GB/51.0 GB	active
+perf_01218	2027-01-01 16:35:09	19.0 GB/Unlimited	disabled
+perf_01219	2026-12-28 16:35:09	9.0 GB/51.0 GB	active
+perf_01221	2026-11-18 16:35:09	18.0 GB/51.0 GB	active
+perf_01223	2027-02-02 16:35:09	48.0 GB/Unlimited	active
+perf_01227	2027-01-07 16:35:09	10.0 GB/Unlimited	active
+perf_01229	2027-01-28 16:35:09	50.0 GB/51.0 GB	active
+perf_01231	2026-12-13 16:35:09	12.0 GB/101.0 GB	active
+perf_01234	2026-11-05 16:35:09	3.0 GB/101.0 GB	expired
+perf_01236	2026-11-19 16:35:09	30.0 GB/101.0 GB	active
+perf_01237	2027-01-14 16:35:09	8.0 GB/Unlimited	active
+perf_01242	2026-12-17 16:35:09	11.0 GB/51.0 GB	active
+perf_01245	2026-11-04 16:35:09	47.0 GB/101.0 GB	expired
+perf_01248	2027-01-09 16:35:09	2.0 GB/101.0 GB	active
+perf_01251	2026-12-12 16:35:09	31.0 GB/51.0 GB	on_hold
+perf_01252	2026-11-05 16:35:09	16.0 GB/Unlimited	expired
+perf_01254	2026-12-16 16:35:09	22.0 GB/51.0 GB	active
+perf_01255	2026-12-16 16:35:09	3.0 GB/51.0 GB	active
+perf_01256	2027-02-09 16:35:09	14.0 GB/51.0 GB	active
+perf_01257	2027-02-07 16:35:09	29.0 GB/Unlimited	active
+perf_01258	2026-11-27 16:35:09	10.0 GB/51.0 GB	disabled
+perf_01262	2026-11-23 16:35:09	6.0 GB/51.0 GB	on_hold
+perf_01263	2027-02-06 16:35:09	37.0 GB/101.0 GB	active
+perf_01266	2026-12-05 16:35:09	5.0 GB/Unlimited	active
+perf_01269	2027-01-17 16:35:09	0/51.0 GB	disabled
+perf_01270	2026-11-01 16:35:09	10.0 GB/101.0 GB	expired
+perf_01274	2026-10-30 16:35:09	24.0 GB/101.0 GB	disabled
+perf_01277	2027-01-08 16:35:09	26.0 GB/Unlimited	disabled
+perf_01278	2027-02-04 16:35:09	5.0 GB/Unlimited	active
+perf_01279	2026-12-07 16:35:09	34.0 GB/51.0 GB	active
+perf_01281	2027-02-10 16:35:09	48.0 GB/101.0 GB	active
+perf_01282	2027-01-29 16:35:09	30.0 GB/101.0 GB	active
+perf_01284	2027-01-30 16:35:09	39.0 GB/101.0 GB	active
+perf_01285	2026-12-16 16:35:09	41.0 GB/Unlimited	active
+perf_01287	2026-11-13 16:35:09	47.0 GB/Unlimited	active
+perf_01288	2026-12-11 16:35:09	15.0 GB/101.0 GB	active
+perf_01289	2027-01-03 16:35:09	41.0 GB/51.0 GB	active
+perf_01290	2026-11-03 16:35:09	48.0 GB/51.0 GB	expired
+perf_01293	2026-12-28 16:35:09	12.0 GB/Unlimited	active
+perf_01294	2026-11-24 16:35:09	18.0 GB/101.0 GB	active
+perf_01295	2026-11-18 16:35:09	40.0 GB/101.0 GB	active
+perf_01296	2027-01-31 16:35:09	26.0 GB/101.0 GB	active
+perf_01298	2026-11-13 16:35:09	49.0 GB/51.0 GB	active
+perf_01299	2027-01-18 16:35:09	42.0 GB/101.0 GB	active
+perf_01303	2026-12-21 16:35:09	14.0 GB/51.0 GB	active
+perf_01308	2026-12-20 16:35:09	18.0 GB/51.0 GB	active
+perf_01309	2026-11-11 16:35:09	31.0 GB/101.0 GB	expired
+perf_01311	2026-12-24 16:35:09	46.0 GB/51.0 GB	active
+perf_01319	2026-12-03 16:35:09	18.0 GB/101.0 GB	active
+perf_01320	2026-11-09 16:35:09	11.0 GB/51.0 GB	on_hold
+perf_01322	2027-01-19 16:35:09	42.0 GB/51.0 GB	active
+perf_01323	2026-10-28 16:35:09	33.0 GB/Unlimited	expired
+perf_01324	2026-12-05 16:35:09	30.0 GB/51.0 GB	active
+perf_01328	2026-10-29 16:35:09	0/Unlimited	expired
+perf_01331	2026-12-28 16:35:09	29.0 GB/51.0 GB	active
+perf_01336	2027-01-20 16:35:09	15.0 GB/Unlimited	active
+perf_01337	2026-10-28 16:35:09	33.0 GB/101.0 GB	expired
+perf_01338	2027-01-07 16:35:09	8.0 GB/101.0 GB	active
+perf_01339	2026-11-26 16:35:09	14.0 GB/101.0 GB	active
+perf_01340	2027-02-10 16:35:09	39.0 GB/101.0 GB	active
+perf_01343	2026-11-30 16:35:09	39.0 GB/Unlimited	active
+perf_01346	2027-02-10 16:35:09	8.0 GB/51.0 GB	active
+perf_01347	2026-11-15 16:35:09	23.0 GB/51.0 GB	active
+perf_01349	2026-12-06 16:35:09	13.0 GB/101.0 GB	active
+perf_01352	2026-10-19 17:35:09	27.0 GB/101.0 GB	expired
+perf_01354	2026-11-16 16:35:09	46.0 GB/51.0 GB	active
+perf_01356	2027-01-10 16:35:09	34.0 GB/51.0 GB	active
+perf_01357	2026-10-19 17:35:09	34.0 GB/Unlimited	expired
+perf_01358	2027-01-11 16:35:09	3.0 GB/Unlimited	active
+perf_01359	2026-11-14 16:35:09	42.0 GB/101.0 GB	active
+perf_01365	2026-10-27 16:35:09	32.0 GB/101.0 GB	expired
+perf_01370	2026-11-22 16:35:09	25.0 GB/51.0 GB	active
+perf_01373	2026-11-18 16:35:09	17.0 GB/51.0 GB	active
+perf_01374	2026-11-30 16:35:09	1.0 GB/101.0 GB	active
+perf_01375	2027-01-11 16:35:09	50.0 GB/Unlimited	active
+perf_01376	2026-11-24 16:35:09	45.0 GB/Unlimited	active
+perf_01378	2027-02-08 16:35:09	30.0 GB/Unlimited	active
+perf_01384	2026-10-13 17:35:09	6.0 GB/Unlimited	expired
+perf_01385	2027-01-14 16:35:09	38.0 GB/51.0 GB	active
+perf_01388	2026-12-04 16:35:09	36.0 GB/Unlimited	active
+perf_01390	2027-01-28 16:35:09	13.0 GB/Unlimited	active
+perf_01393	2026-11-27 16:35:09	9.0 GB/101.0 GB	active
+perf_01397	2027-01-24 16:35:09	23.0 GB/51.0 GB	active
+perf_01399	2026-11-17 16:35:09	45.0 GB/51.0 GB	active
+perf_01400	2027-01-05 16:35:09	47.0 GB/Unlimited	active
+perf_01401	2026-11-05 16:35:09	6.0 GB/51.0 GB	expired
+perf_01410	2026-12-23 16:35:09	20.0 GB/Unlimited	active
+perf_01414	2026-11-03 16:35:09	32.0 GB/51.0 GB	expired
+perf_01418	2026-11-20 16:35:09	30.0 GB/101.0 GB	active
+perf_01419	2027-01-24 16:35:09	2.0 GB/51.0 GB	active
+perf_01422	2026-12-03 16:35:09	8.0 GB/101.0 GB	on_hold
+perf_01424	2026-11-27 16:35:09	6.0 GB/101.0 GB	active
+perf_01429	2027-01-09 16:35:09	4.0 GB/101.0 GB	active
+perf_01432	2026-12-18 16:35:09	42.0 GB/101.0 GB	active
+perf_01434	2026-11-12 16:35:09	42.0 GB/51.0 GB	active
+perf_01437	2027-01-09 16:35:09	27.0 GB/Unlimited	active
+perf_01444	2026-12-18 16:35:09	39.0 GB/Unlimited	active
+perf_01447	2027-02-05 16:35:09	9.0 GB/101.0 GB	active
+perf_01448	2026-12-11 16:35:09	31.0 GB/Unlimited	active
+perf_01451	2026-12-16 16:35:09	17.0 GB/101.0 GB	active
+perf_01452	2027-01-06 16:35:09	41.0 GB/Unlimited	active
+perf_01453	2026-10-29 16:35:09	33.0 GB/51.0 GB	expired
+perf_01455	2026-12-15 16:35:09	48.0 GB/101.0 GB	active
+perf_01458	2027-01-12 16:35:09	18.0 GB/51.0 GB	active
+perf_01459	2027-02-06 16:35:09	7.0 GB/Unlimited	active
+perf_01460	2026-12-27 16:35:09	28.0 GB/Unlimited	active
+perf_01461	2027-01-01 16:35:09	49.0 GB/101.0 GB	active
+perf_01462	2027-01-11 16:35:09	50.0 GB/101.0 GB	active
+perf_01464	2027-01-01 16:35:09	18.0 GB/Unlimited	active
+perf_01465	2027-01-31 16:35:09	45.0 GB/Unlimited	active
+perf_01466	2026-12-01 16:35:09	33.0 GB/101.0 GB	active
+perf_01474	2027-01-06 16:35:09	43.0 GB/51.0 GB	active
+perf_01475	2026-12-16 16:35:09	29.0 GB/51.0 GB	active
+perf_01478	2026-10-22 17:35:09	28.0 GB/51.0 GB	expired
+perf_01482	2027-02-09 16:35:09	16.0 GB/51.0 GB	active
+perf_01483	2026-11-02 16:35:09	48.0 GB/51.0 GB	expired
+perf_01488	2026-11-18 16:35:09	32.0 GB/Unlimited	active
+perf_01490	2027-01-23 16:35:09	8.0 GB/51.0 GB	active
+perf_01492	2027-01-16 16:35:09	20.0 GB/51.0 GB	active
+perf_01493	2026-12-15 16:35:09	9.0 GB/101.0 GB	active
+perf_01494	2027-01-10 16:35:09	6.0 GB/Unlimited	active
+perf_01496	2027-01-21 16:35:09	47.0 GB/Unlimited	active
+perf_01501	2026-11-22 16:35:09	9.0 GB/Unlimited	active
+perf_01507	2026-10-24 17:35:09	20.0 GB/51.0 GB	expired
+perf_01510	2027-01-09 16:35:09	17.0 GB/101.0 GB	active
+perf_01511	2026-12-03 16:35:09	47.0 GB/Unlimited	active
+perf_01512	2026-11-27 16:35:09	48.0 GB/Unlimited	active
+perf_01515	2026-11-18 16:35:09	35.0 GB/51.0 GB	active
+perf_01516	2026-12-16 16:35:09	28.0 GB/Unlimited	active
+perf_01518	2026-11-18 16:35:09	49.0 GB/101.0 GB	disabled
+perf_01520	2026-10-19 17:35:09	13.0 GB/101.0 GB	expired
+perf_01528	2026-10-17 17:35:09	21.0 GB/101.0 GB	expired
+perf_01529	2026-11-18 16:35:09	18.0 GB/Unlimited	active
+perf_01530	2026-11-18 16:35:09	46.0 GB/101.0 GB	active
+perf_01533	2026-11-23 16:35:09	17.0 GB/51.0 GB	active
+perf_01534	2026-11-12 16:35:09	16.0 GB/Unlimited	active
+perf_01536	2026-11-16 16:35:09	41.0 GB/101.0 GB	active
+perf_01537	2026-11-24 16:35:09	47.0 GB/51.0 GB	active
+perf_01539	2026-12-06 16:35:09	45.0 GB/101.0 GB	active
+perf_01540	2027-02-05 16:35:09	27.0 GB/51.0 GB	active
+perf_01542	2026-11-11 16:35:09	5.0 GB/101.0 GB	expired
+perf_01543	2026-12-12 16:35:09	38.0 GB/101.0 GB	active
+perf_01544	2026-12-14 16:35:09	18.0 GB/Unlimited	active
+perf_01545	2027-01-14 16:35:09	17.0 GB/51.0 GB	active
+perf_01551	2026-10-23 17:35:09	39.0 GB/101.0 GB	expired
+perf_01552	2027-01-06 16:35:09	5.0 GB/Unlimited	active
+perf_01556	2027-01-21 16:35:09	18.0 GB/51.0 GB	active
+perf_01557	2026-12-06 16:35:09	42.0 GB/51.0 GB	active
+perf_01558	2026-11-24 16:35:09	15.0 GB/Unlimited	active
+perf_01565	2027-01-21 16:35:09	41.0 GB/101.0 GB	active
+perf_01567	2026-12-26 16:35:09	37.0 GB/Unlimited	active
+perf_01569	2027-02-05 16:35:09	42.0 GB/Unlimited	active
+perf_01570	2026-12-16 16:35:09	28.0 GB/Unlimited	active
+perf_01571	2026-12-26 16:35:09	1.0 GB/51.0 GB	active
+perf_01572	2026-11-21 16:35:09	34.0 GB/101.0 GB	active
+perf_01574	2027-01-09 16:35:09	18.0 GB/Unlimited	active
+perf_01575	2027-02-05 16:35:09	22.0 GB/Unlimited	active
+perf_01576	2026-12-22 16:35:09	36.0 GB/101.0 GB	active
+perf_01579	2027-01-14 16:35:09	30.0 GB/51.0 GB	active
+perf_01580	2026-11-28 16:35:09	44.0 GB/101.0 GB	active
+perf_01581	2027-01-29 16:35:09	17.0 GB/101.0 GB	active
+perf_01583	2026-10-27 16:35:09	17.0 GB/101.0 GB	expired
+perf_01584	2027-01-02 16:35:09	11.0 GB/51.0 GB	active
+perf_01585	2026-10-19 17:35:09	9.0 GB/51.0 GB	expired
+perf_01586	2027-01-04 16:35:09	0/101.0 GB	active
+perf_01589	2026-10-17 17:35:09	45.0 GB/51.0 GB	expired
+perf_01591	2027-01-26 16:35:09	4.0 GB/Unlimited	active
+perf_01592	2026-11-13 16:35:09	12.0 GB/Unlimited	active
+perf_01594	2026-12-28 16:35:09	3.0 GB/51.0 GB	active
+perf_01596	2027-01-02 16:35:09	23.0 GB/51.0 GB	active
+perf_01598	2026-12-06 16:35:09	3.0 GB/101.0 GB	active
+perf_01599	2026-10-17 17:35:09	30.0 GB/51.0 GB	expired
+perf_01601	2026-12-19 16:35:09	3.0 GB/Unlimited	active
+perf_01602	2026-12-21 16:35:09	22.0 GB/101.0 GB	active
+perf_01604	2026-12-22 16:35:09	3.0 GB/Unlimited	active
+perf_01605	2026-12-09 16:35:09	45.0 GB/101.0 GB	active
+perf_01607	2027-01-26 16:35:09	32.0 GB/101.0 GB	active
+perf_01611	2026-10-22 17:35:09	8.0 GB/51.0 GB	expired
+perf_01613	2027-01-06 16:35:09	9.0 GB/101.0 GB	active
+perf_01614	2026-11-08 16:35:09	18.0 GB/51.0 GB	expired
+perf_01616	2026-12-22 16:35:09	48.0 GB/51.0 GB	active
+perf_01617	2026-12-09 16:35:09	2.0 GB/101.0 GB	active
+perf_01619	2026-12-15 16:35:09	43.0 GB/Unlimited	active
+perf_01620	2027-02-07 16:35:09	33.0 GB/Unlimited	active
+perf_01631	2026-12-06 16:35:09	40.0 GB/101.0 GB	active
+perf_01632	2027-01-22 16:35:09	3.0 GB/51.0 GB	active
+perf_01634	2027-01-14 16:35:09	17.0 GB/Unlimited	active
+perf_01635	2027-02-04 16:35:09	44.0 GB/Unlimited	active
+perf_01636	2027-01-31 16:35:09	5.0 GB/Unlimited	active
+perf_01640	2027-01-27 16:35:09	25.0 GB/101.0 GB	active
+perf_01643	2026-11-05 16:35:09	14.0 GB/Unlimited	expired
+perf_01645	2026-11-01 16:35:09	4.0 GB/Unlimited	expired
+perf_01646	2026-10-31 16:35:09	46.0 GB/51.0 GB	expired
+perf_01650	2026-11-23 16:35:09	32.0 GB/Unlimited	active
+perf_01652	2027-01-24 16:35:09	0/Unlimited	active
+perf_01654	2026-11-18 16:35:09	48.0 GB/51.0 GB	active
+perf_01655	2027-01-03 16:35:09	21.0 GB/Unlimited	active
+perf_01656	2027-01-23 16:35:09	6.0 GB/101.0 GB	active
+perf_01657	2027-02-10 16:35:09	9.0 GB/51.0 GB	active
+perf_01659	2027-01-20 16:35:09	21.0 GB/Unlimited	active
+perf_01661	2026-12-18 16:35:09	5.0 GB/101.0 GB	active
+perf_01663	2026-12-12 16:35:09	21.0 GB/101.0 GB	active
+perf_01668	2027-02-10 16:35:09	8.0 GB/51.0 GB	active
+perf_01669	2027-01-13 16:35:09	16.0 GB/51.0 GB	active
+perf_01670	2026-11-07 16:35:09	6.0 GB/51.0 GB	expired
+perf_01673	2026-12-20 16:35:09	8.0 GB/101.0 GB	active
+perf_01682	2026-11-23 16:35:09	31.0 GB/51.0 GB	active
+perf_01685	2026-12-07 16:35:09	21.0 GB/101.0 GB	on_hold
+perf_01686	2026-12-13 16:35:09	22.0 GB/Unlimited	active
+perf_01687	2026-11-17 16:35:09	26.0 GB/Unlimited	active
+perf_01691	2026-11-06 16:35:09	11.0 GB/Unlimited	expired
+perf_01692	2026-11-21 16:35:09	40.0 GB/Unlimited	on_hold
+perf_01694	2026-10-21 17:35:09	38.0 GB/101.0 GB	expired
+perf_01695	2026-12-02 16:35:09	2.0 GB/101.0 GB	active
+perf_01699	2027-01-16 16:35:09	30.0 GB/Unlimited	active
+perf_01700	2027-02-08 16:35:09	1.0 GB/101.0 GB	active
+perf_01701	2026-12-03 16:35:09	13.0 GB/101.0 GB	active
+perf_01702	2027-01-23 16:35:09	4.0 GB/Unlimited	active
+perf_01703	2026-11-19 16:35:09	2.0 GB/101.0 GB	active
+perf_01704	2026-10-30 16:35:09	25.0 GB/51.0 GB	expired
+perf_01705	2026-12-09 16:35:09	1.0 GB/51.0 GB	disabled
+perf_01707	2026-12-20 16:35:09	5.0 GB/51.0 GB	active
+perf_01708	2026-10-25 17:35:09	3.0 GB/Unlimited	expired
+perf_01712	2026-12-15 16:35:09	32.0 GB/51.0 GB	active
+perf_01713	2027-01-03 16:35:09	48.0 GB/101.0 GB	active
+perf_01720	2026-10-23 17:35:09	38.0 GB/101.0 GB	on_hold
+perf_01723	2026-12-03 16:35:09	32.0 GB/101.0 GB	active
+perf_01726	2026-11-26 16:35:09	24.0 GB/101.0 GB	active
+perf_01727	2027-01-21 16:35:09	48.0 GB/51.0 GB	active
+perf_01728	2026-11-11 16:35:09	18.0 GB/Unlimited	disabled
+perf_01729	2027-01-04 16:35:09	29.0 GB/51.0 GB	active
+perf_01730	2027-02-01 16:35:09	8.0 GB/Unlimited	active
+perf_01733	2026-11-10 16:35:09	11.0 GB/51.0 GB	expired
+perf_01737	2026-11-30 16:35:09	11.0 GB/Unlimited	active
+perf_01741	2026-12-13 16:35:09	12.0 GB/51.0 GB	active
+perf_01742	2027-01-31 16:35:09	23.0 GB/51.0 GB	active
+perf_01745	2027-01-04 16:35:09	32.0 GB/51.0 GB	active
+perf_01746	2026-12-16 16:35:09	9.0 GB/101.0 GB	active
+perf_01747	2027-02-08 16:35:09	32.0 GB/Unlimited	on_hold
+perf_01749	2026-11-06 16:35:09	49.0 GB/101.0 GB	expired
+perf_01750	2026-11-25 16:35:09	32.0 GB/Unlimited	active
+perf_01760	2026-12-13 16:35:09	1.0 GB/51.0 GB	active
+perf_01761	2026-10-31 16:35:09	14.0 GB/101.0 GB	expired
+perf_01762	2027-01-31 16:35:09	40.0 GB/101.0 GB	active
+perf_01763	2026-10-17 17:35:09	8.0 GB/51.0 GB	expired
+perf_01764	2027-02-10 16:35:09	7.0 GB/51.0 GB	active
+perf_01766	2026-11-24 16:35:09	43.0 GB/101.0 GB	active
+perf_01767	2026-11-02 16:35:09	8.0 GB/Unlimited	expired
+perf_01770	2026-12-01 16:35:09	18.0 GB/101.0 GB	active
+perf_01772	2027-01-13 16:35:09	15.0 GB/51.0 GB	on_hold
+perf_01773	2026-10-28 16:35:09	27.0 GB/51.0 GB	expired
+perf_01774	2027-01-25 16:35:09	7.0 GB/Unlimited	active
+perf_01775	2026-11-17 16:35:09	38.0 GB/Unlimited	active
+perf_01777	2026-11-09 16:35:09	28.0 GB/101.0 GB	expired
+perf_01778	2026-11-18 16:35:09	20.0 GB/101.0 GB	active
+perf_01782	2026-10-21 17:35:09	18.0 GB/Unlimited	expired
+perf_01784	2027-01-09 16:35:09	8.0 GB/51.0 GB	disabled
+perf_01790	2027-01-02 16:35:09	34.0 GB/Unlimited	active
+perf_01792	2027-01-14 16:35:09	29.0 GB/Unlimited	active
+perf_01794	2026-12-22 16:35:09	39.0 GB/51.0 GB	active
+perf_01795	2027-01-11 16:35:09	0/51.0 GB	active
+perf_01796	2026-10-19 17:35:09	19.0 GB/101.0 GB	expired
+perf_01799	2027-01-30 16:35:09	34.0 GB/101.0 GB	active
+perf_01800	2026-10-21 17:35:09	13.0 GB/Unlimited	expired
+perf_01802	2027-01-16 16:35:09	37.0 GB/51.0 GB	active
+perf_01804	2026-12-04 16:35:09	18.0 GB/101.0 GB	active
+perf_01805	2026-10-24 17:35:09	27.0 GB/Unlimited	expired
+perf_01812	2026-10-16 17:35:09	35.0 GB/101.0 GB	expired
+perf_01814	2027-01-01 16:35:09	36.0 GB/101.0 GB	active
+perf_01819	2027-01-26 16:35:09	28.0 GB/51.0 GB	active
+perf_01820	2026-12-10 16:35:09	9.0 GB/Unlimited	active
+perf_01826	2026-12-17 16:35:09	21.0 GB/Unlimited	active
+perf_01827	2027-01-01 16:35:09	38.0 GB/Unlimited	active
+perf_01828	2026-10-18 17:35:09	37.0 GB/101.0 GB	expired
+perf_01829	2027-01-29 16:35:09	2.0 GB/Unlimited	active
+perf_01832	2026-12-04 16:35:09	11.0 GB/101.0 GB	active
+perf_01836	2027-01-31 16:35:09	14.0 GB/Unlimited	active
+perf_01840	2026-11-09 16:35:09	31.0 GB/Unlimited	expired
+perf_01841	2026-12-17 16:35:09	9.0 GB/51.0 GB	active
+perf_01842	2027-02-10 16:35:09	43.0 GB/51.0 GB	active
+perf_01844	2026-11-05 16:35:09	7.0 GB/51.0 GB	expired
+perf_01845	2027-01-18 16:35:09	15.0 GB/Unlimited	active
+perf_01846	2026-12-12 16:35:09	21.0 GB/51.0 GB	on_hold
+perf_01851	2026-11-14 16:35:09	32.0 GB/Unlimited	active
+perf_01857	2026-12-14 16:35:09	4.0 GB/101.0 GB	active
+perf_01862	2026-10-20 17:35:09	8.0 GB/Unlimited	expired
+perf_01864	2027-01-31 16:35:09	45.0 GB/101.0 GB	active
+perf_01865	2027-01-29 16:35:09	44.0 GB/51.0 GB	active
+perf_01866	2026-12-17 16:35:09	13.0 GB/51.0 GB	active
+perf_01867	2027-02-03 16:35:09	45.0 GB/Unlimited	active
+perf_01869	2027-01-27 16:35:09	29.0 GB/Unlimited	active
+perf_01871	2026-11-02 16:35:09	36.0 GB/51.0 GB	expired
+perf_01872	2027-02-05 16:35:09	22.0 GB/51.0 GB	active
+perf_01880	2026-12-28 16:35:09	2.0 GB/101.0 GB	active
+perf_01882	2027-02-09 16:35:09	10.0 GB/Unlimited	active
+perf_01889	2026-10-17 17:35:09	33.0 GB/51.0 GB	disabled
+perf_01894	2027-01-09 16:35:09	26.0 GB/101.0 GB	active
+perf_01896	2027-01-12 16:35:09	33.0 GB/101.0 GB	active
+perf_01899	2026-10-31 16:35:09	31.0 GB/Unlimited	expired
+perf_01901	2026-12-22 16:35:09	32.0 GB/101.0 GB	on_hold
+perf_01902	2026-12-10 16:35:09	14.0 GB/51.0 GB	active
+perf_01904	2026-11-24 16:35:09	1.0 GB/101.0 GB	active
+perf_01906	2027-02-04 16:35:09	48.0 GB/51.0 GB	active
+perf_01907	2026-11-06 16:35:09	25.0 GB/51.0 GB	expired
+perf_01908	2026-12-13 16:35:09	1.0 GB/101.0 GB	active
+perf_01910	2026-12-11 16:35:09	31.0 GB/Unlimited	active
+perf_01911	2026-11-02 16:35:09	19.0 GB/101.0 GB	expired
+perf_01912	2026-11-11 16:35:09	38.0 GB/101.0 GB	expired
+perf_01913	2026-10-27 16:35:09	11.0 GB/Unlimited	expired
+perf_01918	2027-01-18 16:35:09	35.0 GB/Unlimited	active
+perf_01919	2026-10-19 17:35:09	40.0 GB/101.0 GB	expired
+perf_01922	2026-10-23 17:35:09	6.0 GB/101.0 GB	expired
+perf_01923	2027-01-24 16:35:09	31.0 GB/51.0 GB	active
+perf_01927	2027-01-12 16:35:09	46.0 GB/51.0 GB	on_hold
+perf_01928	2026-11-05 16:35:09	31.0 GB/Unlimited	expired
+perf_01932	2026-11-09 16:35:09	42.0 GB/Unlimited	expired
+perf_01936	2026-12-24 16:35:09	21.0 GB/Unlimited	active
+perf_01938	2027-01-31 16:35:09	29.0 GB/51.0 GB	active
+perf_01939	2026-11-19 16:35:09	25.0 GB/51.0 GB	active
+perf_01940	2027-02-04 16:35:09	48.0 GB/Unlimited	active
+perf_01943	2026-12-11 16:35:09	43.0 GB/101.0 GB	active
+perf_01948	2027-02-04 16:35:09	9.0 GB/101.0 GB	active
+perf_01949	2026-11-12 16:35:09	5.0 GB/51.0 GB	active
+perf_01950	2027-01-21 16:35:09	32.0 GB/Unlimited	active
+perf_01955	2026-11-08 16:35:09	49.0 GB/51.0 GB	expired
+perf_01956	2026-12-05 16:35:09	19.0 GB/101.0 GB	active
+perf_01957	2026-10-27 16:35:09	2.0 GB/101.0 GB	expired
+perf_01958	2026-11-12 16:35:09	33.0 GB/101.0 GB	active
+perf_01960	2026-12-30 16:35:09	4.0 GB/101.0 GB	active
+perf_01963	2026-12-06 16:35:09	21.0 GB/51.0 GB	active
+perf_01967	2026-12-22 16:35:09	8.0 GB/101.0 GB	active
+perf_01968	2027-01-16 16:35:09	8.0 GB/51.0 GB	active
+perf_01970	2026-10-13 17:35:09	12.0 GB/Unlimited	expired
+perf_01981	2027-01-22 16:35:09	0/51.0 GB	active
+perf_01985	2026-10-17 17:35:09	24.0 GB/101.0 GB	expired
+perf_01986	2026-12-14 16:35:09	1.0 GB/Unlimited	active
+perf_01987	2026-10-20 17:35:09	44.0 GB/Unlimited	expired
+perf_01988	2026-11-29 16:35:09	24.0 GB/51.0 GB	active
+perf_01992	2027-01-07 16:35:09	24.0 GB/101.0 GB	active
+perf_01993	2026-11-06 16:35:09	45.0 GB/51.0 GB	expired
+perf_01994	2026-11-16 16:35:09	6.0 GB/Unlimited	active
+perf_01995	2027-01-18 16:35:09	34.0 GB/51.0 GB	active
+perf_01996	2026-12-13 16:35:09	8.0 GB/101.0 GB	active
+perf_01997	2026-12-17 16:35:09	19.0 GB/51.0 GB	on_hold
+perf_02006	2026-10-18 17:35:09	30.0 GB/101.0 GB	expired
+perf_02010	2027-02-08 16:35:09	2.0 GB/51.0 GB	active
+perf_02012	2027-01-21 16:35:09	29.0 GB/101.0 GB	active
+perf_02016	2026-12-27 16:35:09	18.0 GB/101.0 GB	active
+perf_02017	2027-01-16 16:35:09	28.0 GB/Unlimited	active
+perf_02019	2027-01-13 16:35:09	14.0 GB/51.0 GB	on_hold
+perf_02020	2026-12-08 16:35:09	20.0 GB/101.0 GB	active
+perf_02026	2026-10-28 16:35:09	30.0 GB/101.0 GB	expired
+perf_02027	2027-01-30 16:35:09	44.0 GB/51.0 GB	active
+perf_02032	2026-11-17 16:35:09	43.0 GB/51.0 GB	active
+perf_02033	2026-12-25 16:35:09	31.0 GB/51.0 GB	active
+perf_02034	2026-12-01 16:35:09	44.0 GB/101.0 GB	active
+perf_02035	2026-12-09 16:35:09	9.0 GB/51.0 GB	active
+perf_02039	2027-02-07 16:35:09	0/101.0 GB	on_hold
+perf_02040	2026-12-13 16:35:09	38.0 GB/101.0 GB	active
+perf_02041	2026-11-06 16:35:09	45.0 GB/101.0 GB	expired
+perf_02042	2027-01-09 16:35:09	25.0 GB/Unlimited	active
+perf_02050	2027-01-31 16:35:09	9.0 GB/Unlimited	active
+perf_02052	2026-12-01 16:35:09	49.0 GB/51.0 GB	active
+perf_02053	2026-11-16 16:35:09	8.0 GB/51.0 GB	active
+perf_02055	2026-12-25 16:35:09	14.0 GB/101.0 GB	active
+perf_02059	2027-02-10 16:35:09	7.0 GB/101.0 GB	active
+perf_02060	2026-12-19 16:35:09	37.0 GB/51.0 GB	on_hold
+perf_02061	2027-01-12 16:35:09	37.0 GB/101.0 GB	active
+perf_02062	2026-11-08 16:35:09	15.0 GB/101.0 GB	expired
+perf_02064	2026-11-02 16:35:09	50.0 GB/Unlimited	expired
+perf_02072	2027-01-23 16:35:09	26.0 GB/Unlimited	active
+perf_02073	2026-10-15 17:35:09	10.0 GB/101.0 GB	expired
+perf_02075	2026-12-11 16:35:09	8.0 GB/51.0 GB	active
+perf_02076	2026-10-16 17:35:09	7.0 GB/51.0 GB	expired
+perf_02077	2026-11-09 16:35:09	33.0 GB/101.0 GB	expired
+perf_02078	2026-11-30 16:35:09	47.0 GB/Unlimited	active
+perf_02079	2026-12-17 16:35:09	24.0 GB/Unlimited	active
+perf_02087	2026-11-18 16:35:09	49.0 GB/101.0 GB	active
+perf_02088	2026-10-29 16:35:09	48.0 GB/51.0 GB	expired
+perf_02090	2026-11-15 16:35:09	39.0 GB/Unlimited	active
+perf_02095	2026-11-30 16:35:09	50.0 GB/Unlimited	active
+perf_02098	2027-01-28 16:35:09	21.0 GB/Unlimited	active
+perf_02100	2027-01-29 16:35:09	40.0 GB/101.0 GB	active
+perf_02104	2027-01-04 16:35:09	25.0 GB/51.0 GB	active
+perf_02107	2026-11-04 16:35:09	38.0 GB/101.0 GB	expired
+perf_02109	2027-01-27 16:35:09	1.0 GB/101.0 GB	active
+perf_02113	2026-10-16 17:35:09	38.0 GB/Unlimited	expired
+perf_02114	2026-12-18 16:35:09	37.0 GB/Unlimited	active
+perf_02115	2027-01-11 16:35:09	6.0 GB/51.0 GB	on_hold
+perf_02116	2027-01-19 16:35:09	37.0 GB/101.0 GB	active
+perf_02119	2026-10-30 16:35:09	37.0 GB/101.0 GB	expired
+perf_02121	2026-11-29 16:35:09	25.0 GB/101.0 GB	active
+perf_02123	2026-11-23 16:35:09	29.0 GB/101.0 GB	active
+perf_02125	2026-12-14 16:35:09	6.0 GB/101.0 GB	active
+perf_02127	2026-12-20 16:35:09	41.0 GB/51.0 GB	active
+perf_02131	2026-10-28 16:35:09	17.0 GB/51.0 GB	expired
+perf_02132	2026-11-10 16:35:09	9.0 GB/101.0 GB	expired
+perf_02134	2027-02-05 16:35:09	22.0 GB/51.0 GB	active
+perf_02137	2026-11-03 16:35:09	27.0 GB/Unlimited	expired
+perf_02139	2027-01-18 16:35:09	0/51.0 GB	active
+perf_02141	2026-10-18 17:35:09	33.0 GB/Unlimited	expired
+perf_02143	2026-11-24 16:35:09	32.0 GB/51.0 GB	active
+perf_02145	2027-02-09 16:35:09	36.0 GB/Unlimited	active
+perf_02149	2026-11-06 16:35:09	12.0 GB/51.0 GB	expired
+perf_02151	2026-11-13 16:35:09	4.0 GB/51.0 GB	disabled
+perf_02156	2026-12-23 16:35:09	4.0 GB/51.0 GB	active
+perf_02158	2026-10-27 16:35:09	42.0 GB/Unlimited	expired
+perf_02161	2027-01-12 16:35:09	8.0 GB/Unlimited	active
+perf_02162	2026-12-01 16:35:09	41.0 GB/51.0 GB	active
+perf_02167	2027-01-09 16:35:09	8.0 GB/101.0 GB	active
+perf_02168	2026-11-10 16:35:09	24.0 GB/51.0 GB	expired
+perf_02171	2026-11-27 16:35:09	13.0 GB/51.0 GB	active
+perf_02172	2027-01-17 16:35:09	10.0 GB/Unlimited	active
+perf_02173	2026-11-09 16:35:09	48.0 GB/51.0 GB	expired
+perf_02175	2026-10-31 16:35:09	27.0 GB/101.0 GB	expired
+perf_02180	2027-01-12 16:35:09	1.0 GB/51.0 GB	active
+perf_02181	2027-01-21 16:35:09	46.0 GB/51.0 GB	active
+perf_02182	2026-10-17 17:35:09	8.0 GB/Unlimited	expired
+perf_02183	2026-12-19 16:35:09	2.0 GB/101.0 GB	active
+perf_02186	2027-01-22 16:35:09	6.0 GB/Unlimited	active
+perf_02187	2027-02-03 16:35:09	16.0 GB/101.0 GB	active
+perf_02188	2026-11-20 16:35:09	22.0 GB/101.0 GB	active
+perf_02190	2026-10-23 17:35:09	38.0 GB/Unlimited	expired
+perf_02191	2027-02-02 16:35:09	37.0 GB/101.0 GB	active
+perf_02195	2026-10-24 17:35:09	32.0 GB/51.0 GB	expired
+perf_02196	2026-12-04 16:35:09	46.0 GB/51.0 GB	disabled
+perf_02199	2027-01-07 16:35:09	35.0 GB/Unlimited	active
+perf_02201	2027-01-24 16:35:09	22.0 GB/101.0 GB	active
+perf_02203	2026-11-13 16:35:09	29.0 GB/101.0 GB	active
+perf_02204	2026-11-09 16:35:09	9.0 GB/Unlimited	expired
+perf_02210	2026-12-18 16:35:09	10.0 GB/101.0 GB	disabled
+perf_02211	2027-01-04 16:35:09	50.0 GB/Unlimited	active
+perf_02212	2027-01-26 16:35:09	18.0 GB/101.0 GB	active
+perf_02214	2026-11-22 16:35:09	5.0 GB/Unlimited	active
+perf_02216	2026-11-10 16:35:09	8.0 GB/101.0 GB	expired
+perf_02217	2027-01-11 16:35:09	19.0 GB/51.0 GB	active
+perf_02218	2026-10-30 16:35:09	34.0 GB/51.0 GB	expired
+perf_02219	2026-11-12 16:35:09	20.0 GB/Unlimited	active
+perf_02221	2026-12-09 16:35:09	12.0 GB/51.0 GB	active
+perf_02222	2027-01-21 16:35:09	35.0 GB/51.0 GB	active
+perf_02226	2026-11-17 16:35:09	6.0 GB/51.0 GB	active
+perf_02228	2026-11-28 16:35:09	40.0 GB/101.0 GB	active
+perf_02231	2026-11-03 16:35:09	42.0 GB/51.0 GB	expired
+perf_02232	2027-01-12 16:35:09	5.0 GB/51.0 GB	active
+perf_02236	2026-10-20 17:35:09	45.0 GB/Unlimited	disabled
+perf_02238	2027-01-14 16:35:09	21.0 GB/101.0 GB	active
+perf_02240	2026-11-04 16:35:09	2.0 GB/Unlimited	expired
+perf_02241	2026-10-25 17:35:09	16.0 GB/51.0 GB	disabled
+perf_02244	2027-01-17 16:35:09	47.0 GB/101.0 GB	active
+perf_02245	2027-01-06 16:35:09	2.0 GB/51.0 GB	active
+perf_02246	2027-01-03 16:35:09	27.0 GB/51.0 GB	active
+perf_02248	2026-11-11 16:35:09	26.0 GB/51.0 GB	on_hold
+perf_02252	2027-01-15 16:35:09	38.0 GB/51.0 GB	active
+perf_02254	2027-02-08 16:35:09	39.0 GB/51.0 GB	active
+perf_02257	2026-11-28 16:35:09	41.0 GB/51.0 GB	active
+perf_02259	2027-01-09 16:35:09	22.0 GB/51.0 GB	active
+perf_02260	2027-01-03 16:35:09	28.0 GB/101.0 GB	active
+perf_02261	2026-10-25 17:35:09	35.0 GB/Unlimited	expired
+perf_02262	2027-01-12 16:35:09	11.0 GB/101.0 GB	active
+perf_02268	2026-11-14 16:35:09	48.0 GB/51.0 GB	active
+perf_02270	2027-02-07 16:35:09	46.0 GB/101.0 GB	active
+perf_02275	2027-01-30 16:35:09	29.0 GB/Unlimited	active
+perf_02278	2027-02-07 16:35:09	49.0 GB/101.0 GB	active
+perf_02280	2027-01-31 16:35:09	6.0 GB/51.0 GB	on_hold
+perf_02281	2026-10-25 17:35:09	3.0 GB/51.0 GB	expired
+perf_02282	2026-12-28 16:35:09	29.0 GB/Unlimited	active
+perf_02283	2026-12-19 16:35:09	45.0 GB/101.0 GB	active
+perf_02293	2027-02-03 16:35:09	11.0 GB/101.0 GB	active
+perf_02295	2026-12-24 16:35:09	37.0 GB/101.0 GB	disabled
+perf_02296	2026-11-02 16:35:09	38.0 GB/Unlimited	expired
+perf_02297	2027-01-11 16:35:09	27.0 GB/Unlimited	active
+perf_02302	2026-11-24 16:35:09	15.0 GB/101.0 GB	active
+perf_02304	2026-11-07 16:35:09	0/Unlimited	expired
+perf_02306	2026-11-14 16:35:09	33.0 GB/Unlimited	active
+perf_02310	2026-11-28 16:35:09	28.0 GB/Unlimited	active
+perf_02311	2027-01-09 16:35:09	46.0 GB/Unlimited	active
+perf_02314	2026-10-20 17:35:09	26.0 GB/101.0 GB	expired
+perf_02316	2027-02-08 16:35:09	11.0 GB/101.0 GB	active
+perf_02321	2026-12-05 16:35:09	19.0 GB/101.0 GB	active
+perf_02322	2026-10-24 17:35:09	30.0 GB/51.0 GB	expired
+perf_02327	2026-12-28 16:35:09	13.0 GB/51.0 GB	active
+perf_02328	2026-12-23 16:35:09	34.0 GB/101.0 GB	active
+perf_02330	2027-01-16 16:35:09	48.0 GB/51.0 GB	active
+perf_02332	2026-11-27 16:35:09	22.0 GB/101.0 GB	active
+perf_02335	2026-11-28 16:35:09	39.0 GB/51.0 GB	active
+perf_02338	2027-01-24 16:35:09	23.0 GB/101.0 GB	active
+perf_02339	2027-01-01 16:35:09	41.0 GB/Unlimited	active
+perf_02340	2026-12-09 16:35:09	49.0 GB/101.0 GB	active
+perf_02343	2026-10-17 17:35:09	42.0 GB/101.0 GB	expired
+perf_02345	2027-01-22 16:35:09	26.0 GB/101.0 GB	disabled
+perf_02348	2027-01-11 16:35:09	29.0 GB/51.0 GB	disabled
+perf_02350	2027-01-13 16:35:09	4.0 GB/101.0 GB	on_hold
+perf_02355	2026-11-29 16:35:09	1.0 GB/51.0 GB	active
+perf_02356	2026-11-14 16:35:09	8.0 GB/Unlimited	active
+perf_02357	2026-12-04 16:35:09	22.0 GB/101.0 GB	active
+perf_02358	2026-11-26 16:35:09	39.0 GB/Unlimited	active
+perf_02359	2026-11-18 16:35:09	44.0 GB/51.0 GB	on_hold
+perf_02367	2026-12-31 16:35:09	42.0 GB/101.0 GB	active
+perf_02368	2026-11-30 16:35:09	33.0 GB/101.0 GB	on_hold
+perf_02372	2027-01-01 16:35:09	44.0 GB/101.0 GB	active
+perf_02374	2026-12-12 16:35:09	3.0 GB/51.0 GB	active
+perf_02375	2027-01-22 16:35:09	34.0 GB/51.0 GB	active
+perf_02381	2026-12-02 16:35:09	15.0 GB/101.0 GB	on_hold
+perf_02383	2027-01-04 16:35:09	43.0 GB/Unlimited	active
+perf_02385	2026-11-13 16:35:09	17.0 GB/Unlimited	active
+perf_02387	2027-01-18 16:35:09	8.0 GB/Unlimited	active
+perf_02390	2026-11-20 16:35:09	35.0 GB/51.0 GB	active
+perf_02391	2026-11-06 16:35:09	30.0 GB/101.0 GB	on_hold
+perf_02392	2027-01-13 16:35:09	20.0 GB/51.0 GB	active
+perf_02393	2026-12-19 16:35:09	13.0 GB/51.0 GB	active
+perf_02395	2026-11-03 16:35:09	19.0 GB/51.0 GB	expired
+perf_02400	2026-12-05 16:35:09	4.0 GB/Unlimited	active
+perf_02401	2026-11-03 16:35:09	15.0 GB/101.0 GB	expired
+perf_02402	2026-11-27 16:35:09	13.0 GB/101.0 GB	active
+perf_02404	2026-10-22 17:35:09	43.0 GB/51.0 GB	expired
+perf_02407	2026-10-21 17:35:09	9.0 GB/Unlimited	expired
+perf_02408	2027-01-12 16:35:09	22.0 GB/101.0 GB	active
+perf_02409	2027-01-22 16:35:09	45.0 GB/Unlimited	on_hold
+perf_02410	2026-11-16 16:35:09	46.0 GB/51.0 GB	active
+perf_02412	2027-01-21 16:35:09	16.0 GB/101.0 GB	active
+perf_02413	2026-12-30 16:35:09	5.0 GB/51.0 GB	on_hold
+perf_02414	2027-01-23 16:35:09	4.0 GB/101.0 GB	active
+perf_02418	2026-10-22 17:35:09	26.0 GB/Unlimited	on_hold
+perf_02430	2027-01-05 16:35:09	12.0 GB/51.0 GB	active
+perf_02432	2026-11-19 16:35:09	17.0 GB/Unlimited	active
+perf_02435	2026-12-19 16:35:09	3.0 GB/Unlimited	disabled
+perf_02438	2027-01-19 16:35:09	46.0 GB/101.0 GB	active
+perf_02445	2027-02-10 16:35:09	26.0 GB/Unlimited	active
+perf_02446	2026-11-28 16:35:09	6.0 GB/101.0 GB	active
+perf_02448	2026-11-11 16:35:09	36.0 GB/51.0 GB	expired
+perf_02451	2027-01-28 16:35:09	32.0 GB/101.0 GB	active
+perf_02452	2027-01-13 16:35:09	48.0 GB/51.0 GB	active
+perf_02455	2026-12-01 16:35:09	19.0 GB/101.0 GB	active
+perf_02456	2026-10-30 16:35:09	1.0 GB/51.0 GB	expired
+perf_02457	2026-10-15 17:35:09	27.0 GB/51.0 GB	expired
+perf_02460	2026-10-15 17:35:09	48.0 GB/51.0 GB	expired
+perf_02461	2026-11-07 16:35:09	0/Unlimited	disabled
+perf_02462	2027-01-15 16:35:09	49.0 GB/101.0 GB	active
+perf_02467	2027-01-09 16:35:09	15.0 GB/51.0 GB	active
+perf_02470	2027-01-06 16:35:09	50.0 GB/101.0 GB	active
+perf_02473	2027-01-03 16:35:09	24.0 GB/101.0 GB	active
+perf_02474	2027-02-08 16:35:09	35.0 GB/101.0 GB	active
+perf_02475	2026-12-23 16:35:09	30.0 GB/51.0 GB	disabled
+perf_02477	2027-01-25 16:35:09	0/101.0 GB	on_hold
+perf_02479	2026-11-18 16:35:09	22.0 GB/51.0 GB	active
+perf_02480	2027-01-17 16:35:09	30.0 GB/101.0 GB	active
+perf_02482	2027-02-08 16:35:09	20.0 GB/101.0 GB	on_hold
+perf_02489	2026-10-28 16:35:09	30.0 GB/Unlimited	expired
+perf_02490	2027-02-06 16:35:09	34.0 GB/101.0 GB	active
+perf_02492	2027-02-01 16:35:09	49.0 GB/101.0 GB	active
+perf_02495	2027-01-25 16:35:09	16.0 GB/101.0 GB	active
+perf_02499	2026-11-23 16:35:09	45.0 GB/51.0 GB	active
+perf_02500	2027-01-22 16:35:09	19.0 GB/101.0 GB	active
+perf_02502	2026-11-20 16:35:09	6.0 GB/101.0 GB	active
+perf_02504	2027-01-24 16:35:09	1.0 GB/Unlimited	active
+perf_02505	2026-11-27 16:35:09	9.0 GB/Unlimited	active
+perf_02506	2026-11-19 16:35:09	33.0 GB/Unlimited	active
+perf_02512	2026-10-24 17:35:09	41.0 GB/Unlimited	expired
+perf_02513	2026-12-10 16:35:09	44.0 GB/101.0 GB	active
+perf_02515	2026-12-05 16:35:09	24.0 GB/51.0 GB	active
+perf_02516	2026-11-29 16:35:09	10.0 GB/101.0 GB	disabled
+perf_02519	2027-01-13 16:35:09	47.0 GB/51.0 GB	active
+perf_02520	2027-01-29 16:35:09	37.0 GB/101.0 GB	active
+perf_02521	2027-01-01 16:35:09	11.0 GB/51.0 GB	active
+perf_02522	2027-01-12 16:35:09	16.0 GB/Unlimited	active
+perf_02523	2026-12-26 16:35:09	25.0 GB/51.0 GB	active
+perf_02525	2026-10-15 17:35:09	27.0 GB/Unlimited	on_hold
+perf_02528	2027-01-24 16:35:09	20.0 GB/51.0 GB	active
+perf_02529	2026-10-30 16:35:09	35.0 GB/101.0 GB	disabled
+perf_02535	2026-11-05 16:35:09	1.0 GB/51.0 GB	on_hold
+perf_02538	2026-12-24 16:35:09	15.0 GB/51.0 GB	active
+perf_02540	2026-12-23 16:35:09	37.0 GB/101.0 GB	active
+perf_02542	2026-11-25 16:35:09	18.0 GB/Unlimited	on_hold
+perf_02544	2026-10-22 17:35:09	26.0 GB/51.0 GB	expired
+perf_02547	2026-10-26 16:35:09	8.0 GB/101.0 GB	expired
+perf_02548	2026-10-31 16:35:09	20.0 GB/51.0 GB	expired
+perf_02550	2026-10-13 17:35:09	40.0 GB/Unlimited	expired
+perf_02551	2027-01-28 16:35:09	4.0 GB/Unlimited	active
+perf_02553	2026-11-07 16:35:09	10.0 GB/101.0 GB	expired
+perf_02558	2027-01-02 16:35:09	49.0 GB/101.0 GB	active
+perf_02561	2027-01-02 16:35:09	19.0 GB/Unlimited	active
+perf_02563	2027-02-02 16:35:09	39.0 GB/101.0 GB	active
+perf_02566	2026-12-07 16:35:09	47.0 GB/101.0 GB	active
+perf_02567	2026-10-24 17:35:09	14.0 GB/Unlimited	expired
+perf_02568	2026-11-06 16:35:09	15.0 GB/101.0 GB	expired
+perf_02570	2026-11-29 16:35:09	18.0 GB/101.0 GB	active
+perf_02572	2026-10-15 17:35:09	43.0 GB/51.0 GB	expired
+perf_02573	2026-10-20 17:35:09	7.0 GB/101.0 GB	expired
+perf_02574	2027-01-23 16:35:09	34.0 GB/51.0 GB	active
+perf_02582	2026-11-05 16:35:09	17.0 GB/51.0 GB	disabled
+perf_02584	2026-11-09 16:35:09	31.0 GB/51.0 GB	expired
+perf_02585	2027-01-08 16:35:09	22.0 GB/Unlimited	active
+perf_02588	2026-12-09 16:35:09	14.0 GB/Unlimited	active
+perf_02591	2027-02-08 16:35:09	28.0 GB/101.0 GB	active
+perf_02593	2027-01-25 16:35:09	50.0 GB/51.0 GB	active
+perf_02594	2027-01-30 16:35:09	11.0 GB/51.0 GB	active
+perf_02597	2027-02-02 16:35:09	4.0 GB/51.0 GB	active
+perf_02601	2026-10-16 17:35:09	27.0 GB/51.0 GB	expired
+perf_02602	2026-12-24 16:35:09	17.0 GB/101.0 GB	disabled
+perf_02603	2027-02-02 16:35:09	24.0 GB/Unlimited	active
+perf_02611	2027-01-25 16:35:09	34.0 GB/51.0 GB	active
+perf_02613	2026-12-11 16:35:09	4.0 GB/101.0 GB	active
+perf_02614	2026-12-15 16:35:09	24.0 GB/51.0 GB	active
+perf_02615	2027-02-02 16:35:09	22.0 GB/51.0 GB	active
+perf_02616	2026-12-30 16:35:09	22.0 GB/101.0 GB	active
+perf_02617	2026-12-26 16:35:09	6.0 GB/101.0 GB	active
+perf_02618	2026-12-10 16:35:09	26.0 GB/Unlimited	active
+perf_02619	2026-12-12 16:35:09	28.0 GB/101.0 GB	active
+perf_02622	2026-11-12 16:35:09	24.0 GB/101.0 GB	active
+perf_02625	2026-12-27 16:35:09	27.0 GB/101.0 GB	active
+perf_02626	2027-01-10 16:35:09	24.0 GB/Unlimited	active
+perf_02627	2027-01-28 16:35:09	11.0 GB/51.0 GB	active
+perf_02628	2027-01-08 16:35:09	16.0 GB/Unlimited	active
+perf_02632	2027-01-18 16:35:09	35.0 GB/Unlimited	active
+perf_02634	2027-01-26 16:35:09	46.0 GB/51.0 GB	active
+perf_02637	2026-11-12 16:35:09	21.0 GB/101.0 GB	active
+perf_02644	2027-01-01 16:35:09	4.0 GB/101.0 GB	active
+perf_02645	2026-12-14 16:35:09	0/Unlimited	active
+perf_02648	2026-12-15 16:35:09	7.0 GB/51.0 GB	active
+perf_02651	2026-12-04 16:35:09	13.0 GB/101.0 GB	active
+perf_02652	2027-01-29 16:35:09	33.0 GB/Unlimited	active
+perf_02658	2026-11-19 16:35:09	24.0 GB/Unlimited	active
+perf_02659	2027-01-03 16:35:09	38.0 GB/101.0 GB	active
+perf_02660	2027-02-01 16:35:09	0/51.0 GB	active
+perf_02662	2026-10-29 16:35:09	11.0 GB/Unlimited	expired
+perf_02663	2027-01-12 16:35:09	6.0 GB/Unlimited	active
+perf_02664	2026-10-26 16:35:09	18.0 GB/101.0 GB	expired
+perf_02665	2026-11-22 16:35:09	36.0 GB/51.0 GB	active
+perf_02667	2026-12-16 16:35:09	2.0 GB/51.0 GB	active
+perf_02668	2027-01-07 16:35:09	31.0 GB/101.0 GB	active
+perf_02670	2027-02-06 16:35:09	37.0 GB/Unlimited	active
+perf_02671	2026-10-24 17:35:09	37.0 GB/51.0 GB	expired
+perf_02675	2026-10-19 17:35:09	4.0 GB/101.0 GB	expired
+perf_02679	2026-12-24 16:35:09	39.0 GB/Unlimited	active
+perf_02681	2026-11-02 16:35:09	7.0 GB/101.0 GB	expired
+perf_02682	2026-10-22 17:35:09	28.0 GB/101.0 GB	expired
+perf_02685	2026-12-15 16:35:09	28.0 GB/101.0 GB	active
+perf_02688	2027-01-02 16:35:09	2.0 GB/101.0 GB	active
+perf_02692	2026-10-22 17:35:09	48.0 GB/Unlimited	on_hold
+perf_02694	2026-10-14 17:35:09	21.0 GB/Unlimited	expired
+perf_02695	2026-10-16 17:35:09	18.0 GB/101.0 GB	disabled
+perf_02696	2027-02-09 16:35:09	18.0 GB/Unlimited	active
+perf_02697	2026-11-10 16:35:09	31.0 GB/101.0 GB	expired
+perf_02698	2026-10-18 17:35:09	28.0 GB/101.0 GB	expired
+perf_02699	2027-01-15 16:35:09	35.0 GB/101.0 GB	active
+perf_02701	2026-11-20 16:35:09	8.0 GB/51.0 GB	active
+perf_02702	2026-10-30 16:35:09	24.0 GB/Unlimited	expired
+perf_02703	2026-10-19 17:35:09	11.0 GB/51.0 GB	expired
+perf_02707	2026-11-10 16:35:09	30.0 GB/101.0 GB	expired
+perf_02710	2026-10-28 16:35:09	23.0 GB/51.0 GB	expired
+perf_02712	2026-11-18 16:35:09	37.0 GB/Unlimited	active
+perf_02713	2027-01-16 16:35:09	31.0 GB/Unlimited	active
+perf_02714	2027-01-04 16:35:09	21.0 GB/51.0 GB	active
+perf_02716	2027-02-03 16:35:09	20.0 GB/51.0 GB	disabled
+perf_02718	2027-02-01 16:35:09	11.0 GB/Unlimited	active
+perf_02719	2027-02-06 16:35:09	14.0 GB/101.0 GB	active
+perf_02720	2026-11-05 16:35:09	49.0 GB/Unlimited	expired
+perf_02721	2026-11-15 16:35:09	47.0 GB/101.0 GB	active
+perf_02722	2026-12-22 16:35:09	23.0 GB/101.0 GB	active
+perf_02723	2027-01-05 16:35:09	11.0 GB/101.0 GB	active
+perf_02725	2027-02-08 16:35:09	30.0 GB/101.0 GB	disabled
+perf_02729	2027-01-20 16:35:09	41.0 GB/51.0 GB	active
+perf_02733	2027-01-08 16:35:09	31.0 GB/101.0 GB	active
+perf_02734	2026-11-15 16:35:09	41.0 GB/Unlimited	active
+perf_02735	2027-02-02 16:35:09	29.0 GB/Unlimited	active
+perf_02738	2026-11-21 16:35:09	9.0 GB/101.0 GB	on_hold
+perf_02740	2026-12-13 16:35:09	23.0 GB/101.0 GB	active
+perf_02741	2027-01-15 16:35:09	22.0 GB/101.0 GB	active
+perf_02743	2027-01-10 16:35:09	34.0 GB/101.0 GB	active
+perf_02745	2026-11-21 16:35:09	41.0 GB/51.0 GB	active
+perf_02747	2026-11-11 16:35:09	39.0 GB/51.0 GB	on_hold
+perf_02751	2026-11-14 16:35:09	35.0 GB/Unlimited	active
+perf_02753	2026-10-21 17:35:09	31.0 GB/Unlimited	expired
+perf_02755	2026-11-02 16:35:09	46.0 GB/Unlimited	expired
+perf_02756	2027-01-25 16:35:09	27.0 GB/101.0 GB	active
+perf_02759	2026-11-08 16:35:09	24.0 GB/Unlimited	expired
+perf_02761	2026-11-23 16:35:09	13.0 GB/Unlimited	active
+perf_02764	2026-10-27 16:35:09	42.0 GB/51.0 GB	expired
+perf_02769	2026-12-18 16:35:09	43.0 GB/51.0 GB	active
+perf_02770	2027-01-31 16:35:09	22.0 GB/51.0 GB	active
+perf_02771	2026-11-12 16:35:09	40.0 GB/Unlimited	active
+perf_02772	2026-12-28 16:35:09	9.0 GB/51.0 GB	active
+perf_02773	2026-11-29 16:35:09	5.0 GB/Unlimited	active
+perf_02775	2026-10-19 17:35:09	34.0 GB/Unlimited	expired
+perf_02778	2027-01-14 16:35:09	33.0 GB/51.0 GB	active
+perf_02780	2026-10-26 16:35:09	44.0 GB/Unlimited	expired
+perf_02781	2026-10-26 16:35:09	0/Unlimited	expired
+perf_02783	2026-12-03 16:35:09	0/51.0 GB	active
+perf_02784	2026-12-12 16:35:09	27.0 GB/101.0 GB	active
+perf_02785	2026-11-22 16:35:09	26.0 GB/Unlimited	active
+perf_02787	2026-12-06 16:35:09	34.0 GB/Unlimited	active
+perf_02788	2027-01-13 16:35:09	47.0 GB/Unlimited	active
+perf_02792	2026-10-29 16:35:09	42.0 GB/101.0 GB	expired
+perf_02794	2026-12-09 16:35:09	41.0 GB/51.0 GB	disabled
+perf_02797	2026-12-19 16:35:09	20.0 GB/Unlimited	active
+perf_02799	2026-12-08 16:35:09	3.0 GB/Unlimited	active
+perf_02802	2026-11-22 16:35:09	29.0 GB/Unlimited	active
+perf_02813	2026-12-07 16:35:09	21.0 GB/101.0 GB	active
+perf_02814	2027-01-23 16:35:09	1.0 GB/Unlimited	active
+perf_02816	2027-01-13 16:35:09	3.0 GB/101.0 GB	on_hold
+perf_02819	2027-01-07 16:35:09	37.0 GB/101.0 GB	active
+perf_02821	2027-01-08 16:35:09	43.0 GB/Unlimited	active
+perf_02825	2026-10-25 17:35:09	1.0 GB/101.0 GB	expired
+perf_02827	2027-02-01 16:35:09	7.0 GB/51.0 GB	active
+perf_02829	2027-01-15 16:35:09	25.0 GB/101.0 GB	active
+perf_02832	2026-11-11 16:35:09	36.0 GB/51.0 GB	expired
+perf_02835	2026-12-02 16:35:09	31.0 GB/51.0 GB	active
+perf_02837	2026-11-07 16:35:09	46.0 GB/101.0 GB	expired
+perf_02840	2027-02-09 16:35:09	14.0 GB/51.0 GB	active
+perf_02842	2026-11-14 16:35:09	41.0 GB/51.0 GB	on_hold
+perf_02843	2026-12-19 16:35:09	21.0 GB/51.0 GB	active
+perf_02844	2026-10-16 17:35:09	20.0 GB/101.0 GB	expired
+perf_02846	2027-01-04 16:35:09	15.0 GB/101.0 GB	active
+perf_02847	2026-11-07 16:35:09	35.0 GB/101.0 GB	expired
+perf_02850	2026-12-20 16:35:09	16.0 GB/Unlimited	active
+perf_02851	2026-12-29 16:35:09	49.0 GB/101.0 GB	active
+perf_02852	2026-11-29 16:35:09	6.0 GB/Unlimited	disabled
+perf_02853	2026-10-27 16:35:09	18.0 GB/101.0 GB	expired
+perf_02854	2026-11-17 16:35:09	28.0 GB/Unlimited	active
+perf_02856	2027-01-13 16:35:09	7.0 GB/51.0 GB	active
+perf_02857	2027-01-15 16:35:09	37.0 GB/101.0 GB	active
+perf_02859	2026-12-30 16:35:09	37.0 GB/101.0 GB	active
+perf_02863	2027-01-30 16:35:09	20.0 GB/Unlimited	active
+perf_02865	2026-12-07 16:35:09	36.0 GB/51.0 GB	active
+perf_02871	2027-02-05 16:35:09	45.0 GB/Unlimited	active
+perf_02874	2026-10-19 17:35:09	46.0 GB/51.0 GB	expired
+perf_02875	2026-10-17 17:35:09	13.0 GB/101.0 GB	expired
+perf_02878	2026-11-21 16:35:09	4.0 GB/51.0 GB	active
+perf_02879	2027-01-12 16:35:09	46.0 GB/101.0 GB	active
+perf_02883	2027-01-28 16:35:09	9.0 GB/51.0 GB	active
+perf_02884	2026-11-17 16:35:09	5.0 GB/Unlimited	active
+perf_02886	2026-12-26 16:35:09	17.0 GB/51.0 GB	active
+perf_02890	2026-10-17 17:35:09	41.0 GB/Unlimited	expired
+perf_02895	2026-11-17 16:35:09	36.0 GB/51.0 GB	active
+perf_02897	2027-01-21 16:35:09	8.0 GB/Unlimited	active
+perf_02902	2027-01-07 16:35:09	2.0 GB/101.0 GB	active
+perf_02903	2026-12-26 16:35:09	45.0 GB/101.0 GB	on_hold
+perf_02906	2026-10-27 16:35:09	18.0 GB/51.0 GB	expired
+perf_02907	2027-02-03 16:35:09	14.0 GB/51.0 GB	active
+perf_02908	2026-12-10 16:35:09	41.0 GB/Unlimited	active
+perf_02914	2026-11-01 16:35:09	27.0 GB/51.0 GB	expired
+perf_02915	2026-10-27 16:35:09	2.0 GB/101.0 GB	expired
+perf_02917	2026-11-13 16:35:09	26.0 GB/101.0 GB	active
+perf_02920	2027-01-22 16:35:09	23.0 GB/Unlimited	active
+perf_02921	2026-10-28 16:35:09	45.0 GB/101.0 GB	on_hold
+perf_02922	2026-11-11 16:35:09	11.0 GB/51.0 GB	expired
+perf_02923	2026-12-26 16:35:09	0/Unlimited	active
+perf_02925	2027-01-11 16:35:09	38.0 GB/101.0 GB	active
+perf_02927	2027-01-29 16:35:09	36.0 GB/51.0 GB	active
+perf_02928	2026-11-29 16:35:09	42.0 GB/51.0 GB	disabled
+perf_02929	2026-10-29 16:35:09	30.0 GB/51.0 GB	expired
+perf_02930	2026-11-21 16:35:09	32.0 GB/101.0 GB	active
+perf_02931	2026-10-20 17:35:09	45.0 GB/51.0 GB	expired
+perf_02932	2026-12-28 16:35:09	24.0 GB/Unlimited	on_hold
+perf_02938	2027-01-02 16:35:09	23.0 GB/51.0 GB	disabled
+perf_02942	2026-11-25 16:35:09	4.0 GB/101.0 GB	active
+perf_02944	2026-10-21 17:35:09	17.0 GB/Unlimited	expired
+perf_02949	2027-01-31 16:35:09	16.0 GB/51.0 GB	active
+perf_02952	2027-02-06 16:35:09	31.0 GB/51.0 GB	active
+perf_02953	2027-02-03 16:35:09	44.0 GB/Unlimited	active
+perf_02954	2026-11-10 16:35:09	40.0 GB/51.0 GB	on_hold
+perf_02955	2026-11-17 16:35:09	39.0 GB/51.0 GB	on_hold
+perf_02957	2027-01-15 16:35:09	37.0 GB/Unlimited	active
+perf_02959	2027-01-27 16:35:09	40.0 GB/101.0 GB	active
+perf_02960	2026-11-08 16:35:09	7.0 GB/Unlimited	expired
+perf_02962	2027-01-18 16:35:09	50.0 GB/101.0 GB	on_hold
+perf_02964	2027-01-14 16:35:09	2.0 GB/51.0 GB	active
+perf_02965	2026-10-16 17:35:09	45.0 GB/101.0 GB	expired
+perf_02967	2026-11-18 16:35:09	33.0 GB/Unlimited	active
+perf_02972	2026-11-16 16:35:09	39.0 GB/101.0 GB	active
+perf_02973	2026-11-16 16:35:09	12.0 GB/Unlimited	active
+perf_02980	2027-02-04 16:35:09	44.0 GB/51.0 GB	active
+perf_02983	2027-02-08 16:35:09	1.0 GB/Unlimited	active
+perf_02984	2026-10-22 17:35:09	16.0 GB/51.0 GB	expired
+perf_02986	2027-01-31 16:35:09	13.0 GB/101.0 GB	disabled
+perf_02987	2026-12-04 16:35:09	37.0 GB/51.0 GB	active
+perf_02989	2026-11-24 16:35:09	21.0 GB/Unlimited	active
+perf_02991	2026-10-17 17:35:09	50.0 GB/51.0 GB	expired
+perf_02992	2026-12-31 16:35:09	22.0 GB/Unlimited	active
+perf_02993	2027-01-04 16:35:09	10.0 GB/101.0 GB	active
+perf_02995	2026-12-10 16:35:09	9.0 GB/Unlimited	active
+perf_02996	2027-02-06 16:35:09	12.0 GB/Unlimited	active
+perf_02998	2026-12-04 16:35:09	17.0 GB/51.0 GB	active
+perf_03000	2027-01-31 16:35:09	47.0 GB/Unlimited	active
+perf_03001	2026-11-13 16:35:09	44.0 GB/101.0 GB	active
+perf_03002	2026-10-30 16:35:09	7.0 GB/51.0 GB	expired
+perf_03003	2027-01-23 16:35:09	32.0 GB/Unlimited	active
+perf_03004	2027-02-08 16:35:09	3.0 GB/Unlimited	active
+perf_03005	2026-10-26 16:35:09	15.0 GB/51.0 GB	expired
+perf_03006	2026-11-08 16:35:09	12.0 GB/51.0 GB	expired
+perf_03009	2026-12-21 16:35:09	18.0 GB/Unlimited	active
+perf_03011	2027-01-01 16:35:09	11.0 GB/Unlimited	active
+perf_03016	2026-11-10 16:35:09	11.0 GB/Unlimited	expired
+perf_03019	2027-01-27 16:35:09	19.0 GB/Unlimited	active
+perf_03020	2026-10-16 17:35:09	50.0 GB/51.0 GB	disabled
+perf_03024	2027-01-14 16:35:09	36.0 GB/101.0 GB	active
+perf_03025	2026-11-07 16:35:09	34.0 GB/101.0 GB	expired
+perf_03026	2026-12-01 16:35:09	37.0 GB/101.0 GB	active
+perf_03027	2026-12-27 16:35:09	11.0 GB/101.0 GB	disabled
+perf_03029	2027-01-14 16:35:09	22.0 GB/101.0 GB	active
+perf_03030	2027-02-05 16:35:09	9.0 GB/101.0 GB	active
+perf_03032	2027-02-01 16:35:09	14.0 GB/101.0 GB	on_hold
+perf_03035	2026-12-29 16:35:09	24.0 GB/Unlimited	active
+perf_03045	2026-10-16 17:35:09	1.0 GB/51.0 GB	disabled
+perf_03051	2027-02-06 16:35:09	0/51.0 GB	active
+perf_03052	2027-01-15 16:35:09	37.0 GB/101.0 GB	active
+perf_03056	2026-10-15 17:35:09	16.0 GB/51.0 GB	expired
+perf_03057	2026-11-25 16:35:09	32.0 GB/51.0 GB	active
+perf_03064	2026-12-17 16:35:09	1.0 GB/Unlimited	on_hold
+perf_03065	2027-01-21 16:35:09	7.0 GB/Unlimited	active
+perf_03069	2026-11-19 16:35:09	9.0 GB/101.0 GB	on_hold
+perf_03073	2026-11-21 16:35:09	20.0 GB/51.0 GB	active
+perf_03076	2026-11-23 16:35:09	40.0 GB/Unlimited	active
+perf_03077	2026-11-16 16:35:09	43.0 GB/101.0 GB	active
+perf_03078	2026-11-17 16:35:09	5.0 GB/51.0 GB	active
+perf_03080	2026-11-08 16:35:09	37.0 GB/Unlimited	expired
+perf_03081	2026-10-23 17:35:09	3.0 GB/51.0 GB	expired
+perf_03085	2026-11-21 16:35:09	4.0 GB/51.0 GB	active
+perf_03088	2027-01-12 16:35:09	41.0 GB/101.0 GB	active
+perf_03089	2027-02-08 16:35:09	2.0 GB/101.0 GB	active
+perf_03091	2027-01-29 16:35:09	18.0 GB/51.0 GB	disabled
+perf_03092	2026-12-30 16:35:09	40.0 GB/51.0 GB	active
+perf_03095	2026-11-25 16:35:09	5.0 GB/51.0 GB	active
+perf_03096	2026-11-15 16:35:09	42.0 GB/101.0 GB	active
+perf_03105	2027-01-11 16:35:09	37.0 GB/Unlimited	active
+perf_03106	2027-01-19 16:35:09	38.0 GB/51.0 GB	active
+perf_03107	2027-02-08 16:35:09	12.0 GB/101.0 GB	active
+perf_03115	2026-10-13 17:35:09	49.0 GB/Unlimited	expired
+perf_03120	2026-11-07 16:35:09	19.0 GB/Unlimited	on_hold
+perf_03122	2026-10-25 17:35:09	11.0 GB/51.0 GB	on_hold
+perf_03131	2027-01-30 16:35:09	15.0 GB/101.0 GB	active
+perf_03134	2027-01-05 16:35:09	12.0 GB/Unlimited	active
+perf_03135	2027-01-07 16:35:09	15.0 GB/101.0 GB	active
+perf_03136	2026-11-23 16:35:09	49.0 GB/101.0 GB	active
+perf_03139	2027-02-01 16:35:09	47.0 GB/Unlimited	active
+perf_03143	2027-02-09 16:35:09	16.0 GB/101.0 GB	active
+perf_03144	2027-01-18 16:35:09	12.0 GB/101.0 GB	active
+perf_03148	2026-11-17 16:35:09	31.0 GB/Unlimited	active
+perf_03149	2026-11-14 16:35:09	16.0 GB/Unlimited	active
+perf_03151	2026-11-29 16:35:09	17.0 GB/Unlimited	active
+perf_03152	2026-11-27 16:35:09	13.0 GB/Unlimited	active
+perf_03155	2026-11-28 16:35:09	1.0 GB/Unlimited	active
+perf_03156	2026-12-10 16:35:09	1.0 GB/51.0 GB	active
+perf_03158	2026-10-29 16:35:09	21.0 GB/51.0 GB	expired
+perf_03161	2026-10-22 17:35:09	11.0 GB/101.0 GB	expired
+perf_03163	2026-11-17 16:35:09	21.0 GB/51.0 GB	active
+perf_03167	2026-11-04 16:35:09	19.0 GB/Unlimited	expired
+perf_03168	2027-01-13 16:35:09	7.0 GB/Unlimited	active
+perf_03169	2027-01-18 16:35:09	3.0 GB/51.0 GB	active
+perf_03170	2026-12-15 16:35:09	1.0 GB/Unlimited	active
+perf_03172	2026-12-13 16:35:09	43.0 GB/51.0 GB	active
+perf_03174	2026-11-27 16:35:09	5.0 GB/51.0 GB	active
+perf_03175	2027-02-03 16:35:09	6.0 GB/51.0 GB	active
+perf_03177	2027-01-06 16:35:09	33.0 GB/51.0 GB	active
+perf_03178	2027-01-31 16:35:09	16.0 GB/Unlimited	active
+perf_03190	2026-11-23 16:35:09	7.0 GB/Unlimited	active
+perf_03192	2027-01-06 16:35:09	40.0 GB/101.0 GB	active
+perf_03193	2026-10-31 16:35:09	41.0 GB/51.0 GB	on_hold
+perf_03194	2026-10-28 16:35:09	42.0 GB/51.0 GB	expired
+perf_03196	2026-12-15 16:35:09	12.0 GB/101.0 GB	active
+perf_03198	2027-01-04 16:35:09	16.0 GB/51.0 GB	active
+perf_03201	2027-02-07 16:35:09	9.0 GB/51.0 GB	active
+perf_03206	2026-10-15 17:35:09	43.0 GB/101.0 GB	expired
+perf_03207	2026-12-06 16:35:09	24.0 GB/101.0 GB	active
+perf_03209	2026-12-21 16:35:09	18.0 GB/Unlimited	active
+perf_03210	2027-01-06 16:35:09	21.0 GB/51.0 GB	active
+perf_03211	2026-12-25 16:35:09	41.0 GB/101.0 GB	active
+perf_03212	2026-10-26 16:35:09	4.0 GB/Unlimited	on_hold
+perf_03214	2027-01-23 16:35:09	26.0 GB/Unlimited	active
+perf_03215	2026-10-16 17:35:09	29.0 GB/51.0 GB	expired
+perf_03216	2026-12-10 16:35:09	5.0 GB/51.0 GB	active
+perf_03217	2027-01-26 16:35:09	35.0 GB/101.0 GB	disabled
+perf_03218	2026-11-30 16:35:09	5.0 GB/Unlimited	active
+perf_03223	2026-11-17 16:35:09	22.0 GB/51.0 GB	active
+perf_03226	2026-12-23 16:35:09	15.0 GB/Unlimited	active
+perf_03227	2027-02-04 16:35:09	18.0 GB/Unlimited	active
+perf_03231	2026-11-10 16:35:09	37.0 GB/Unlimited	expired
+perf_03232	2027-01-12 16:35:09	33.0 GB/51.0 GB	active
+perf_03234	2026-11-25 16:35:09	14.0 GB/Unlimited	active
+perf_03237	2026-11-24 16:35:09	48.0 GB/51.0 GB	active
+perf_03238	2026-12-03 16:35:09	34.0 GB/101.0 GB	active
+perf_03239	2026-10-18 17:35:09	41.0 GB/Unlimited	expired
+perf_03240	2026-11-12 16:35:09	13.0 GB/Unlimited	active
+perf_03243	2026-10-18 17:35:09	18.0 GB/101.0 GB	expired
+perf_03246	2027-02-03 16:35:09	4.0 GB/51.0 GB	active
+perf_03249	2026-11-07 16:35:09	29.0 GB/101.0 GB	expired
+perf_03250	2026-12-04 16:35:09	20.0 GB/51.0 GB	active
+perf_03257	2027-01-08 16:35:09	25.0 GB/51.0 GB	on_hold
+perf_03259	2026-11-08 16:35:09	44.0 GB/51.0 GB	disabled
+perf_03264	2026-12-26 16:35:09	41.0 GB/Unlimited	active
+perf_03265	2026-12-26 16:35:09	30.0 GB/51.0 GB	active
+perf_03267	2027-01-30 16:35:09	42.0 GB/101.0 GB	active
+perf_03268	2026-11-17 16:35:09	43.0 GB/101.0 GB	on_hold
+perf_03269	2026-11-23 16:35:09	14.0 GB/51.0 GB	active
+perf_03270	2026-10-15 17:35:09	20.0 GB/Unlimited	expired
+perf_03273	2027-01-28 16:35:09	2.0 GB/51.0 GB	active
+perf_03275	2026-11-25 16:35:09	12.0 GB/101.0 GB	active
+perf_03276	2027-02-04 16:35:09	7.0 GB/101.0 GB	active
+perf_03277	2027-02-05 16:35:09	34.0 GB/Unlimited	active
+perf_03280	2026-10-31 16:35:09	20.0 GB/Unlimited	expired
+perf_03282	2026-10-31 16:35:09	33.0 GB/51.0 GB	expired
+perf_03284	2027-01-02 16:35:09	22.0 GB/101.0 GB	disabled
+perf_03285	2026-12-12 16:35:09	22.0 GB/51.0 GB	active
+perf_03286	2027-01-06 16:35:09	45.0 GB/Unlimited	active
+perf_03287	2026-12-17 16:35:09	23.0 GB/51.0 GB	active
+perf_03288	2027-02-06 16:35:09	37.0 GB/101.0 GB	active
+perf_03292	2026-12-03 16:35:09	20.0 GB/51.0 GB	active
+perf_03294	2027-01-29 16:35:09	20.0 GB/101.0 GB	active
+perf_03296	2027-01-21 16:35:09	14.0 GB/101.0 GB	active
+perf_03297	2026-10-24 17:35:09	30.0 GB/51.0 GB	expired
+perf_03298	2027-01-07 16:35:09	32.0 GB/51.0 GB	active
+perf_03302	2026-12-03 16:35:09	18.0 GB/101.0 GB	active
+perf_03304	2026-11-28 16:35:09	49.0 GB/51.0 GB	disabled
+perf_03306	2026-11-04 16:35:09	3.0 GB/51.0 GB	expired
+perf_03311	2027-01-08 16:35:09	12.0 GB/51.0 GB	active
+perf_03315	2027-01-06 16:35:09	9.0 GB/101.0 GB	active
+perf_03316	2026-10-19 17:35:09	48.0 GB/51.0 GB	expired
+perf_03317	2026-11-19 16:35:09	42.0 GB/Unlimited	active
+perf_03318	2027-02-10 16:35:09	21.0 GB/Unlimited	active
+perf_03320	2026-12-03 16:35:09	18.0 GB/101.0 GB	active
+perf_03321	2026-12-30 16:35:09	21.0 GB/51.0 GB	active
+perf_03323	2027-02-05 16:35:09	35.0 GB/101.0 GB	active
+perf_03324	2027-02-06 16:35:09	12.0 GB/Unlimited	active
+perf_03327	2026-12-22 16:35:09	15.0 GB/Unlimited	active
+perf_03329	2027-01-17 16:35:09	2.0 GB/101.0 GB	active
+perf_03331	2026-10-13 17:35:09	6.0 GB/101.0 GB	expired
+perf_03333	2027-02-01 16:35:09	46.0 GB/51.0 GB	disabled
+perf_03335	2026-12-09 16:35:09	31.0 GB/101.0 GB	active
+perf_03337	2026-12-04 16:35:09	41.0 GB/Unlimited	active
+perf_03339	2026-12-13 16:35:09	48.0 GB/101.0 GB	active
+perf_03340	2027-01-16 16:35:09	40.0 GB/51.0 GB	active
+perf_03342	2026-11-25 16:35:09	39.0 GB/51.0 GB	active
+perf_03345	2026-11-24 16:35:09	33.0 GB/51.0 GB	active
+perf_03346	2026-10-31 16:35:09	27.0 GB/Unlimited	expired
+perf_03347	2026-12-18 16:35:09	33.0 GB/101.0 GB	active
+perf_03348	2027-01-24 16:35:09	40.0 GB/Unlimited	active
+perf_03350	2027-02-06 16:35:09	21.0 GB/51.0 GB	active
+perf_03361	2027-01-19 16:35:09	23.0 GB/101.0 GB	on_hold
+perf_03363	2027-01-13 16:35:09	48.0 GB/Unlimited	active
+perf_03366	2027-01-19 16:35:09	26.0 GB/101.0 GB	active
+perf_03367	2026-10-27 16:35:09	3.0 GB/101.0 GB	expired
+perf_03370	2027-01-23 16:35:09	22.0 GB/101.0 GB	active
+perf_03372	2026-11-11 16:35:09	28.0 GB/Unlimited	expired
+perf_03374	2026-10-23 17:35:09	28.0 GB/101.0 GB	expired
+perf_03376	2026-12-10 16:35:09	20.0 GB/Unlimited	on_hold
+perf_03377	2027-01-25 16:35:09	48.0 GB/Unlimited	active
+perf_03382	2026-12-04 16:35:09	19.0 GB/51.0 GB	active
+perf_03384	2027-01-09 16:35:09	25.0 GB/Unlimited	active
+perf_03385	2027-02-03 16:35:09	0/101.0 GB	active
+perf_03387	2026-11-09 16:35:09	25.0 GB/Unlimited	expired
+perf_03388	2026-12-21 16:35:09	32.0 GB/101.0 GB	active
+perf_03389	2026-12-30 16:35:09	50.0 GB/101.0 GB	active
+perf_03392	2026-12-12 16:35:09	46.0 GB/101.0 GB	active
+perf_03395	2027-01-11 16:35:09	34.0 GB/101.0 GB	active
+perf_03396	2026-12-31 16:35:09	34.0 GB/51.0 GB	active
+perf_03397	2026-10-28 16:35:09	14.0 GB/101.0 GB	on_hold
+perf_03398	2027-02-09 16:35:09	1.0 GB/Unlimited	active
+perf_03399	2026-11-29 16:35:09	23.0 GB/51.0 GB	active
+perf_03400	2026-12-13 16:35:09	0/51.0 GB	active
+perf_03402	2027-02-10 16:35:09	32.0 GB/101.0 GB	active
+perf_03403	2026-10-25 17:35:09	22.0 GB/51.0 GB	expired
+perf_03405	2026-10-19 17:35:09	47.0 GB/51.0 GB	expired
+perf_03408	2027-01-02 16:35:09	40.0 GB/Unlimited	active
+perf_03412	2026-12-11 16:35:09	19.0 GB/Unlimited	disabled
+perf_03413	2026-11-15 16:35:09	24.0 GB/101.0 GB	active
+perf_03414	2026-12-21 16:35:09	43.0 GB/51.0 GB	active
+perf_03415	2026-11-09 16:35:09	30.0 GB/51.0 GB	expired
+perf_03418	2026-12-04 16:35:09	6.0 GB/101.0 GB	active
+perf_03423	2026-12-28 16:35:09	0/Unlimited	active
+perf_03424	2026-12-23 16:35:09	10.0 GB/Unlimited	active
+perf_03425	2027-01-28 16:35:09	5.0 GB/51.0 GB	active
+perf_03426	2027-02-04 16:35:09	40.0 GB/Unlimited	active
+perf_03427	2027-01-03 16:35:09	30.0 GB/51.0 GB	active
+perf_03428	2026-12-28 16:35:09	23.0 GB/51.0 GB	active
+perf_03430	2026-11-26 16:35:09	3.0 GB/Unlimited	active
+perf_03432	2026-11-20 16:35:09	32.0 GB/101.0 GB	active
+perf_03433	2027-01-15 16:35:09	2.0 GB/101.0 GB	active
+perf_03434	2026-11-21 16:35:09	43.0 GB/Unlimited	active
+perf_03437	2027-01-15 16:35:09	38.0 GB/Unlimited	on_hold
+perf_03439	2027-01-23 16:35:09	19.0 GB/51.0 GB	active
+perf_03441	2026-11-14 16:35:09	14.0 GB/51.0 GB	active
+perf_03442	2026-11-26 16:35:09	30.0 GB/51.0 GB	active
+perf_03445	2026-11-24 16:35:09	0/51.0 GB	active
+perf_03448	2026-11-23 16:35:09	17.0 GB/101.0 GB	active
+perf_03450	2026-10-25 17:35:09	30.0 GB/Unlimited	expired
+perf_03451	2027-01-03 16:35:09	18.0 GB/101.0 GB	active
+perf_03453	2027-01-28 16:35:09	8.0 GB/Unlimited	active
+perf_03454	2027-01-03 16:35:09	24.0 GB/51.0 GB	active
+perf_03456	2026-11-23 16:35:09	35.0 GB/Unlimited	active
+perf_03457	2026-11-14 16:35:09	25.0 GB/Unlimited	active
+perf_03459	2026-12-07 16:35:09	26.0 GB/51.0 GB	active
+perf_03463	2027-01-18 16:35:09	22.0 GB/51.0 GB	active
+perf_03465	2026-11-21 16:35:09	47.0 GB/101.0 GB	active
+perf_03466	2027-01-27 16:35:09	45.0 GB/101.0 GB	active
+perf_03467	2027-01-25 16:35:09	3.0 GB/51.0 GB	active
+perf_03468	2026-11-27 16:35:09	40.0 GB/Unlimited	active
+perf_03470	2027-01-28 16:35:09	35.0 GB/101.0 GB	active
+perf_03473	2027-02-03 16:35:09	24.0 GB/101.0 GB	active
+perf_03475	2027-01-02 16:35:09	6.0 GB/101.0 GB	active
+perf_03479	2026-11-20 16:35:09	43.0 GB/Unlimited	active
+perf_03480	2026-10-29 16:35:09	30.0 GB/Unlimited	expired
+perf_03481	2026-12-10 16:35:09	8.0 GB/51.0 GB	active
+perf_03482	2026-10-19 17:35:09	27.0 GB/Unlimited	disabled
+perf_03483	2026-12-18 16:35:09	7.0 GB/101.0 GB	active
+perf_03485	2027-01-05 16:35:09	28.0 GB/Unlimited	disabled
+perf_03487	2026-11-12 16:35:09	34.0 GB/101.0 GB	active
+perf_03489	2026-12-05 16:35:09	40.0 GB/Unlimited	active
+perf_03490	2027-01-28 16:35:09	30.0 GB/51.0 GB	active
+perf_03491	2026-11-17 16:35:09	3.0 GB/Unlimited	active
+perf_03495	2026-10-17 17:35:09	5.0 GB/51.0 GB	disabled
+perf_03498	2026-10-25 17:35:09	16.0 GB/51.0 GB	expired
+perf_03504	2026-12-11 16:35:09	46.0 GB/101.0 GB	active
+perf_03506	2026-12-18 16:35:09	28.0 GB/Unlimited	active
+perf_03515	2026-12-20 16:35:09	37.0 GB/51.0 GB	active
+perf_03516	2027-01-22 16:35:09	43.0 GB/51.0 GB	on_hold
+perf_03517	2027-01-14 16:35:09	11.0 GB/51.0 GB	on_hold
+perf_03519	2026-12-16 16:35:09	46.0 GB/101.0 GB	active
+perf_03520	2026-10-21 17:35:09	49.0 GB/101.0 GB	expired
+perf_03521	2026-11-30 16:35:09	13.0 GB/101.0 GB	active
+perf_03522	2026-11-22 16:35:09	46.0 GB/51.0 GB	active
+perf_03524	2026-10-17 17:35:09	19.0 GB/101.0 GB	expired
+perf_03525	2026-11-01 16:35:09	2.0 GB/Unlimited	expired
+perf_03526	2026-10-22 17:35:09	17.0 GB/51.0 GB	on_hold
+perf_03529	2026-11-30 16:35:09	33.0 GB/Unlimited	active
+perf_03535	2027-01-08 16:35:09	5.0 GB/51.0 GB	active
+perf_03539	2026-12-03 16:35:09	34.0 GB/51.0 GB	on_hold
+perf_03541	2026-11-04 16:35:09	24.0 GB/Unlimited	expired
+perf_03544	2026-10-18 17:35:09	21.0 GB/101.0 GB	expired
+perf_03547	2027-01-11 16:35:09	17.0 GB/51.0 GB	on_hold
+perf_03550	2027-01-26 16:35:09	50.0 GB/51.0 GB	active
+perf_03558	2027-01-31 16:35:09	36.0 GB/101.0 GB	active
+perf_03560	2026-12-13 16:35:09	33.0 GB/Unlimited	active
+perf_03563	2026-11-06 16:35:09	39.0 GB/101.0 GB	expired
+perf_03566	2026-12-07 16:35:09	39.0 GB/101.0 GB	active
+perf_03569	2026-10-19 17:35:09	43.0 GB/101.0 GB	expired
+perf_03571	2026-11-26 16:35:09	16.0 GB/51.0 GB	active
+perf_03572	2026-12-07 16:35:09	20.0 GB/101.0 GB	active
+perf_03574	2026-11-13 16:35:09	35.0 GB/51.0 GB	active
+perf_03576	2026-10-20 17:35:09	13.0 GB/51.0 GB	expired
+perf_03578	2026-10-19 17:35:09	19.0 GB/Unlimited	expired
+perf_03589	2026-12-05 16:35:09	16.0 GB/51.0 GB	active
+perf_03591	2026-12-01 16:35:09	14.0 GB/51.0 GB	active
+perf_03592	2026-11-30 16:35:09	25.0 GB/Unlimited	active
+perf_03593	2026-12-07 16:35:09	47.0 GB/51.0 GB	active
+perf_03595	2026-12-14 16:35:09	47.0 GB/101.0 GB	active
+perf_03597	2026-12-05 16:35:09	1.0 GB/Unlimited	disabled
+perf_03598	2026-11-25 16:35:09	12.0 GB/101.0 GB	active
+perf_03601	2027-01-05 16:35:09	33.0 GB/Unlimited	active
+perf_03607	2027-01-21 16:35:09	49.0 GB/Unlimited	on_hold
+perf_03609	2026-12-04 16:35:09	9.0 GB/Unlimited	active
+perf_03611	2026-11-19 16:35:09	19.0 GB/101.0 GB	active
+perf_03615	2026-11-27 16:35:09	8.0 GB/51.0 GB	active
+perf_03617	2027-01-05 16:35:09	40.0 GB/101.0 GB	active
+perf_03618	2027-02-09 16:35:09	30.0 GB/Unlimited	active
+perf_03619	2026-11-16 16:35:09	30.0 GB/51.0 GB	active
+perf_03621	2026-12-21 16:35:09	9.0 GB/51.0 GB	active
+perf_03622	2026-12-02 16:35:09	33.0 GB/101.0 GB	active
+perf_03628	2026-10-13 17:35:09	0/Unlimited	expired
+perf_03632	2026-12-12 16:35:09	42.0 GB/51.0 GB	active
+perf_03637	2026-12-05 16:35:09	13.0 GB/51.0 GB	active
+perf_03640	2027-01-24 16:35:09	33.0 GB/Unlimited	active
+perf_03641	2027-01-02 16:35:09	17.0 GB/101.0 GB	active
+perf_03644	2027-01-04 16:35:09	3.0 GB/101.0 GB	active
+perf_03647	2027-01-06 16:35:09	39.0 GB/Unlimited	on_hold
+perf_03648	2026-10-24 17:35:09	33.0 GB/51.0 GB	expired
+perf_03649	2026-12-22 16:35:09	23.0 GB/Unlimited	active
+perf_03650	2026-11-06 16:35:09	9.0 GB/101.0 GB	expired
+perf_03652	2026-10-18 17:35:09	40.0 GB/Unlimited	disabled
+perf_03656	2027-01-23 16:35:09	19.0 GB/101.0 GB	active
+perf_03658	2026-11-15 16:35:09	21.0 GB/51.0 GB	active
+perf_03661	2026-10-29 16:35:09	46.0 GB/101.0 GB	expired
+perf_03662	2026-12-01 16:35:09	31.0 GB/101.0 GB	active
+perf_03664	2027-01-11 16:35:09	46.0 GB/101.0 GB	disabled
+perf_03665	2026-12-16 16:35:09	16.0 GB/101.0 GB	active
+perf_03666	2026-12-21 16:35:09	20.0 GB/51.0 GB	active
+perf_03669	2027-01-12 16:35:09	34.0 GB/51.0 GB	active
+perf_03673	2026-12-20 16:35:09	26.0 GB/Unlimited	active
+perf_03675	2027-02-08 16:35:09	13.0 GB/101.0 GB	active
+perf_03676	2026-12-19 16:35:09	27.0 GB/101.0 GB	active
+perf_03677	2027-01-11 16:35:09	28.0 GB/51.0 GB	active
+perf_03678	2026-10-19 17:35:09	50.0 GB/51.0 GB	expired
+perf_03680	2026-11-12 16:35:09	26.0 GB/Unlimited	active
+perf_03681	2026-11-05 16:35:09	37.0 GB/101.0 GB	disabled
+perf_03683	2027-02-10 16:35:09	28.0 GB/101.0 GB	active
+perf_03685	2026-11-29 16:35:09	31.0 GB/101.0 GB	active
+perf_03686	2026-10-17 17:35:09	35.0 GB/101.0 GB	expired
+perf_03687	2027-01-26 16:35:09	35.0 GB/51.0 GB	active
+perf_03688	2027-02-09 16:35:09	31.0 GB/Unlimited	active
+perf_03691	2027-01-05 16:35:09	32.0 GB/101.0 GB	active
+perf_03692	2026-11-18 16:35:09	37.0 GB/51.0 GB	active
+perf_03693	2027-01-05 16:35:09	33.0 GB/51.0 GB	active
+perf_03694	2026-11-05 16:35:09	9.0 GB/51.0 GB	expired
+perf_03698	2026-12-19 16:35:09	35.0 GB/Unlimited	active
+perf_03700	2026-10-16 17:35:09	1.0 GB/51.0 GB	expired
+perf_03701	2027-01-16 16:35:09	0/51.0 GB	active
+perf_03702	2027-01-12 16:35:09	49.0 GB/51.0 GB	active
+perf_03705	2026-12-05 16:35:09	36.0 GB/101.0 GB	active
+perf_03708	2027-01-12 16:35:09	31.0 GB/101.0 GB	disabled
+perf_03709	2026-10-20 17:35:09	38.0 GB/Unlimited	expired
+perf_03710	2026-12-23 16:35:09	44.0 GB/101.0 GB	active
+perf_03713	2026-11-25 16:35:09	0/51.0 GB	active
+perf_03715	2026-12-24 16:35:09	8.0 GB/101.0 GB	active
+perf_03726	2027-02-05 16:35:09	9.0 GB/101.0 GB	active
+perf_03728	2027-01-17 16:35:09	3.0 GB/51.0 GB	disabled
+perf_03729	2027-01-20 16:35:09	5.0 GB/Unlimited	active
+perf_03730	2027-02-06 16:35:09	15.0 GB/101.0 GB	active
+perf_03731	2026-12-30 16:35:09	25.0 GB/51.0 GB	active
+perf_03734	2026-11-29 16:35:09	2.0 GB/Unlimited	active
+perf_03735	2026-12-28 16:35:09	22.0 GB/101.0 GB	active
+perf_03737	2026-11-28 16:35:09	11.0 GB/101.0 GB	active
+perf_03739	2027-01-25 16:35:09	14.0 GB/Unlimited	active
+perf_03740	2026-12-24 16:35:09	11.0 GB/51.0 GB	active
+perf_03741	2026-11-26 16:35:09	1.0 GB/51.0 GB	active
+perf_03742	2026-10-19 17:35:09	12.0 GB/101.0 GB	on_hold
+perf_03747	2026-11-10 16:35:09	12.0 GB/Unlimited	expired
+perf_03749	2026-10-27 16:35:09	18.0 GB/51.0 GB	expired
+perf_03750	2026-12-12 16:35:09	1.0 GB/51.0 GB	disabled
+perf_03751	2027-01-22 16:35:09	35.0 GB/Unlimited	active
+perf_03752	2026-10-28 16:35:09	36.0 GB/101.0 GB	expired
+perf_03754	2026-12-10 16:35:09	13.0 GB/51.0 GB	active
+perf_03756	2026-12-27 16:35:09	48.0 GB/101.0 GB	active
+perf_03758	2027-01-31 16:35:09	8.0 GB/Unlimited	active
+perf_03760	2026-11-04 16:35:09	21.0 GB/51.0 GB	expired
+perf_03769	2027-01-29 16:35:09	25.0 GB/101.0 GB	active
+perf_03774	2026-10-16 17:35:09	17.0 GB/51.0 GB	expired
+perf_03775	2026-11-29 16:35:09	42.0 GB/51.0 GB	active
+perf_03776	2026-12-18 16:35:09	12.0 GB/101.0 GB	active
+perf_03777	2026-11-11 16:35:09	6.0 GB/101.0 GB	on_hold
+perf_03784	2026-11-11 16:35:09	50.0 GB/51.0 GB	expired
+perf_03786	2027-01-22 16:35:09	9.0 GB/Unlimited	on_hold
+perf_03787	2026-11-18 16:35:09	41.0 GB/101.0 GB	active
+perf_03789	2027-01-26 16:35:09	32.0 GB/51.0 GB	active
+perf_03790	2026-11-29 16:35:09	46.0 GB/101.0 GB	active
+perf_03791	2026-12-03 16:35:09	19.0 GB/51.0 GB	disabled
+perf_03793	2026-12-17 16:35:09	20.0 GB/51.0 GB	active
+perf_03795	2026-11-25 16:35:09	10.0 GB/51.0 GB	active
+perf_03797	2027-02-05 16:35:09	42.0 GB/101.0 GB	active
+perf_03799	2026-12-14 16:35:09	20.0 GB/101.0 GB	active
+perf_03801	2026-11-01 16:35:09	24.0 GB/101.0 GB	expired
+perf_03804	2026-12-21 16:35:09	10.0 GB/101.0 GB	active
+perf_03805	2026-10-29 16:35:09	43.0 GB/51.0 GB	expired
+perf_03808	2027-01-10 16:35:09	4.0 GB/51.0 GB	active
+perf_03812	2027-02-01 16:35:09	4.0 GB/101.0 GB	active
+perf_03815	2026-12-08 16:35:09	33.0 GB/101.0 GB	active
+perf_03817	2026-12-10 16:35:09	6.0 GB/51.0 GB	active
+perf_03818	2026-11-25 16:35:09	18.0 GB/51.0 GB	active
+perf_03819	2027-02-10 16:35:09	38.0 GB/Unlimited	active
+perf_03821	2026-11-25 16:35:09	41.0 GB/101.0 GB	active
+perf_03822	2026-10-31 16:35:09	23.0 GB/101.0 GB	expired
+perf_03824	2027-01-28 16:35:09	4.0 GB/51.0 GB	active
+perf_03826	2026-11-12 16:35:09	16.0 GB/Unlimited	active
+perf_03829	2026-11-25 16:35:09	4.0 GB/51.0 GB	active
+perf_03830	2027-02-06 16:35:09	43.0 GB/101.0 GB	active
+perf_03832	2026-12-09 16:35:09	36.0 GB/Unlimited	active
+perf_03833	2026-12-25 16:35:09	10.0 GB/Unlimited	on_hold
+perf_03835	2026-10-17 17:35:09	15.0 GB/101.0 GB	expired
+perf_03840	2027-01-02 16:35:09	31.0 GB/101.0 GB	on_hold
+perf_03843	2026-11-18 16:35:09	28.0 GB/Unlimited	active
+perf_03846	2027-01-24 16:35:09	21.0 GB/Unlimited	disabled
+perf_03849	2027-01-17 16:35:09	36.0 GB/Unlimited	active
+perf_03850	2027-01-05 16:35:09	7.0 GB/101.0 GB	active
+perf_03852	2026-10-26 16:35:09	40.0 GB/Unlimited	expired
+perf_03858	2027-02-08 16:35:09	40.0 GB/51.0 GB	active
+perf_03859	2026-11-20 16:35:09	26.0 GB/101.0 GB	active
+perf_03861	2026-10-14 17:35:09	32.0 GB/101.0 GB	expired
+perf_03864	2026-12-25 16:35:09	6.0 GB/101.0 GB	active
+perf_03867	2026-12-18 16:35:09	28.0 GB/51.0 GB	on_hold
+perf_03868	2027-01-27 16:35:09	22.0 GB/101.0 GB	active
+perf_03873	2026-10-23 17:35:09	16.0 GB/101.0 GB	expired
+perf_03875	2026-12-15 16:35:09	18.0 GB/101.0 GB	active
+perf_03883	2026-11-01 16:35:09	24.0 GB/Unlimited	expired
+perf_03884	2026-11-26 16:35:09	18.0 GB/Unlimited	active
+perf_03887	2027-01-30 16:35:09	44.0 GB/51.0 GB	active
+perf_03889	2027-01-13 16:35:09	46.0 GB/101.0 GB	on_hold
+perf_03890	2026-11-30 16:35:09	42.0 GB/Unlimited	active
+perf_03891	2026-11-09 16:35:09	41.0 GB/101.0 GB	expired
+perf_03894	2026-10-24 17:35:09	35.0 GB/101.0 GB	disabled
+perf_03899	2027-01-12 16:35:09	43.0 GB/Unlimited	active
+perf_03900	2026-12-02 16:35:09	41.0 GB/Unlimited	active
+perf_03901	2026-12-11 16:35:09	22.0 GB/101.0 GB	active
+perf_03903	2026-11-19 16:35:09	22.0 GB/Unlimited	active
+perf_03910	2026-10-14 17:35:09	44.0 GB/101.0 GB	expired
+perf_03911	2027-02-02 16:35:09	13.0 GB/51.0 GB	on_hold
+perf_03912	2027-01-10 16:35:09	30.0 GB/101.0 GB	active
+perf_03913	2026-12-05 16:35:09	25.0 GB/101.0 GB	active
+perf_03915	2026-10-30 16:35:09	5.0 GB/101.0 GB	on_hold
+perf_03919	2026-11-17 16:35:09	19.0 GB/51.0 GB	active
+perf_03920	2026-11-27 16:35:09	24.0 GB/51.0 GB	active
+perf_03921	2026-11-29 16:35:09	5.0 GB/Unlimited	active
+perf_03928	2026-11-02 16:35:09	40.0 GB/51.0 GB	expired
+perf_03929	2027-01-18 16:35:09	4.0 GB/Unlimited	on_hold
+perf_03930	2026-10-31 16:35:09	24.0 GB/Unlimited	expired
+perf_03931	2027-01-10 16:35:09	34.0 GB/101.0 GB	disabled
+perf_03935	2026-11-22 16:35:09	7.0 GB/51.0 GB	active
+perf_03936	2026-11-09 16:35:09	45.0 GB/Unlimited	expired
+perf_03937	2027-01-04 16:35:09	49.0 GB/101.0 GB	active
+perf_03939	2027-01-14 16:35:09	50.0 GB/Unlimited	active
+perf_03940	2026-12-13 16:35:09	26.0 GB/Unlimited	active
+perf_03942	2026-12-12 16:35:09	2.0 GB/101.0 GB	active
+perf_03944	2026-12-08 16:35:09	1.0 GB/101.0 GB	active
+perf_03945	2026-12-23 16:35:09	30.0 GB/Unlimited	active
+perf_03948	2027-01-10 16:35:09	8.0 GB/101.0 GB	active
+perf_03955	2027-01-21 16:35:09	48.0 GB/101.0 GB	on_hold
+perf_03957	2026-11-05 16:35:09	33.0 GB/101.0 GB	expired
+perf_03958	2026-11-05 16:35:09	18.0 GB/101.0 GB	expired
+perf_03962	2026-11-20 16:35:09	32.0 GB/Unlimited	active
+perf_03966	2026-10-28 16:35:09	19.0 GB/Unlimited	expired
+perf_03968	2026-12-08 16:35:09	12.0 GB/51.0 GB	active
+perf_03971	2026-10-27 16:35:09	27.0 GB/51.0 GB	expired
+perf_03972	2026-11-07 16:35:09	50.0 GB/51.0 GB	expired
+perf_03974	2027-01-17 16:35:09	44.0 GB/51.0 GB	disabled
+perf_03975	2026-10-18 17:35:09	27.0 GB/Unlimited	expired
+perf_03977	2026-12-20 16:35:09	12.0 GB/Unlimited	active
+perf_03978	2026-12-20 16:35:09	1.0 GB/51.0 GB	active
+perf_03979	2027-01-06 16:35:09	41.0 GB/51.0 GB	active
+perf_03982	2026-10-14 17:35:09	17.0 GB/101.0 GB	expired
+perf_03983	2027-01-26 16:35:09	18.0 GB/Unlimited	active
+perf_03984	2026-12-02 16:35:09	8.0 GB/51.0 GB	active
+perf_03985	2026-12-04 16:35:09	50.0 GB/Unlimited	active
+perf_03988	2026-10-27 16:35:09	31.0 GB/51.0 GB	expired
+perf_03990	2026-12-30 16:35:09	45.0 GB/Unlimited	active
+perf_03993	2027-02-02 16:35:09	5.0 GB/51.0 GB	active
+perf_03998	2026-10-27 16:35:09	10.0 GB/Unlimited	expired
+perf_03999	2027-02-10 16:35:09	20.0 GB/Unlimited	active
+perf_04000	2027-01-06 16:35:09	22.0 GB/Unlimited	active
+perf_04001	2027-01-14 16:35:09	0/101.0 GB	active
+perf_04003	2027-01-21 16:35:09	32.0 GB/51.0 GB	disabled
+perf_04007	2026-12-13 16:35:09	47.0 GB/101.0 GB	active
+perf_04009	2026-10-13 17:35:09	22.0 GB/51.0 GB	expired
+perf_04011	2026-12-13 16:35:09	18.0 GB/101.0 GB	active
+perf_04016	2026-12-20 16:35:09	22.0 GB/Unlimited	active
+perf_04020	2026-11-02 16:35:09	4.0 GB/101.0 GB	expired
+perf_04021	2027-02-01 16:35:09	32.0 GB/51.0 GB	on_hold
+perf_04022	2026-12-28 16:35:09	50.0 GB/51.0 GB	active
+perf_04026	2026-11-10 16:35:09	9.0 GB/101.0 GB	expired
+perf_04029	2026-12-15 16:35:09	15.0 GB/101.0 GB	active
+perf_04032	2026-10-13 17:35:09	40.0 GB/Unlimited	expired
+perf_04035	2027-01-20 16:35:09	33.0 GB/Unlimited	active
+perf_04037	2026-10-25 17:35:09	20.0 GB/51.0 GB	expired
+perf_04040	2027-01-16 16:35:09	4.0 GB/Unlimited	active
+perf_04042	2026-11-25 16:35:09	37.0 GB/101.0 GB	on_hold
+perf_04044	2026-12-04 16:35:09	47.0 GB/Unlimited	active
+perf_04045	2026-10-26 16:35:09	25.0 GB/51.0 GB	expired
+perf_04052	2026-11-18 16:35:09	21.0 GB/Unlimited	active
+perf_04053	2026-12-07 16:35:09	38.0 GB/Unlimited	on_hold
+perf_04054	2026-10-19 17:35:09	30.0 GB/101.0 GB	expired
+perf_04055	2027-01-18 16:35:09	11.0 GB/101.0 GB	active
+perf_04057	2026-11-08 16:35:09	46.0 GB/Unlimited	expired
+perf_04059	2026-12-06 16:35:09	40.0 GB/51.0 GB	active
+perf_04065	2027-01-13 16:35:09	22.0 GB/101.0 GB	active
+perf_04066	2026-10-16 17:35:09	13.0 GB/Unlimited	expired
+perf_04067	2026-12-22 16:35:09	48.0 GB/Unlimited	disabled
+perf_04068	2026-10-15 17:35:09	21.0 GB/Unlimited	expired
+perf_04069	2026-12-26 16:35:09	43.0 GB/Unlimited	on_hold
+perf_04071	2026-11-17 16:35:09	4.0 GB/101.0 GB	active
+perf_04072	2026-10-30 16:35:09	31.0 GB/101.0 GB	expired
+perf_04073	2026-11-04 16:35:09	39.0 GB/101.0 GB	expired
+perf_04074	2027-01-04 16:35:09	38.0 GB/101.0 GB	active
+perf_04075	2027-01-12 16:35:09	45.0 GB/51.0 GB	active
+perf_04076	2026-10-26 16:35:09	30.0 GB/51.0 GB	on_hold
+perf_04079	2027-01-17 16:35:09	1.0 GB/Unlimited	active
+perf_04080	2026-11-21 16:35:09	8.0 GB/51.0 GB	active
+perf_04081	2026-11-14 16:35:09	11.0 GB/51.0 GB	on_hold
+perf_04084	2026-11-05 16:35:09	14.0 GB/Unlimited	expired
+perf_04085	2026-10-16 17:35:09	30.0 GB/Unlimited	expired
+perf_04088	2027-01-27 16:35:09	30.0 GB/51.0 GB	active
+perf_04090	2026-11-07 16:35:09	44.0 GB/101.0 GB	expired
+perf_04091	2026-12-31 16:35:09	7.0 GB/51.0 GB	active
+perf_04092	2026-11-15 16:35:09	40.0 GB/51.0 GB	active
+perf_04093	2026-10-13 17:35:09	14.0 GB/101.0 GB	expired
+perf_04096	2027-01-03 16:35:09	18.0 GB/Unlimited	active
+perf_04097	2027-02-07 16:35:09	8.0 GB/101.0 GB	active
+perf_04099	2026-10-17 17:35:09	45.0 GB/Unlimited	expired
+perf_04104	2026-12-05 16:35:09	31.0 GB/101.0 GB	active
+perf_04106	2027-01-24 16:35:09	28.0 GB/51.0 GB	active
+perf_04108	2026-10-15 17:35:09	23.0 GB/Unlimited	expired
+perf_04109	2027-01-30 16:35:09	14.0 GB/101.0 GB	active
+perf_04110	2027-01-16 16:35:09	12.0 GB/51.0 GB	disabled
+perf_04113	2027-01-19 16:35:09	17.0 GB/51.0 GB	active
+perf_04118	2026-11-05 16:35:09	24.0 GB/101.0 GB	expired
+perf_04119	2027-01-07 16:35:09	40.0 GB/101.0 GB	active
+perf_04122	2026-11-21 16:35:09	43.0 GB/51.0 GB	active
+perf_04125	2026-10-17 17:35:09	31.0 GB/51.0 GB	expired
+perf_04128	2026-10-21 17:35:09	9.0 GB/101.0 GB	expired
+perf_04129	2026-12-01 16:35:09	4.0 GB/51.0 GB	active
+perf_04131	2026-12-19 16:35:09	48.0 GB/101.0 GB	active
+perf_04133	2027-01-23 16:35:09	15.0 GB/Unlimited	active
+perf_04134	2026-10-14 17:35:09	2.0 GB/101.0 GB	expired
+perf_04136	2027-01-11 16:35:09	4.0 GB/101.0 GB	active
+perf_04137	2026-12-30 16:35:09	5.0 GB/Unlimited	active
+perf_04138	2027-02-06 16:35:09	24.0 GB/Unlimited	active
+perf_04139	2026-12-24 16:35:09	13.0 GB/101.0 GB	active
+perf_04140	2026-12-15 16:35:09	28.0 GB/51.0 GB	active
+perf_04141	2026-12-20 16:35:09	9.0 GB/51.0 GB	active
+perf_04142	2027-02-01 16:35:09	37.0 GB/51.0 GB	active
+perf_04147	2027-02-06 16:35:09	16.0 GB/51.0 GB	active
+perf_04154	2026-10-13 17:35:09	10.0 GB/101.0 GB	expired
+perf_04155	2026-11-11 16:35:09	24.0 GB/101.0 GB	expired
+perf_04156	2027-01-28 16:35:09	25.0 GB/101.0 GB	active
+perf_04159	2026-11-18 16:35:09	36.0 GB/Unlimited	active
+perf_04161	2026-11-02 16:35:09	45.0 GB/101.0 GB	disabled
+perf_04163	2026-12-06 16:35:09	49.0 GB/Unlimited	active
+perf_04168	2026-11-11 16:35:09	3.0 GB/101.0 GB	expired
+perf_04170	2026-12-21 16:35:09	21.0 GB/51.0 GB	active
+perf_04174	2026-12-18 16:35:09	3.0 GB/Unlimited	active
+perf_04179	2026-10-21 17:35:09	22.0 GB/51.0 GB	expired
+perf_04180	2026-12-24 16:35:09	33.0 GB/Unlimited	active
+perf_04181	2026-12-04 16:35:09	21.0 GB/101.0 GB	active
+perf_04184	2027-01-27 16:35:09	26.0 GB/51.0 GB	active
+perf_04187	2026-10-19 17:35:09	11.0 GB/Unlimited	expired
+perf_04188	2026-10-18 17:35:09	48.0 GB/101.0 GB	expired
+perf_04189	2026-12-23 16:35:09	40.0 GB/51.0 GB	active
+perf_04191	2026-12-30 16:35:09	25.0 GB/101.0 GB	active
+perf_04192	2026-10-21 17:35:09	15.0 GB/Unlimited	expired
+perf_04194	2026-12-21 16:35:09	42.0 GB/51.0 GB	on_hold
+perf_04196	2026-10-21 17:35:09	41.0 GB/Unlimited	expired
+perf_04197	2026-12-07 16:35:09	41.0 GB/Unlimited	disabled
+perf_04198	2026-12-03 16:35:09	35.0 GB/Unlimited	active
+perf_04200	2027-01-06 16:35:09	12.0 GB/51.0 GB	active
+perf_04201	2027-01-24 16:35:09	28.0 GB/Unlimited	active
+perf_04205	2027-01-08 16:35:09	8.0 GB/101.0 GB	disabled
+perf_04207	2027-02-10 16:35:09	44.0 GB/51.0 GB	active
+perf_04210	2026-10-22 17:35:09	11.0 GB/51.0 GB	expired
+perf_04213	2026-12-23 16:35:09	50.0 GB/Unlimited	active
+perf_04215	2027-01-16 16:35:09	39.0 GB/51.0 GB	active
+perf_04218	2027-01-30 16:35:09	29.0 GB/Unlimited	active
+perf_04222	2027-01-27 16:35:09	8.0 GB/51.0 GB	active
+perf_04223	2026-10-28 16:35:09	21.0 GB/Unlimited	expired
+perf_04226	2026-11-21 16:35:09	15.0 GB/Unlimited	active
+perf_04233	2027-02-08 16:35:09	42.0 GB/51.0 GB	active
+perf_04234	2026-10-27 16:35:09	36.0 GB/51.0 GB	expired
+perf_04235	2027-01-08 16:35:09	2.0 GB/Unlimited	active
+perf_04236	2026-11-10 16:35:09	45.0 GB/51.0 GB	expired
+perf_04237	2027-01-25 16:35:09	25.0 GB/Unlimited	active
+perf_04239	2026-12-23 16:35:09	37.0 GB/51.0 GB	active
+perf_04245	2027-01-28 16:35:09	22.0 GB/Unlimited	active
+perf_04247	2027-01-30 16:35:09	8.0 GB/Unlimited	active
+perf_04249	2027-01-14 16:35:09	19.0 GB/101.0 GB	active
+perf_04250	2027-01-26 16:35:09	23.0 GB/51.0 GB	active
+perf_04254	2027-01-26 16:35:09	32.0 GB/101.0 GB	active
+perf_04256	2026-10-30 16:35:09	11.0 GB/Unlimited	expired
+perf_04259	2027-01-04 16:35:09	23.0 GB/101.0 GB	active
+perf_04260	2026-10-18 17:35:09	5.0 GB/101.0 GB	expired
+perf_04265	2027-01-31 16:35:09	38.0 GB/101.0 GB	active
+perf_04266	2027-01-21 16:35:09	27.0 GB/Unlimited	active
+perf_04267	2026-12-31 16:35:09	0/51.0 GB	active
+perf_04268	2027-01-07 16:35:09	14.0 GB/Unlimited	active
+perf_04271	2027-01-31 16:35:09	7.0 GB/51.0 GB	active
+perf_04273	2026-11-16 16:35:09	42.0 GB/101.0 GB	active
+perf_04274	2026-12-13 16:35:09	11.0 GB/51.0 GB	active
+perf_04275	2027-01-28 16:35:09	47.0 GB/51.0 GB	active
+perf_04277	2026-12-16 16:35:09	8.0 GB/Unlimited	active
+perf_04280	2026-11-30 16:35:09	24.0 GB/Unlimited	active
+perf_04281	2026-11-08 16:35:09	17.0 GB/Unlimited	expired
+perf_04282	2027-01-06 16:35:09	48.0 GB/51.0 GB	active
+perf_04283	2026-11-11 16:35:09	47.0 GB/Unlimited	expired
+perf_04286	2026-11-19 16:35:09	9.0 GB/101.0 GB	active
+perf_04287	2026-11-04 16:35:09	25.0 GB/101.0 GB	expired
+perf_04290	2026-11-01 16:35:09	21.0 GB/101.0 GB	expired
+perf_04292	2026-12-15 16:35:09	31.0 GB/Unlimited	active
+perf_04293	2027-01-12 16:35:09	39.0 GB/Unlimited	active
+perf_04296	2026-11-18 16:35:09	14.0 GB/101.0 GB	active
+perf_04300	2026-11-28 16:35:09	24.0 GB/101.0 GB	active
+perf_04301	2026-11-06 16:35:09	17.0 GB/Unlimited	expired
+perf_04302	2027-01-05 16:35:09	15.0 GB/51.0 GB	active
+perf_04304	2026-12-16 16:35:09	24.0 GB/101.0 GB	active
+perf_04306	2027-01-23 16:35:09	38.0 GB/101.0 GB	on_hold
+perf_04309	2027-01-15 16:35:09	24.0 GB/51.0 GB	active
+perf_04312	2026-10-30 16:35:09	31.0 GB/51.0 GB	expired
+perf_04313	2027-01-30 16:35:09	18.0 GB/Unlimited	disabled
+perf_04314	2027-01-18 16:35:09	17.0 GB/51.0 GB	active
+perf_04315	2026-10-13 17:35:09	29.0 GB/51.0 GB	expired
+perf_04316	2027-01-05 16:35:09	9.0 GB/Unlimited	active
+perf_04319	2026-11-05 16:35:09	25.0 GB/101.0 GB	expired
+perf_04322	2026-12-03 16:35:09	45.0 GB/51.0 GB	active
+perf_04324	2026-12-21 16:35:09	17.0 GB/51.0 GB	disabled
+perf_04326	2027-01-09 16:35:09	36.0 GB/51.0 GB	active
+perf_04328	2026-10-18 17:35:09	10.0 GB/51.0 GB	expired
+perf_04329	2027-01-04 16:35:09	13.0 GB/Unlimited	active
+perf_04330	2026-11-13 16:35:09	14.0 GB/Unlimited	active
+perf_04333	2027-01-16 16:35:09	21.0 GB/Unlimited	active
+perf_04336	2026-12-23 16:35:09	29.0 GB/51.0 GB	active
+perf_04337	2027-02-01 16:35:09	30.0 GB/101.0 GB	active
+perf_04339	2026-12-21 16:35:09	23.0 GB/51.0 GB	active
+perf_04342	2027-01-03 16:35:09	1.0 GB/101.0 GB	active
+perf_04343	2026-10-29 16:35:09	29.0 GB/101.0 GB	expired
+perf_04344	2027-02-06 16:35:09	18.0 GB/51.0 GB	on_hold
+perf_04345	2026-11-01 16:35:09	45.0 GB/Unlimited	expired
+perf_04347	2026-11-22 16:35:09	34.0 GB/51.0 GB	active
+perf_04348	2026-11-23 16:35:09	3.0 GB/101.0 GB	active
+perf_04352	2026-12-22 16:35:09	3.0 GB/101.0 GB	active
+perf_04356	2027-01-11 16:35:09	47.0 GB/101.0 GB	active
+perf_04359	2026-12-22 16:35:09	45.0 GB/Unlimited	active
+perf_04360	2027-01-20 16:35:09	35.0 GB/101.0 GB	active
+perf_04363	2027-01-23 16:35:09	29.0 GB/Unlimited	active
+perf_04364	2027-02-04 16:35:09	22.0 GB/101.0 GB	disabled
+perf_04368	2026-12-19 16:35:09	12.0 GB/51.0 GB	active
+perf_04369	2026-12-16 16:35:09	36.0 GB/101.0 GB	active
+perf_04371	2026-12-29 16:35:09	4.0 GB/101.0 GB	active
+perf_04373	2026-12-07 16:35:09	5.0 GB/51.0 GB	active
+perf_04375	2026-12-11 16:35:09	29.0 GB/51.0 GB	active
+perf_04377	2026-10-14 17:35:09	23.0 GB/51.0 GB	expired
+perf_04378	2026-10-23 17:35:09	34.0 GB/101.0 GB	expired
+perf_04379	2026-10-22 17:35:09	20.0 GB/51.0 GB	expired
+perf_04383	2027-01-16 16:35:09	5.0 GB/101.0 GB	active
+perf_04384	2027-01-13 16:35:09	31.0 GB/Unlimited	active
+perf_04388	2027-02-10 16:35:09	0/101.0 GB	active
+perf_04389	2027-01-11 16:35:09	13.0 GB/101.0 GB	active
+perf_04391	2027-01-09 16:35:09	34.0 GB/51.0 GB	active
+perf_04392	2027-01-23 16:35:09	38.0 GB/51.0 GB	active
+perf_04393	2026-11-26 16:35:09	41.0 GB/51.0 GB	active
+perf_04394	2026-11-25 16:35:09	14.0 GB/51.0 GB	active
+perf_04395	2026-10-18 17:35:09	4.0 GB/Unlimited	expired
+perf_04399	2027-01-02 16:35:09	48.0 GB/101.0 GB	active
+perf_04401	2027-01-07 16:35:09	17.0 GB/51.0 GB	active
+perf_04403	2026-10-16 17:35:09	27.0 GB/Unlimited	expired
+perf_04404	2026-10-20 17:35:09	9.0 GB/101.0 GB	expired
+perf_04405	2027-01-25 16:35:09	23.0 GB/Unlimited	active
+perf_04407	2026-10-15 17:35:09	11.0 GB/101.0 GB	on_hold
+perf_04410	2026-10-28 16:35:09	43.0 GB/51.0 GB	expired
+perf_04412	2027-01-19 16:35:09	12.0 GB/101.0 GB	active
+perf_04413	2026-11-19 16:35:09	31.0 GB/51.0 GB	active
+perf_04414	2026-12-08 16:35:09	13.0 GB/51.0 GB	active
+perf_04416	2026-12-17 16:35:09	49.0 GB/101.0 GB	active
+perf_04417	2026-11-08 16:35:09	29.0 GB/Unlimited	expired
+perf_04423	2026-12-07 16:35:09	38.0 GB/Unlimited	disabled
+perf_04424	2026-10-30 16:35:09	29.0 GB/Unlimited	expired
+perf_04429	2027-02-07 16:35:09	36.0 GB/101.0 GB	active
+perf_04433	2026-10-16 17:35:09	33.0 GB/101.0 GB	expired
+perf_04434	2026-10-29 16:35:09	45.0 GB/101.0 GB	on_hold
+perf_04435	2026-12-23 16:35:09	32.0 GB/Unlimited	active
+perf_04442	2026-12-25 16:35:09	32.0 GB/101.0 GB	active
+perf_04446	2027-01-18 16:35:09	2.0 GB/51.0 GB	active
+perf_04447	2026-12-09 16:35:09	4.0 GB/101.0 GB	active
+perf_04449	2026-12-15 16:35:09	15.0 GB/Unlimited	active
+perf_04452	2027-01-27 16:35:09	23.0 GB/101.0 GB	active
+perf_04453	2027-01-13 16:35:09	39.0 GB/101.0 GB	active
+perf_04457	2026-12-29 16:35:09	46.0 GB/51.0 GB	active
+perf_04458	2026-11-12 16:35:09	4.0 GB/51.0 GB	active
+perf_04461	2027-01-23 16:35:09	50.0 GB/Unlimited	on_hold
+perf_04466	2026-12-27 16:35:09	47.0 GB/Unlimited	active
+perf_04467	2026-10-31 16:35:09	2.0 GB/51.0 GB	disabled
+perf_04473	2026-10-16 17:35:09	28.0 GB/101.0 GB	expired
+perf_04474	2026-12-12 16:35:09	19.0 GB/Unlimited	active
+perf_04475	2027-01-29 16:35:09	48.0 GB/51.0 GB	on_hold
+perf_04476	2026-12-30 16:35:09	11.0 GB/101.0 GB	active
+perf_04478	2026-11-07 16:35:09	19.0 GB/51.0 GB	expired
+perf_04480	2026-12-20 16:35:09	13.0 GB/Unlimited	active
+perf_04483	2027-01-16 16:35:09	26.0 GB/51.0 GB	active
+perf_04484	2026-10-17 17:35:09	3.0 GB/51.0 GB	expired
+perf_04485	2026-11-09 16:35:09	4.0 GB/101.0 GB	on_hold
+perf_04486	2026-11-03 16:35:09	42.0 GB/101.0 GB	expired
+perf_04487	2026-10-23 17:35:09	21.0 GB/Unlimited	expired
+perf_04488	2026-10-20 17:35:09	48.0 GB/51.0 GB	expired
+perf_04489	2026-11-08 16:35:09	26.0 GB/51.0 GB	expired
+perf_04490	2026-10-15 17:35:09	6.0 GB/Unlimited	expired
+perf_04491	2026-11-18 16:35:09	34.0 GB/101.0 GB	active
+perf_04492	2027-02-07 16:35:09	19.0 GB/101.0 GB	active
+perf_04493	2026-11-30 16:35:09	3.0 GB/Unlimited	active
+perf_04495	2026-12-06 16:35:09	16.0 GB/101.0 GB	active
+perf_04496	2026-12-08 16:35:09	27.0 GB/51.0 GB	disabled
+perf_04499	2026-10-22 17:35:09	10.0 GB/101.0 GB	expired
+perf_04503	2026-11-16 16:35:09	10.0 GB/101.0 GB	active
+perf_04507	2026-12-20 16:35:09	48.0 GB/Unlimited	active
+perf_04511	2027-01-11 16:35:09	49.0 GB/51.0 GB	active
+perf_04514	2026-11-12 16:35:09	30.0 GB/51.0 GB	active
+perf_04515	2027-01-22 16:35:09	28.0 GB/Unlimited	active
+perf_04516	2026-11-29 16:35:09	11.0 GB/51.0 GB	active
+perf_04517	2027-01-12 16:35:09	8.0 GB/Unlimited	active
+perf_04518	2027-01-08 16:35:09	40.0 GB/51.0 GB	active
+perf_04520	2026-10-16 17:35:09	6.0 GB/51.0 GB	expired
+perf_04522	2026-12-21 16:35:09	21.0 GB/101.0 GB	active
+perf_04523	2027-01-08 16:35:09	9.0 GB/Unlimited	active
+perf_04524	2026-11-23 16:35:09	37.0 GB/51.0 GB	on_hold
+perf_04530	2026-10-17 17:35:09	32.0 GB/Unlimited	expired
+perf_04532	2027-01-30 16:35:09	28.0 GB/101.0 GB	active
+perf_04535	2026-12-12 16:35:09	50.0 GB/101.0 GB	active
+perf_04536	2026-11-28 16:35:09	2.0 GB/51.0 GB	active
+perf_04541	2027-01-02 16:35:09	28.0 GB/Unlimited	active
+perf_04543	2026-12-12 16:35:09	7.0 GB/101.0 GB	active
+perf_04544	2027-02-06 16:35:09	50.0 GB/101.0 GB	active
+perf_04546	2027-01-20 16:35:09	41.0 GB/101.0 GB	active
+perf_04547	2026-12-23 16:35:09	17.0 GB/Unlimited	active
+perf_04551	2026-12-28 16:35:09	32.0 GB/Unlimited	active
+perf_04552	2026-11-23 16:35:09	21.0 GB/Unlimited	active
+perf_04554	2027-01-18 16:35:09	1.0 GB/Unlimited	active
+perf_04556	2026-12-11 16:35:09	0/51.0 GB	active
+perf_04558	2026-11-16 16:35:09	36.0 GB/101.0 GB	active
+perf_04561	2027-01-06 16:35:09	50.0 GB/51.0 GB	on_hold
+perf_04563	2026-10-13 17:35:09	10.0 GB/101.0 GB	expired
+perf_04566	2026-12-10 16:35:09	50.0 GB/Unlimited	active
+perf_04572	2027-01-29 16:35:09	26.0 GB/Unlimited	active
+perf_04574	2026-10-21 17:35:09	1.0 GB/Unlimited	expired
+perf_04575	2026-12-02 16:35:09	39.0 GB/Unlimited	active
+perf_04579	2027-01-25 16:35:09	17.0 GB/Unlimited	active
+perf_04583	2026-10-13 17:35:09	42.0 GB/51.0 GB	on_hold
+perf_04584	2026-11-19 16:35:09	45.0 GB/51.0 GB	active
+perf_04588	2027-02-06 16:35:09	18.0 GB/101.0 GB	active
+perf_04594	2026-11-16 16:35:09	4.0 GB/Unlimited	active
+perf_04598	2026-11-12 16:35:09	38.0 GB/51.0 GB	active
+perf_04599	2026-11-22 16:35:09	5.0 GB/101.0 GB	active
+perf_04601	2026-12-20 16:35:09	5.0 GB/51.0 GB	active
+perf_04603	2026-10-22 17:35:09	35.0 GB/51.0 GB	expired
+perf_04604	2026-11-10 16:35:09	33.0 GB/101.0 GB	expired
+perf_04605	2027-01-05 16:35:09	14.0 GB/Unlimited	on_hold
+perf_04606	2026-11-16 16:35:09	6.0 GB/51.0 GB	active
+perf_04607	2027-02-03 16:35:09	23.0 GB/Unlimited	active
+perf_04608	2026-12-22 16:35:09	23.0 GB/51.0 GB	active
+perf_04609	2026-12-17 16:35:09	44.0 GB/101.0 GB	active
+perf_04611	2026-10-27 16:35:09	30.0 GB/101.0 GB	on_hold
+perf_04613	2026-11-23 16:35:09	50.0 GB/51.0 GB	active
+perf_04615	2026-12-09 16:35:09	31.0 GB/101.0 GB	active
+perf_04619	2026-11-05 16:35:09	29.0 GB/Unlimited	expired
+perf_04620	2026-12-20 16:35:09	36.0 GB/Unlimited	active
+perf_04621	2027-01-13 16:35:09	27.0 GB/101.0 GB	active
+perf_04622	2027-01-08 16:35:09	4.0 GB/101.0 GB	disabled
+perf_04626	2026-12-21 16:35:09	20.0 GB/Unlimited	active
+perf_04627	2027-01-04 16:35:09	41.0 GB/51.0 GB	active
+perf_04628	2026-11-06 16:35:09	39.0 GB/101.0 GB	expired
+perf_04634	2026-11-22 16:35:09	5.0 GB/51.0 GB	active
+perf_04635	2026-10-31 16:35:09	25.0 GB/Unlimited	expired
+perf_04636	2027-01-26 16:35:09	27.0 GB/51.0 GB	active
+perf_04637	2026-12-17 16:35:09	44.0 GB/Unlimited	active
+perf_04638	2027-01-12 16:35:09	8.0 GB/101.0 GB	active
+perf_04641	2027-02-02 16:35:09	8.0 GB/51.0 GB	active
+perf_04643	2026-12-31 16:35:09	44.0 GB/101.0 GB	disabled
+perf_04645	2027-01-27 16:35:09	25.0 GB/Unlimited	on_hold
+perf_04646	2026-12-22 16:35:09	1.0 GB/Unlimited	active
+perf_04650	2027-01-22 16:35:09	10.0 GB/101.0 GB	active
+perf_04651	2026-10-28 16:35:09	11.0 GB/51.0 GB	expired
+perf_04654	2027-01-23 16:35:09	8.0 GB/Unlimited	active
+perf_04655	2026-11-16 16:35:09	41.0 GB/Unlimited	active
+perf_04656	2027-01-24 16:35:09	36.0 GB/Unlimited	on_hold
+perf_04657	2026-10-13 17:35:09	9.0 GB/Unlimited	expired
+perf_04658	2026-11-03 16:35:09	35.0 GB/51.0 GB	expired
+perf_04662	2027-01-18 16:35:09	46.0 GB/Unlimited	active
+perf_04665	2026-11-19 16:35:09	41.0 GB/51.0 GB	active
+perf_04668	2026-12-25 16:35:09	49.0 GB/51.0 GB	active
+perf_04669	2026-10-31 16:35:09	13.0 GB/51.0 GB	expired
+perf_04670	2027-01-20 16:35:09	27.0 GB/101.0 GB	active
+perf_04673	2027-01-15 16:35:09	2.0 GB/51.0 GB	active
+perf_04679	2027-01-22 16:35:09	30.0 GB/51.0 GB	active
+perf_04680	2026-11-26 16:35:09	14.0 GB/51.0 GB	active
+perf_04681	2026-11-07 16:35:09	49.0 GB/51.0 GB	expired
+perf_04682	2026-11-10 16:35:09	27.0 GB/51.0 GB	expired
+perf_04683	2027-02-06 16:35:09	36.0 GB/Unlimited	active
+perf_04684	2026-10-15 17:35:09	43.0 GB/51.0 GB	expired
+perf_04688	2026-12-31 16:35:09	49.0 GB/101.0 GB	active
+perf_04690	2026-10-26 16:35:09	42.0 GB/101.0 GB	expired
+perf_04692	2026-12-03 16:35:09	5.0 GB/Unlimited	active
+perf_04693	2027-01-20 16:35:09	5.0 GB/Unlimited	active
+perf_04694	2026-10-25 17:35:09	13.0 GB/Unlimited	expired
+perf_04696	2027-02-02 16:35:09	29.0 GB/51.0 GB	active
+perf_04698	2026-10-16 17:35:09	42.0 GB/Unlimited	expired
+perf_04699	2027-01-28 16:35:09	15.0 GB/Unlimited	active
+perf_04700	2026-10-30 16:35:09	20.0 GB/Unlimited	disabled
+perf_04701	2027-02-09 16:35:09	0/101.0 GB	active
+perf_04704	2027-01-12 16:35:09	40.0 GB/Unlimited	active
+perf_04705	2026-11-19 16:35:09	30.0 GB/51.0 GB	active
+perf_04706	2026-11-01 16:35:09	28.0 GB/51.0 GB	expired
+perf_04711	2026-12-14 16:35:09	15.0 GB/101.0 GB	active
+perf_04713	2026-12-31 16:35:09	34.0 GB/51.0 GB	active
+perf_04714	2026-12-10 16:35:09	30.0 GB/51.0 GB	active
+perf_04715	2027-01-10 16:35:09	4.0 GB/51.0 GB	active
+perf_04718	2026-12-13 16:35:09	17.0 GB/51.0 GB	active
+perf_04723	2027-02-06 16:35:09	23.0 GB/Unlimited	active
+perf_04724	2026-10-16 17:35:09	19.0 GB/51.0 GB	expired
+perf_04725	2027-01-06 16:35:09	38.0 GB/51.0 GB	active
+perf_04726	2027-01-01 16:35:09	17.0 GB/51.0 GB	active
+perf_04728	2027-01-14 16:35:09	5.0 GB/Unlimited	active
+perf_04731	2027-02-02 16:35:09	24.0 GB/Unlimited	active
+perf_04732	2026-10-29 16:35:09	1.0 GB/51.0 GB	expired
+perf_04735	2027-01-31 16:35:09	0/51.0 GB	active
+perf_04736	2026-12-05 16:35:09	10.0 GB/51.0 GB	active
+perf_04737	2027-01-06 16:35:09	13.0 GB/101.0 GB	active
+perf_04743	2027-01-28 16:35:09	29.0 GB/51.0 GB	active
+perf_04746	2026-12-11 16:35:09	40.0 GB/101.0 GB	active
+perf_04747	2026-11-23 16:35:09	18.0 GB/51.0 GB	active
+perf_04754	2027-01-27 16:35:09	30.0 GB/Unlimited	active
+perf_04755	2026-12-06 16:35:09	33.0 GB/Unlimited	active
+perf_04761	2026-12-03 16:35:09	35.0 GB/Unlimited	disabled
+perf_04762	2026-11-11 16:35:09	49.0 GB/Unlimited	disabled
+perf_04763	2026-12-23 16:35:09	46.0 GB/101.0 GB	active
+perf_04764	2027-02-10 16:35:09	23.0 GB/101.0 GB	active
+perf_04765	2026-12-31 16:35:09	33.0 GB/101.0 GB	active
+perf_04767	2026-12-02 16:35:09	44.0 GB/101.0 GB	active
+perf_04770	2026-11-04 16:35:09	28.0 GB/Unlimited	expired
+perf_04771	2027-01-25 16:35:09	2.0 GB/Unlimited	on_hold
+perf_04772	2027-02-03 16:35:09	49.0 GB/101.0 GB	active
+perf_04777	2026-12-06 16:35:09	31.0 GB/Unlimited	active
+perf_04778	2026-12-20 16:35:09	34.0 GB/Unlimited	active
+perf_04781	2026-10-29 16:35:09	37.0 GB/Unlimited	expired
+perf_04782	2027-01-22 16:35:09	14.0 GB/51.0 GB	active
+perf_04785	2026-12-02 16:35:09	38.0 GB/Unlimited	active
+perf_04787	2027-02-03 16:35:09	29.0 GB/Unlimited	active
+perf_04788	2027-02-02 16:35:09	26.0 GB/101.0 GB	active
+perf_04790	2027-01-31 16:35:09	14.0 GB/51.0 GB	disabled
+perf_04791	2026-10-28 16:35:09	50.0 GB/101.0 GB	expired
+perf_04796	2026-10-17 17:35:09	8.0 GB/51.0 GB	expired
+perf_04799	2026-12-15 16:35:09	35.0 GB/51.0 GB	active
+perf_04800	2026-12-11 16:35:09	22.0 GB/Unlimited	active
+perf_04801	2026-11-09 16:35:09	5.0 GB/51.0 GB	on_hold
+perf_04802	2027-01-05 16:35:09	40.0 GB/Unlimited	active
+perf_04803	2026-12-20 16:35:09	28.0 GB/101.0 GB	on_hold
+perf_04806	2026-12-17 16:35:09	29.0 GB/Unlimited	active
+perf_04809	2027-02-07 16:35:09	15.0 GB/Unlimited	active
+perf_04811	2026-11-03 16:35:09	26.0 GB/101.0 GB	expired
+perf_04815	2026-10-26 16:35:09	1.0 GB/51.0 GB	expired
+perf_04816	2027-01-31 16:35:09	39.0 GB/Unlimited	active
+perf_04817	2027-01-14 16:35:09	30.0 GB/Unlimited	active
+perf_04821	2026-11-10 16:35:09	46.0 GB/51.0 GB	on_hold
+perf_04822	2027-01-27 16:35:09	27.0 GB/Unlimited	active
+perf_04830	2026-12-30 16:35:09	5.0 GB/Unlimited	active
+perf_04831	2026-12-03 16:35:09	50.0 GB/Unlimited	active
+perf_04832	2026-10-13 17:35:09	49.0 GB/101.0 GB	expired
+perf_04834	2026-12-06 16:35:09	13.0 GB/101.0 GB	active
+perf_04835	2026-12-17 16:35:09	8.0 GB/101.0 GB	active
+perf_04838	2026-11-08 16:35:09	8.0 GB/51.0 GB	expired
+perf_04839	2026-12-31 16:35:09	34.0 GB/101.0 GB	active
+perf_04840	2026-11-25 16:35:09	45.0 GB/Unlimited	active
+perf_04844	2027-01-09 16:35:09	33.0 GB/Unlimited	active
+perf_04845	2027-01-27 16:35:09	43.0 GB/Unlimited	active
+perf_04846	2026-11-06 16:35:09	2.0 GB/101.0 GB	expired
+perf_04847	2026-12-13 16:35:09	50.0 GB/51.0 GB	active
+perf_04849	2027-02-09 16:35:09	4.0 GB/51.0 GB	disabled
+perf_04850	2026-12-09 16:35:09	36.0 GB/Unlimited	on_hold
+perf_04858	2026-10-26 16:35:09	25.0 GB/51.0 GB	expired
+perf_04860	2026-12-06 16:35:09	39.0 GB/51.0 GB	active
+perf_04861	2026-11-13 16:35:09	21.0 GB/Unlimited	active
+perf_04862	2026-10-23 17:35:09	28.0 GB/101.0 GB	expired
+perf_04863	2026-11-22 16:35:09	19.0 GB/101.0 GB	active
+perf_04864	2026-11-20 16:35:09	15.0 GB/101.0 GB	active
+perf_04866	2026-11-04 16:35:09	26.0 GB/101.0 GB	expired
+perf_04869	2026-12-14 16:35:09	33.0 GB/51.0 GB	active
+perf_04870	2026-12-02 16:35:09	15.0 GB/51.0 GB	active
+perf_04873	2027-02-04 16:35:09	45.0 GB/51.0 GB	active
+perf_04874	2026-12-23 16:35:09	43.0 GB/51.0 GB	active
+perf_04875	2027-01-22 16:35:09	23.0 GB/Unlimited	active
+perf_04876	2026-12-06 16:35:09	20.0 GB/51.0 GB	disabled
+perf_04878	2026-10-30 16:35:09	33.0 GB/101.0 GB	expired
+perf_04884	2027-01-08 16:35:09	50.0 GB/101.0 GB	active
+perf_04886	2026-10-19 17:35:09	12.0 GB/Unlimited	disabled
+perf_04887	2026-10-27 16:35:09	6.0 GB/101.0 GB	expired
+perf_04888	2026-12-21 16:35:09	17.0 GB/101.0 GB	active
+perf_04889	2026-12-20 16:35:09	2.0 GB/101.0 GB	active
+perf_04891	2026-11-25 16:35:09	32.0 GB/Unlimited	active
+perf_04892	2026-12-01 16:35:09	6.0 GB/101.0 GB	active
+perf_04894	2026-12-14 16:35:09	41.0 GB/101.0 GB	active
+perf_04897	2026-10-21 17:35:09	3.0 GB/Unlimited	expired
+perf_04899	2026-10-31 16:35:09	48.0 GB/101.0 GB	expired
+perf_04902	2026-10-29 16:35:09	34.0 GB/51.0 GB	expired
+perf_04907	2027-01-05 16:35:09	37.0 GB/101.0 GB	active
+perf_04910	2027-01-08 16:35:09	20.0 GB/51.0 GB	active
+perf_04911	2026-10-26 16:35:09	7.0 GB/51.0 GB	on_hold
+perf_04914	2026-11-26 16:35:09	26.0 GB/51.0 GB	active
+perf_04918	2027-01-15 16:35:09	3.0 GB/Unlimited	active
+perf_04923	2026-10-26 16:35:09	4.0 GB/51.0 GB	disabled
+perf_04924	2026-11-23 16:35:09	24.0 GB/51.0 GB	active
+perf_04927	2026-10-26 16:35:09	21.0 GB/51.0 GB	expired
+perf_04929	2027-01-06 16:35:09	5.0 GB/101.0 GB	active
+perf_04931	2026-10-19 17:35:09	32.0 GB/101.0 GB	expired
+perf_04933	2027-02-10 16:35:09	45.0 GB/51.0 GB	active
+perf_04936	2027-01-01 16:35:09	35.0 GB/101.0 GB	active
+perf_04939	2026-11-07 16:35:09	44.0 GB/101.0 GB	expired
+perf_04942	2026-11-24 16:35:09	4.0 GB/Unlimited	active
+perf_04945	2027-01-16 16:35:09	20.0 GB/51.0 GB	active
+perf_04953	2026-12-24 16:35:09	25.0 GB/Unlimited	active
+perf_04954	2026-12-25 16:35:09	8.0 GB/51.0 GB	active
+perf_04956	2026-10-20 17:35:09	23.0 GB/101.0 GB	expired
+perf_04959	2026-11-13 16:35:09	18.0 GB/Unlimited	disabled
+perf_04960	2027-01-27 16:35:09	22.0 GB/51.0 GB	active
+perf_04961	2027-02-08 16:35:09	6.0 GB/Unlimited	active
+perf_04963	2027-01-28 16:35:09	41.0 GB/Unlimited	active
+perf_04966	2027-01-15 16:35:09	46.0 GB/Unlimited	active
+perf_04967	2026-12-13 16:35:09	23.0 GB/Unlimited	active
+perf_04969	2026-11-16 16:35:09	38.0 GB/Unlimited	active
+perf_04970	2026-12-13 16:35:09	17.0 GB/51.0 GB	active
+perf_04971	2026-11-09 16:35:09	13.0 GB/101.0 GB	expired
+perf_04972	2026-10-20 17:35:09	26.0 GB/101.0 GB	expired
+perf_04974	2026-12-16 16:35:09	0/101.0 GB	active
+perf_04976	2026-11-21 16:35:09	33.0 GB/Unlimited	active
+perf_04977	2027-01-31 16:35:09	49.0 GB/Unlimited	active
+perf_04982	2027-01-11 16:35:09	41.0 GB/51.0 GB	active
+perf_04983	2027-01-23 16:35:09	28.0 GB/101.0 GB	active
+perf_04984	2026-11-24 16:35:09	46.0 GB/101.0 GB	active
+perf_04985	2026-12-30 16:35:09	16.0 GB/101.0 GB	active
+perf_04986	2027-01-08 16:35:09	0/101.0 GB	active
+perf_04987	2026-12-19 16:35:09	21.0 GB/101.0 GB	active
+perf_04992	2027-01-15 16:35:09	42.0 GB/51.0 GB	active
+perf_04994	2026-12-26 16:35:09	36.0 GB/51.0 GB	active
+perf_04996	2027-01-23 16:35:09	24.0 GB/Unlimited	disabled

@@ -3,10 +3,12 @@ Functions for managing proxy hosts, users, user templates, nodes, and administra
 """
 
 from datetime import datetime, timedelta
+
+from dateutil.relativedelta import relativedelta
 from enum import Enum
 from typing import Dict, List, Optional, Tuple, Union
 
-from sqlalchemy import and_, delete, func, or_
+from sqlalchemy import and_, bindparam, delete, func, or_, update
 from sqlalchemy.orm import Query, Session, joinedload, selectinload
 from sqlalchemy.sql.functions import coalesce
 
@@ -43,7 +45,8 @@ from app.models.user import (
 )
 from app.models.user_template import UserTemplateCreate, UserTemplateModify
 from app.utils.helpers import calculate_expiration_days, calculate_usage_percent
-from config import NOTIFY_DAYS_LEFT, NOTIFY_REACHED_USAGE_PERCENT, USERS_AUTODELETE_DAYS
+from app.settings import settings as app_settings  # (a local `settings` exists in update_user)
+from config import USERS_AUTODELETE_DAYS
 
 
 def add_default_host(db: Session, inbound: ProxyInbound):
@@ -303,21 +306,158 @@ def get_users(db: Session,
     return query.all()
 
 
-def get_active_users_to_review(db: Session, now_ts: float, include_all: bool = False) -> List[User]:
+def get_active_users_to_review(
+        db: Session,
+        now_ts: float,
+        include_all: bool = False,
+        usage_percent: Optional[int] = None,
+        days_left: Optional[int] = None,
+) -> List[User]:
     """
     Active users the status review job has to look at.
 
-    Only users that reached their data limit or expired can change status, so filter
-    them in SQL instead of loading every active user. `include_all=True` returns all
-    active users (needed when usage/expiry notifications are enabled).
+    Users that reached their data limit or expired can change status. When threshold alerts
+    are enabled, users close to a threshold are needed too: `usage_percent` is the lowest
+    usage threshold and `days_left` the highest days-left threshold. Everything is filtered in
+    SQL instead of loading every active user. `include_all=True` returns all active users.
     """
     query = get_user_queryset(db, eager=False).filter(User.status == UserStatus.active)
     if not include_all:
-        query = query.filter(or_(
+        conditions = [
             and_(User.data_limit.isnot(None), User.data_limit != 0, User.used_traffic >= User.data_limit),
             and_(User.expire.isnot(None), User.expire != 0, User.expire <= now_ts),
-        ))
+        ]
+        if usage_percent:
+            conditions.append(and_(User.data_limit.isnot(None), User.data_limit != 0,
+                                   User.used_traffic * 100 >= User.data_limit * usage_percent))
+        if days_left is not None:
+            conditions.append(and_(User.expire.isnot(None), User.expire != 0,
+                                   User.expire <= now_ts + (days_left + 1) * 86400))
+        query = query.filter(or_(*conditions))
     return query.all()
+
+
+def _chunks(seq: list, size: int = 800):
+    for i in range(0, len(seq), size):
+        yield seq[i:i + size]
+
+
+def _bulk_report_rows(db: Session, user_ids: List[int]):
+    """(username, expire, used_traffic, data_limit, status) of the given users, ordered by id."""
+    rows = []
+    for chunk in _chunks(user_ids):
+        rows.extend(db.query(User.id, User.username, User.expire, User.used_traffic, User.data_limit, User.status)
+                    .filter(User.id.in_(chunk)).all())
+    rows.sort(key=lambda r: r.id)
+    return rows
+
+
+def bulk_add_data_limit(db: Session, delta: int):
+    """
+    Add `delta` bytes to the data limit of every user that has one (limited/expired users are
+    skipped) in a single transaction. Same result as calling update_user() for each of them
+    (status recalculation, reminder cleanup, edit_at) but without a commit per user.
+    A user whose limit would drop below zero is skipped; a limit of exactly 0 means unlimited.
+
+    Returns the updated users as (id, username, expire, used_traffic, data_limit, status) rows.
+    """
+    now = datetime.utcnow()
+    candidates = db.query(User.id, User.data_limit, User.used_traffic, User.status).filter(
+        User.data_limit.isnot(None), User.data_limit != 0,
+        User.status.notin_([UserStatus.limited, UserStatus.expired]),
+    ).all()
+
+    params, new_limits, status_of = [], {}, {}
+    for uid, limit, used, status in candidates:
+        new_limit = limit + delta
+        if new_limit < 0:
+            continue
+        new_limit = new_limit or None
+        if status != UserStatus.disabled:  # disabled users keep their status
+            if not new_limit or used < new_limit:
+                if status != UserStatus.on_hold:
+                    status = UserStatus.active
+            else:
+                status = UserStatus.limited
+        params.append({"uid": uid, "limit": new_limit, "status": status})
+        new_limits[uid] = (used, new_limit)
+        status_of[uid] = status
+    if not params:
+        return []
+
+    db.connection().execute(
+        update(User).where(User.id == bindparam("uid"))
+        .values(data_limit=bindparam("limit"), status=bindparam("status"), edit_at=now),
+        params,
+    )
+
+    # usage reminders the user is no longer past (same rule as update_user)
+    thresholds = app_settings.NOTIFY_REACHED_USAGE_PERCENT
+    if thresholds:
+        stale = []
+        for chunk in _chunks(list(new_limits)):
+            for rem in db.query(NotificationReminder.id, NotificationReminder.user_id, NotificationReminder.threshold).filter(
+                    NotificationReminder.user_id.in_(chunk), NotificationReminder.type == ReminderType.data_usage):
+                used, new_limit = new_limits[rem.user_id]
+                if status_of[rem.user_id] in (UserStatus.expired, UserStatus.disabled) or rem.threshold not in thresholds:
+                    continue
+                if not new_limit or calculate_usage_percent(used, new_limit) < rem.threshold:
+                    stale.append(rem.id)
+        for chunk in _chunks(stale):
+            db.connection().execute(delete(NotificationReminder).where(NotificationReminder.id.in_(chunk)))
+
+    db.commit()
+    return _bulk_report_rows(db, [p["uid"] for p in params])
+
+
+def bulk_add_expire_days(db: Session, days: int):
+    """
+    Move the expiry of every user that has one by `days` days (limited/expired users are
+    skipped) in a single transaction. Mirrors update_user(): active users whose new expiry is in
+    the past become expired, others active; days-left reminders are cleaned up.
+
+    Returns the updated users as (id, username, expire, used_traffic, data_limit, status) rows.
+    """
+    now = datetime.utcnow()
+    now_ts = now.timestamp()
+    candidates = db.query(User.id, User.expire, User.status).filter(
+        User.expire.isnot(None), User.expire != 0,
+        User.status.notin_([UserStatus.limited, UserStatus.expired]),
+    ).all()
+
+    params, new_expires, status_of = [], {}, {}
+    for uid, expire, status in candidates:
+        new_expire = int((datetime.fromtimestamp(expire) + relativedelta(days=days)).timestamp()) or None
+        if status == UserStatus.active:  # (expired users are skipped above)
+            status = UserStatus.active if (not new_expire or new_expire > now_ts) else UserStatus.expired
+        params.append({"uid": uid, "expire": new_expire, "status": status})
+        new_expires[uid] = new_expire
+        status_of[uid] = status
+    if not params:
+        return []
+
+    db.connection().execute(
+        update(User).where(User.id == bindparam("uid"))
+        .values(expire=bindparam("expire"), status=bindparam("status"), edit_at=now),
+        params,
+    )
+
+    thresholds = app_settings.NOTIFY_DAYS_LEFT
+    if thresholds:
+        stale = []
+        for chunk in _chunks(list(new_expires)):
+            for rem in db.query(NotificationReminder.id, NotificationReminder.user_id, NotificationReminder.threshold).filter(
+                    NotificationReminder.user_id.in_(chunk), NotificationReminder.type == ReminderType.expiration_date):
+                new_expire = new_expires[rem.user_id]
+                if status_of[rem.user_id] != UserStatus.active or rem.threshold not in thresholds:
+                    continue
+                if not new_expire or calculate_expiration_days(new_expire) > rem.threshold:
+                    stale.append(rem.id)
+        for chunk in _chunks(stale):
+            db.connection().execute(delete(NotificationReminder).where(NotificationReminder.id.in_(chunk)))
+
+    db.commit()
+    return _bulk_report_rows(db, [p["uid"] for p in params])
 
 
 def get_user_usages(db: Session, dbuser: User, start: datetime, end: datetime) -> List[UserUsageResponse]:
@@ -459,7 +599,7 @@ def remove_users(db: Session, dbusers: List[User]):
     return
 
 
-def update_user(db: Session, dbuser: User, modify: UserModify) -> User:
+def update_user(db: Session, dbuser: User, modify: UserModify, refresh: bool = True) -> User:
     """
     Updates a user with new details.
 
@@ -504,7 +644,7 @@ def update_user(db: Session, dbuser: User, modify: UserModify) -> User:
                 if dbuser.status != UserStatus.on_hold:
                     dbuser.status = UserStatus.active
 
-                for percent in sorted(NOTIFY_REACHED_USAGE_PERCENT, reverse=True):
+                for percent in sorted(app_settings.NOTIFY_REACHED_USAGE_PERCENT, reverse=True):
                     if not dbuser.data_limit or (calculate_usage_percent(
                             dbuser.used_traffic, dbuser.data_limit) < percent):
                         reminder = get_notification_reminder(db, dbuser.id, ReminderType.data_usage, threshold=percent)
@@ -519,7 +659,7 @@ def update_user(db: Session, dbuser: User, modify: UserModify) -> User:
         if dbuser.status in (UserStatus.active, UserStatus.expired):
             if not dbuser.expire or dbuser.expire > datetime.utcnow().timestamp():
                 dbuser.status = UserStatus.active
-                for days_left in sorted(NOTIFY_DAYS_LEFT):
+                for days_left in sorted(app_settings.NOTIFY_DAYS_LEFT):
                     if not dbuser.expire or (calculate_expiration_days(
                             dbuser.expire) > days_left):
                         reminder = get_notification_reminder(
@@ -554,7 +694,8 @@ def update_user(db: Session, dbuser: User, modify: UserModify) -> User:
     dbuser.edit_at = datetime.utcnow()
 
     db.commit()
-    db.refresh(dbuser)
+    if refresh:  # bulk callers keep objects fresh themselves (expire_on_commit=False)
+        db.refresh(dbuser)
     return dbuser
 
 

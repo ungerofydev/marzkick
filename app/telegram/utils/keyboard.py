@@ -33,6 +33,8 @@ class BotKeyboard:
             types.InlineKeyboardButton(text='➕ Create User', callback_data='add_user'))
         keyboard.add(
             types.InlineKeyboardButton(text='➕ Create Bulk User', callback_data='add_bulk_user'))
+        keyboard.add(
+            types.InlineKeyboardButton(text='⚙️ Settings', callback_data='settings'))
         return keyboard
 
     @staticmethod
