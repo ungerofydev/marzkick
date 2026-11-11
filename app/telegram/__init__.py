@@ -1,8 +1,9 @@
 import importlib.util
+import time
 from os.path import dirname
 from threading import Thread
 from config import TELEGRAM_API_TOKEN, TELEGRAM_PROXY_URL
-from app import app
+from app import app, logger
 from telebot import TeleBot, apihelper
 
 
@@ -15,6 +16,20 @@ if TELEGRAM_API_TOKEN:
 
 handler_names = ["admin", "report", "settings", "user"]
 
+def _poll():
+    """Long polling that survives anything. infinity_polling retries errors by itself, but a failure
+    outside its loop (e.g. a timed-out first request) used to end the thread and silence the bot."""
+    while True:
+        try:
+            # allowed_updates: the bot only uses messages and button callbacks.
+            bot.infinity_polling(timeout=30, long_polling_timeout=25,
+                                 allowed_updates=["message", "callback_query"])
+            return  # stop_polling() was requested
+        except Exception as err:
+            logger.error("Telegram polling crashed (%s: %s), restarting in 5s", type(err).__name__, err)
+            time.sleep(5)
+
+
 @app.on_event("startup")
 def start_bot():
     if bot:
@@ -26,11 +41,7 @@ def start_bot():
         from app.telegram import utils # setup custom handlers
         utils.setup()
 
-        # skip_pending: do not replay button presses made while the panel was down;
-        # allowed_updates: the bot only uses messages and button callbacks.
-        thread = Thread(target=bot.infinity_polling, daemon=True, kwargs=dict(
-            skip_pending=True, timeout=30, long_polling_timeout=25,
-            allowed_updates=["message", "callback_query"]))
+        thread = Thread(target=_poll, name="telegram-polling", daemon=True)
         thread.start()
 
 
