@@ -97,6 +97,23 @@ and batched transactions.
 3.11 (part of the upstream Telegram code only ran on 3.12); upstream bugs fixed (a user created without
 explicit `inbounds` got no links, expiry notifications were sent even when switched off).
 
+### Subscription links without `/sub/`
+
+By default a link looks like `https://domain/sub/<token>`. For `https://domain/<token>` set
+`XRAY_SUBSCRIPTION_URL_PREFIX = "https://domain"` and `XRAY_SUBSCRIPTION_PATH = ""` in `.env`. The panel still answers on
+`/sub/<token>`, so a reverse proxy has to map it (nginx example):
+
+```nginx
+location ~ "^/([A-Za-z0-9_=-]{20,})(/(?:info|usage|v2ray|v2ray-json|clash|clash-meta|sing-box|outline))?$" {
+    proxy_pass http://127.0.0.1:8000/sub/$1$2$is_args$args;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header X-Forwarded-Proto https;
+}
+```
+
+Everything else (`/dashboard`, `/api`, `/docs`) is simply not exposed on that host.
+
 ## Management
 
 ```text

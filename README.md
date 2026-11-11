@@ -99,6 +99,23 @@ Python 3.11 (в апстриме часть Telegram-кода запускала
 (пользователь без явных `inbounds` оставался без ссылок, уведомления об окончании срока уходили при
 выключенной опции).
 
+### Ссылки подписки без `/sub/`
+
+По умолчанию ссылка выглядит как `https://домен/sub/<токен>`. Чтобы получить `https://домен/<токен>`, задайте в `.env`
+`XRAY_SUBSCRIPTION_URL_PREFIX = "https://домен"` и `XRAY_SUBSCRIPTION_PATH = ""`. Сама панель по-прежнему отвечает на
+`/sub/<токен>`, поэтому перед ней нужен обратный прокси, который это сопоставляет (пример для nginx):
+
+```nginx
+location ~ "^/([A-Za-z0-9_=-]{20,})(/(?:info|usage|v2ray|v2ray-json|clash|clash-meta|sing-box|outline))?$" {
+    proxy_pass http://127.0.0.1:8000/sub/$1$2$is_args$args;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header X-Forwarded-Proto https;
+}
+```
+
+Остальные пути (`/dashboard`, `/api`, `/docs`) такой хост наружу не отдаёт.
+
 ## Управление
 
 ```text

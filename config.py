@@ -34,6 +34,10 @@ XRAY_ASSETS_PATH = config("XRAY_ASSETS_PATH", default="/usr/local/share/xray")
 XRAY_EXCLUDE_INBOUND_TAGS = config("XRAY_EXCLUDE_INBOUND_TAGS", default='').split()
 XRAY_SUBSCRIPTION_URL_PREFIX = config("XRAY_SUBSCRIPTION_URL_PREFIX", default="").strip("/")
 XRAY_SUBSCRIPTION_PATH = config("XRAY_SUBSCRIPTION_PATH", default="sub").strip("/")
+# The panel always serves subscriptions under this route. XRAY_SUBSCRIPTION_PATH is only the part shown in the
+# URLs given to users; when it is empty (URL = prefix/<token>) a reverse proxy has to map /<token> to
+# /<XRAY_SUBSCRIPTION_ROUTE>/<token>.
+XRAY_SUBSCRIPTION_ROUTE = XRAY_SUBSCRIPTION_PATH or "sub"
 
 TELEGRAM_API_TOKEN = config("TELEGRAM_API_TOKEN", default="")
 TELEGRAM_ADMIN_ID = config(

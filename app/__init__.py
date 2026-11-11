@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.routing import APIRoute
 
-from config import ALLOWED_ORIGINS, DOCS, XRAY_SUBSCRIPTION_PATH
+from config import ALLOWED_ORIGINS, DOCS, XRAY_SUBSCRIPTION_ROUTE
 
 __version__ = "0.8.4"
 
@@ -55,9 +55,9 @@ use_route_names_as_operation_ids(app)
 def on_startup():
     paths = [f"{r.path}/" for r in app.routes]
     paths.append("/api/")
-    if f"/{XRAY_SUBSCRIPTION_PATH}/" in paths:
+    if f"/{XRAY_SUBSCRIPTION_ROUTE}/" in paths:
         raise ValueError(
-            f"you can't use /{XRAY_SUBSCRIPTION_PATH}/ as subscription path it reserved for {app.title}"
+            f"you can't use /{XRAY_SUBSCRIPTION_ROUTE}/ as subscription path it reserved for {app.title}"
         )
     scheduler.start()
 

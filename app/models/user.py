@@ -311,7 +311,7 @@ class UserResponse(User):
             salt = secrets.token_hex(8)
             url_prefix = (XRAY_SUBSCRIPTION_URL_PREFIX).replace('*', salt)
             token = create_subscription_token(self.username)
-            self.subscription_url = f"{url_prefix}/{XRAY_SUBSCRIPTION_PATH}/{token}"
+            self.subscription_url = f"{url_prefix}/" + "/".join(part for part in (XRAY_SUBSCRIPTION_PATH, token) if part)
         return self
 
     @field_validator("proxies", mode="before")

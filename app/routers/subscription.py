@@ -19,7 +19,7 @@ from config import (
     USE_CUSTOM_JSON_FOR_STREISAND,
     USE_CUSTOM_JSON_FOR_V2RAYN,
     USE_CUSTOM_JSON_FOR_V2RAYNG,
-    XRAY_SUBSCRIPTION_PATH,
+    XRAY_SUBSCRIPTION_ROUTE,
 )
 
 client_config = {
@@ -32,7 +32,7 @@ client_config = {
                    "reverse": False}
 }
 
-router = APIRouter(tags=['Subscription'], prefix=f'/{XRAY_SUBSCRIPTION_PATH}')
+router = APIRouter(tags=['Subscription'], prefix=f'/{XRAY_SUBSCRIPTION_ROUTE}')
 
 
 def get_subscription_user_info(user: UserResponse) -> dict:
