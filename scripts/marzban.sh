@@ -1563,7 +1563,12 @@ usage() {
 # systemd unit below, so the docker-specific primitives are redefined here
 # (later definitions win). Commands, options and output stay the same.
 # ============================================================================
-SERVICE_NAME="${SERVICE_NAME:-marzban-dev}"
+# systemd unit of this install: <APP_NAME>.service (older dev installs used marzban-dev)
+if [ -z "${SERVICE_NAME:-}" ]; then
+    if systemctl cat "$APP_NAME" >/dev/null 2>&1; then SERVICE_NAME="$APP_NAME"
+    elif systemctl cat marzban-dev >/dev/null 2>&1; then SERVICE_NAME="marzban-dev"
+    else SERVICE_NAME="$APP_NAME"; fi
+fi
 VENV_DIR="$APP_DIR/venv"
 
 detect_compose() { :; }
@@ -1593,7 +1598,7 @@ follow_marzban_logs() {
 }
 
 marzban_cli() {
-    CLI_PROG_NAME="marzban cli" marzban-cli "$@"
+    CLI_PROG_NAME="$APP_NAME cli" "$APP_NAME-cli" "$@"
 }
 
 status_command() {
@@ -1643,13 +1648,17 @@ edit_command() {
 }
 
 install_command() {
-    colorized_echo red "Not available: Marzban is installed from source in $APP_DIR (see README / use git)."
+    if is_marzban_installed; then
+        colorized_echo yellow "$APP_NAME is already installed in $APP_DIR (use: $APP_NAME update)"
+    else
+        colorized_echo red "Install with the installer: sudo bash -c \"\$(curl -sL https://raw.githubusercontent.com/ungerofydev/marzkick/main/install.sh)\""
+    fi
     exit 1
 }
 
 uninstall_command() {
-    colorized_echo red "Not available for a source install. Remove manually: systemctl disable --now $SERVICE_NAME, then delete $APP_DIR and $DATA_DIR."
-    exit 1
+    check_running_as_root
+    exec env APP_NAME="$APP_NAME" "$APP_DIR/install.sh" uninstall
 }
 
 install_marzban_script() {
